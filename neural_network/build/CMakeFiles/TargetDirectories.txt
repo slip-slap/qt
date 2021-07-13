@@ -1,0 +1,4 @@
+/Users/kismet/Desktop/untitled/build/CMakeFiles/rebuild_cache.dir
+/Users/kismet/Desktop/untitled/build/CMakeFiles/edit_cache.dir
+/Users/kismet/Desktop/untitled/build/CMakeFiles/untitled.dir
+/Users/kismet/Desktop/untitled/build/CMakeFiles/untitled_autogen.dir

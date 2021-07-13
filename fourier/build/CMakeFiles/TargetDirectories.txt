@@ -1,0 +1,4 @@
+/Users/kismet/Desktop/fourier/build/CMakeFiles/rebuild_cache.dir
+/Users/kismet/Desktop/fourier/build/CMakeFiles/edit_cache.dir
+/Users/kismet/Desktop/fourier/build/CMakeFiles/fourier.dir
+/Users/kismet/Desktop/fourier/build/CMakeFiles/fourier_autogen.dir
