@@ -1,0 +1,4 @@
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/rebuild_cache.dir
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/edit_cache.dir
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm.dir
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm_autogen.dir

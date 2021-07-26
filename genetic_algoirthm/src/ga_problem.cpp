@@ -42,5 +42,40 @@ double problem::SO::M4(double x)
 	return std::exp(-2 * std::log(2)* std::pow((x-0.08)/0.854,2)) * problem::SO::M3(x);
 }
 
+double problem::MO::CONSTR::TargetFunction1(double x1){return x1;}
+double problem::MO::CONSTR::TargetFunction2(double x1, double x2)
+{
+	return (1+x2)/x1;
+}
+
+bool problem::MO::CONSTR::TargetConstraint1(double x1, double x2)
+{
+	if(9 * x1 + x2 > 6){return true;} else{return false;}
+}
+
+bool problem::MO::CONSTR::TargetConstraint2(double x1, double x2)
+{
+	if(9 * x1 - x2 > 1){return true;} else{return false;}
+}
+
+
+double problem::MO::SRN::TargetFunction1(double x1, double x2)
+{
+	return std::pow(x1-2,2) + std::pow(x2-2,2) + 2;
+}
+double problem::MO::SRN::TargetFunction2(double x1, double x2)
+{
+	return 9*x1 - std::pow(x2-1,2);
+}
+
+bool problem::MO::SRN::TargetConstraint1(double x1, double x2)
+{
+	if(std::pow(x1,2)+std::pow(x2,1) < 225){return true;} else{return false;}
+}
+
+bool problem::MO::SRN::TargetConstraint2(double x1, double x2)
+{
+	if(x1 - 3*x2 < -10){return true;} else{return false;}
+}
 
 

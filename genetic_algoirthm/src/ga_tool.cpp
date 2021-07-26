@@ -1,7 +1,6 @@
 #include "ga_tool.h"
 
 
-
 int GenerateRandomNumber(int start, int end)
 {
 	boost::chrono::system_clock::time_point now = boost::chrono::system_clock::now();
@@ -14,7 +13,7 @@ int GenerateRandomNumber(int start, int end)
 }
 double BinaryString2Real(std::vector<int>& binary_string)
 {
-    int sum = 0;
+	int sum = 0;
 	int pos = 1;
 	for(auto itr=binary_string.begin(); itr!=binary_string.end();itr++)
 	{
@@ -35,6 +34,12 @@ void GenerateRandomBinaryString(std::vector<int>& binary_string_vec, int length 
 	{
 		binary_string_vec.push_back(GenerateRandomNumber(0,2));
 	}
+}
+double BinaryString2RealWithMinAndMax(std::vector<int>& binary_string, int max_length, double min, double max)
+{
+	double normalize_value = BinaryString2RealNormalization(binary_string, max_length);	
+	// first scarlarization, then translate
+	return normalize_value * (max - min) +  min;
 }
 
 int SelectionWithProbability(std::vector<double>& vec)

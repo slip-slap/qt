@@ -4,6 +4,7 @@
 #include "ga_problem.h"
 #include "crowdingga.h"
 #include "ga_tool.h"
+#include "nsga.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -35,6 +36,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+
+
     ui->customplot->graph(1)->data()->clear();
     QVector<double> x,y;
     ga->Selection();
