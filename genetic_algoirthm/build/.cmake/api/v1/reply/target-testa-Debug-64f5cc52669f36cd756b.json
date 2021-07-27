@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "genetic_algoirthm"
+			"path" : "test/testa"
 		}
 	],
 	"backtrace" : 1,
@@ -16,6 +16,7 @@
 		],
 		"files" : 
 		[
+			"test/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -26,32 +27,41 @@
 			{
 				"command" : 0,
 				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
 				"line" : 35,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 37,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 38,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 34,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 33,
-				"parent" : 0
+				"parent" : 4
 			}
 		]
 	},
@@ -61,11 +71,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk  "
-				},
-				{
-					"backtrace" : 2,
-					"fragment" : "-fPIC"
+					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk  "
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -228,113 +234,44 @@
 				{
 					"backtrace" : 3,
 					"define" : "BOOST_WSERIALIZATION_DYN_LINK"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "QT_CORE_LIB"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "QT_GUI_LIB"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "QT_NO_DEBUG"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "QT_PRINTSUPPORT_LIB"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "QT_WIDGETS_LIB"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/build"
+					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test"
 				},
 				{
-					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm"
+					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/test"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/build/genetic_algoirthm_autogen/include"
-				},
-				{
-					"backtrace" : 4,
-					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/./src"
+					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/testa_autogen/include"
 				},
 				{
 					"backtrace" : 5,
+					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/./src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/kismet/Desktop/qt/genetic_algoirthm/test/testa"
+				},
+				{
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "/usr/local/include"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Headers"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework/Headers"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/./mkspecs/macx-clang"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtPrintSupport.framework"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtPrintSupport.framework/Headers"
 				}
 			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
 				0,
+				1,
 				2,
 				3,
+				4,
 				5,
-				7,
-				9,
-				11,
-				12,
-				15,
-				17
+				6
 			]
 		}
 	],
@@ -342,21 +279,35 @@
 	[
 		{
 			"backtrace" : 0,
-			"id" : "genetic_algoirthm_autogen::@6890427a1f51a3e7e1df"
+			"id" : "testa_autogen::@36f028580bb02cc8272a"
 		}
 	],
-	"id" : "genetic_algoirthm::@6890427a1f51a3e7e1df",
+	"id" : "testa::@36f028580bb02cc8272a",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtPrintSupport.framework/QtPrintSupport",
+				"fragment" : "/usr/local/lib/libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/local/lib/libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lpthread",
 				"role" : "libraries"
 			},
 			{
@@ -500,19 +451,6 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/QtWidgets",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/QtGui",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "/usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/QtCore",
-				"role" : "libraries"
-			},
-			{
 				"backtrace" : 3,
 				"fragment" : "/usr/local/lib/libboost_context-mt.dylib",
 				"role" : "libraries"
@@ -565,12 +503,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "genetic_algoirthm",
-	"nameOnDisk" : "genetic_algoirthm",
+	"name" : "testa",
+	"nameOnDisk" : "testa",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "test",
+		"source" : "test"
 	},
 	"sourceGroups" : 
 	[
@@ -579,29 +517,12 @@
 			"sourceIndexes" : 
 			[
 				0,
+				1,
 				2,
 				3,
-				5,
-				7,
-				9,
-				11,
-				12,
-				15,
-				17
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1,
 				4,
-				6,
-				8,
-				10,
-				13,
-				14,
-				16
+				5,
+				6
 			]
 		}
 	],
@@ -611,85 +532,26 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/genetic_algoirthm_autogen/mocs_compilation.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/qcustomplot.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/qcustomplot.cpp",
+			"path" : "build/test/testa_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/chromosome.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/chromosome.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/crowdingga.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/crowdingga.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/ga_problem.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/ga_problem.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/ga_tool.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/ga_tool.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "test/test_nsga.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/mainwindow.cpp",
+			"path" : "test/test_ga_tool.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/mainwindow.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/nsga_chromosome.h",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "src/nsga.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
@@ -699,13 +561,14 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/nsga.h",
-			"sourceGroupIndex" : 1
+			"compileGroupIndex" : 0,
+			"path" : "src/ga_problem.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/nsga.cpp",
+			"path" : "src/ga_tool.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

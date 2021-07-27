@@ -10,7 +10,8 @@
 class NSGAChromosome 
 {
 	public:
-		NSGAChromosome(int max_length); 
+        NSGAChromosome(int chromosome_length);
+        NSGAChromosome(int chromosome_length, int number_of_gene);
 		NSGAChromosome(const NSGAChromosome& another);
 		NSGAChromosome& operator=(const NSGAChromosome& rhs);
 		std::vector<int> GetChromosome();
@@ -29,5 +30,6 @@ class NSGAChromosome
 	private:
 		std::vector<int> m_chromosome;
 		std::tuple<double, double> m_fitness_tuple;
+        std::vector<double> m_fitness_vector;
 		int m_chromosome_length;
 };

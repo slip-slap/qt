@@ -13,6 +13,11 @@ namespace problem
 		double TargetFunction1(double x1, double x2);
 		double TargetFunction2(double x1, double x2);
 	}
+	namespace KUR
+	{
+		double TargetFunction1(double x1, double x2, double x3);
+		double TargetFunction2(double x1, double x2, double x3);
+	}
 	namespace SO 
 	{
 		double M1(double x);

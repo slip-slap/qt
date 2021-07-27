@@ -1,18 +1,22 @@
 #include "nsga_chromosome.h"
 
 
-NSGAChromosome:: NSGAChromosome(int max_length)
-{
-	std::cout<<"max_length "<<max_length<<std::endl;
-	m_chromosome_length = max_length;
-	std::cout<<"chromosome length "<<m_chromosome_length<<std::endl;
+NSGAChromosome::NSGAChromosome(int max_length)
+{	
+	m_chromosome_length = max_length;	
 	GenerateRandomBinaryString(m_chromosome, m_chromosome_length);
 	UpdateFitness();
+}
+
+NSGAChromosome::NSGAChromosome(int chromosome_length, int number_of_gene)
+{
+
 }
 
 NSGAChromosome::NSGAChromosome(const NSGAChromosome& another)
 {
 	this->m_chromosome = another.m_chromosome;
+    this->m_chromosome_length = another.m_chromosome_length;
 	UpdateFitness();
 }
 
@@ -67,10 +71,13 @@ std::ostream& operator<<(std::ostream& out, NSGAChromosome& item)
 }
 void NSGAChromosome:: UpdateFitness()
 {
-	//std::cout<<m_chromosome_length<<std::endl;
-	//std::cout<<BinaryString2RealNormalization(m_chromosome, m_chromosome_length)<<std::endl;
-			double real_value =BinaryString2RealWithMinAndMax(m_chromosome,m_chromosome_length,-1000,1000);
-			std::get<0>(m_fitness_tuple) = problem::SCH::TargetFunction1(real_value);
-			std::get<1>(m_fitness_tuple) = problem::SCH::TargetFunction2(real_value);
-		}
+    std::vector<std::pair<double,double>> domain;
+    domain.push_back(std::make_pair(-5, 5));
+    domain.push_back(std::make_pair(-5, 5));
+    domain.push_back(std::make_pair(-5, 5));
+    std::vector<double> real_value_vec;
+    BinaryStringWithMultipleGenes2RealWithMinAndMax(m_chromosome,domain, real_value_vec);
+    std::get<0>(m_fitness_tuple) = problem::KUR::TargetFunction1(real_value_vec[0],real_value_vec[1], real_value_vec[2]);
+    std::get<1>(m_fitness_tuple) = problem::KUR::TargetFunction2(real_value_vec[0],real_value_vec[1], real_value_vec[2]);
+}
 

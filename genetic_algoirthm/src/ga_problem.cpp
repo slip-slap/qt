@@ -22,6 +22,19 @@ double problem::POL::TargetFunction2(double x1, double x2)
 	return (x1 + 3) * (x1 + 3) + (x2 + 1) * (x2 + 1);
 }
 
+double problem::KUR::TargetFunction1(double x1, double x2, double x3)
+{
+	return -10*std::exp(-0.2 * std::sqrt(x1*x1 + x2*x2 ))
+		 + -10*std::exp(-0.2 * std::sqrt(x2*x2 + x3*x3 ));
+}
+
+double problem::KUR::TargetFunction2(double x1, double x2, double x3)
+{
+	return std::pow(std::abs(x1),0.8) + 5*std::sin(x1*x1*x1) 
+		+  std::pow(std::abs(x2),0.8) + 5*std::sin(x2*x2*x2)
+		+  std::pow(std::abs(x3),0.8) + 5*std::sin(x3*x3*x3);
+}
+
 double problem::SO::M1(double x)
 {
 	return std::pow(std::sin( 5 * M_PI * x ), 6);

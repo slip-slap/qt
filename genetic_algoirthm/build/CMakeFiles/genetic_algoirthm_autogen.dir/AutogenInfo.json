@@ -3,7 +3,7 @@
 	"CMAKE_BINARY_DIR" : "/Users/kismet/Desktop/qt/genetic_algoirthm/build",
 	"CMAKE_CURRENT_BINARY_DIR" : "/Users/kismet/Desktop/qt/genetic_algoirthm/build",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/kismet/Desktop/qt/genetic_algoirthm",
-	"CMAKE_EXECUTABLE" : "/opt/local/bin/cmake",
+	"CMAKE_EXECUTABLE" : "/usr/local/Cellar/cmake/3.17.3/bin/cmake",
 	"CMAKE_SOURCE_DIR" : "/Users/kismet/Desktop/qt/genetic_algoirthm",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
@@ -96,7 +96,6 @@
 		"BOOST_WSERIALIZATION_DYN_LINK",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
-		"QT_NO_DEBUG",
 		"QT_PRINTSUPPORT_LIB",
 		"QT_WIDGETS_LIB"
 	],
@@ -137,7 +136,7 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/opt/local/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
+		"/usr/local/Cellar/cmake/3.17.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
 	"MOC_PREDEFS_FILE" : "/Users/kismet/Desktop/qt/genetic_algoirthm/build/genetic_algoirthm_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,

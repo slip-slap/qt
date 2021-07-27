@@ -59,10 +59,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/local/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.3/bin/cmake
 
 # The command to remove a file.
-RM = /opt/local/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/kismet/Desktop/qt/genetic_algoirthm/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.3/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -155,6 +155,32 @@ genetic_algoirthm_autogen: cmake_check_build_system
 genetic_algoirthm_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genetic_algoirthm_autogen.dir/build.make CMakeFiles/genetic_algoirthm_autogen.dir/build
 .PHONY : genetic_algoirthm_autogen/fast
+
+#=============================================================================
+# Target rules for targets named testa
+
+# Build rule for target.
+testa: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testa
+.PHONY : testa
+
+# fast build rule for target.
+testa/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/build
+.PHONY : testa/fast
+
+#=============================================================================
+# Target rules for targets named testa_autogen
+
+# Build rule for target.
+testa_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testa_autogen
+.PHONY : testa_autogen
+
+# fast build rule for target.
+testa_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa_autogen.dir/build.make test/CMakeFiles/testa_autogen.dir/build
+.PHONY : testa_autogen/fast
 
 genetic_algoirthm_autogen/mocs_compilation.o: genetic_algoirthm_autogen/mocs_compilation.cpp.o
 
@@ -435,7 +461,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... genetic_algoirthm_autogen"
+	@echo "... testa_autogen"
 	@echo "... genetic_algoirthm"
+	@echo "... testa"
 	@echo "... genetic_algoirthm_autogen/mocs_compilation.o"
 	@echo "... genetic_algoirthm_autogen/mocs_compilation.i"
 	@echo "... genetic_algoirthm_autogen/mocs_compilation.s"

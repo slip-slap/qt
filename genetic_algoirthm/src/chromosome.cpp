@@ -10,13 +10,13 @@ Chromosome::Chromosome(int max_length)
 Chromosome::Chromosome(const Chromosome& another)
         {
             this->m_chromosome = another.m_chromosome;
-            m_chromosome_length = another.m_chromosome_length;
+            this->m_chromosome_length = another.m_chromosome_length;
             UpdateFitness();
         }
 
 Chromosome& Chromosome::operator=(const Chromosome& rhs)
         {
-            this->m_chromosome = rhs.m_chromosome;
+            m_chromosome = rhs.m_chromosome;
             m_chromosome_length = rhs.m_chromosome_length;
             UpdateFitness();
             return *this;
@@ -61,8 +61,7 @@ std::ostream& operator<<(std::ostream& out, Chromosome& item)
 
 void Chromosome::UpdateFitness()
         {
-            m_fitness = problem::SO::M1(BinaryString2RealNormalization(
-                        m_chromosome,m_chromosome_length));
+            m_fitness = problem::SO::M1(BinaryString2RealNormalization(m_chromosome));
         }
 
 

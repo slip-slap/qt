@@ -2,3 +2,7 @@
 /Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/edit_cache.dir
 /Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm.dir
 /Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm_autogen.dir
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/rebuild_cache.dir
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/edit_cache.dir
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir
+/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa_autogen.dir

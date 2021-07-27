@@ -23,9 +23,9 @@ double BinaryString2Real(std::vector<int>& binary_string)
 	return sum;
 }
 
-double BinaryString2RealNormalization(std::vector<int>& binary_string, int max_length)
+double BinaryString2RealNormalization(std::vector<int>& binary_string)
 {
-	return BinaryString2Real(binary_string)/(std::pow(2,max_length)-1);
+    return BinaryString2Real(binary_string)/(std::pow(2,binary_string.size())-1);
 }
 
 void GenerateRandomBinaryString(std::vector<int>& binary_string_vec, int length )
@@ -35,9 +35,9 @@ void GenerateRandomBinaryString(std::vector<int>& binary_string_vec, int length 
 		binary_string_vec.push_back(GenerateRandomNumber(0,2));
 	}
 }
-double BinaryString2RealWithMinAndMax(std::vector<int>& binary_string, int max_length, double min, double max)
+double BinaryString2RealWithMinAndMax(std::vector<int>& binary_string, double min, double max)
 {
-	double normalize_value = BinaryString2RealNormalization(binary_string, max_length);	
+    double normalize_value = BinaryString2RealNormalization(binary_string);
 	// first scarlarization, then translate
 	return normalize_value * (max - min) +  min;
 }
@@ -118,13 +118,13 @@ void CombineTwoChromosome(std::vector<int>& first, std::vector<int>& sec)
 	int crossover_pos = GenerateRandomNumber(0, first.size());	
 	std::cout<<crossover_pos<<std::endl;
 	std::vector<int> temp_a;
-	for(int i=crossover_pos; i< first.size(); i++){
+    for(unsigned long i=crossover_pos; i< first.size(); i++){
 		temp_a.push_back(first[i]);
 	}
-	for(int i = crossover_pos; i< sec.size(); i++){
+    for(unsigned long i = crossover_pos; i< sec.size(); i++){
 		first[i]=sec[i];
 	}
-	for(int i = 0; i< temp_a.size(); i++){
+    for(unsigned long i = 0; i< temp_a.size(); i++){
 		sec[crossover_pos] = temp_a[i];;
 		crossover_pos++;
 	}
@@ -140,4 +140,19 @@ double GetDistanceBetweenTwoBits(std::vector<int>& a, std::vector<int>& b)
 		itr2++;
 	}
 	return distance;
+}
+
+void BinaryStringWithMultipleGenes2RealWithMinAndMax(std::vector<int>& binary_string,
+                                         std::vector<std::pair<double, double>>& domain,
+                                         std::vector<double>& real_value_vec)
+{
+    int gene_length = binary_string.size()/domain.size();
+    auto slice_start = binary_string.begin();
+    for(unsigned long i=0; i<domain.size(); i++)
+    {
+        std::vector<int> temp(slice_start, slice_start + gene_length);
+        double real_value = BinaryString2RealWithMinAndMax(temp, domain[i].first, domain[i].second);
+        slice_start = slice_start + gene_length;
+        real_value_vec.push_back(real_value);
+    }
 }

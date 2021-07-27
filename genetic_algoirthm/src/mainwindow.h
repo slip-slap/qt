@@ -22,6 +22,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_nsga_clicked();
+
 private:
     Ui::MainWindow *ui;
     CrowdingGA* ga;

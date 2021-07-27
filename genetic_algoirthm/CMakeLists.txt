@@ -28,7 +28,9 @@ set(PROJECT_SOURCES ./src/qcustomplot.h ./src/qcustomplot.cpp
     ./src/main.cpp  ./src/mainwindow.cpp
     ./src/mainwindow.h ./src/nsga_chromosome.h
     ./src/nsga_chromosome.cpp
-    ./src/nsga.h ./src/nsga.cpp)
+    ./src/nsga.h ./src/nsga.cpp
+    mainwindow.ui
+	)
 
 include_directories(${Boost_INCLUDE_DIRS})
 include_directories(./src)
@@ -36,3 +38,5 @@ add_executable(genetic_algoirthm ${PROJECT_SOURCES})
 
 target_link_libraries(genetic_algoirthm PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::PrintSupport)
 target_link_libraries(genetic_algoirthm PRIVATE ${Boost_LIBRARIES})
+
+add_subdirectory(test)

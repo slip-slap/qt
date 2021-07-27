@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/local/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.3/bin/cmake
 
 # The command to remove a file.
-RM = /opt/local/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.3/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -75,7 +75,7 @@ include CMakeFiles/genetic_algoirthm_autogen.dir/progress.make
 
 CMakeFiles/genetic_algoirthm_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target genetic_algoirthm"
-	/opt/local/bin/cmake -E cmake_autogen /Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm_autogen.dir/AutogenInfo.json ""
+	/usr/local/Cellar/cmake/3.17.3/bin/cmake -E cmake_autogen /Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm_autogen.dir/AutogenInfo.json Debug
 
 genetic_algoirthm_autogen: CMakeFiles/genetic_algoirthm_autogen
 genetic_algoirthm_autogen: CMakeFiles/genetic_algoirthm_autogen.dir/build.make

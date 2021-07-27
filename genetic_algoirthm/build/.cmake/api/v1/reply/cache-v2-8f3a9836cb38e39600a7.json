@@ -71,7 +71,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "Debug"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -147,7 +147,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/opt/local/bin/cmake"
+			"value" : "/usr/local/Cellar/cmake/3.17.3/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/opt/local/bin/cpack"
+			"value" : "/usr/local/Cellar/cmake/3.17.3/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/opt/local/bin/ctest"
+			"value" : "/usr/local/Cellar/cmake/3.17.3/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -403,7 +403,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : ""
+			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -667,7 +667,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -827,7 +827,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/opt/local/share/cmake-3.17"
+			"value" : "/usr/local/Cellar/cmake/3.17.3/share/cmake"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1076,6 +1076,98 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake][c ][v1.76.0(1.72.0)]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_GTest",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding GTest"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/local/lib/libgtest.a][/usr/local/include][/usr/local/lib/libgtest_main.a][v()]"
+		},
+		{
+			"name" : "GTEST_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/include"
+		},
+		{
+			"name" : "GTEST_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/lib/libgtest.a"
+		},
+		{
+			"name" : "GTEST_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "GTEST_LIBRARY_DEBUG-NOTFOUND"
+		},
+		{
+			"name" : "GTEST_MAIN_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/local/lib/libgtest_main.a"
+		},
+		{
+			"name" : "GTEST_MAIN_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND"
 		},
 		{
 			"name" : "QT_DIR",
