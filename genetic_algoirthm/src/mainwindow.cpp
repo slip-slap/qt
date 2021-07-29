@@ -15,6 +15,26 @@ MainWindow::MainWindow(QWidget *parent)
     ui->customplot->addGraph();
 
     ga = new CrowdingGA(20);
+    nsga = new NSGA(30);
+    m_color_qvec.push_back(QColor(255,0,0,255));
+    m_color_qvec.push_back(QColor(0,255,0,255));
+    m_color_qvec.push_back(QColor(0,0,255,255));
+    m_color_qvec.push_back(QColor(255,0,0,255));
+    m_color_qvec.push_back(QColor(0,255,0,255));
+    m_color_qvec.push_back(QColor(0,0,255,255));
+    m_color_qvec.push_back(QColor(255,0,0,255));
+    m_color_qvec.push_back(QColor(0,255,0,255));
+    m_color_qvec.push_back(QColor(0,0,255,255));
+    m_color_qvec.push_back(QColor(255,0,0,255));
+    m_color_qvec.push_back(QColor(0,255,0,255));
+    m_color_qvec.push_back(QColor(0,0,255,255));
+    m_color_qvec.push_back(QColor(255,0,0,255));
+    m_color_qvec.push_back(QColor(0,255,0,255));
+    m_color_qvec.push_back(QColor(0,0,255,255));
+    m_color_qvec.push_back(QColor(255,0,0,255));
+    m_color_qvec.push_back(QColor(0,255,0,255));
+    m_color_qvec.push_back(QColor(0,0,255,255));
+
 }
 
 MainWindow::~MainWindow()
@@ -53,20 +73,18 @@ void MainWindow::on_pushButton_clicked()
 }
 
 void MainWindow::on_pushButton_nsga_clicked()
-{
-
-
-    NSGA nsga(30);
-    nsga.SelectionOperator();
-    std::vector<NSGAChromosome> pop = nsga.GetPopulation();
-    std::vector<std::vector<NSGAChromosome>> fronters = nsga.GetFronters();
+{ 
+    nsga->SelectionOperator();
+    nsga->CrossoverOperator();
+    std::vector<NSGAChromosome> pop = nsga->GetPopulation();
+    std::vector<std::vector<NSGAChromosome>> fronters = nsga->GetFronters();
 
 
     QVector<double> f1, f2;
     for(auto itr=pop.begin(); itr!=pop.end(); itr++)
     {
-        f1.push_back(itr->GetFirstFitness());
-        f2.push_back(itr->GetSecondFitness());
+        f1.push_back(itr->GetIndexedFitness(0));
+        f2.push_back(itr->GetIndexedFitness(1));
     }
 
     ui->customplot->xAxis->setRange(*std::min_element(f1.constBegin(),f1.constEnd()),
@@ -76,21 +94,17 @@ void MainWindow::on_pushButton_nsga_clicked()
     ui->customplot->graph(0)->setLineStyle(QCPGraph::lsNone);
     ui->customplot->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::white, Qt::red,7));
     ui->customplot->graph(0)->setData(f1,f2);
- ;
 
     //draw fronter
     for(unsigned long k=0; k< fronters.size(); k++){
         ui->customplot->addGraph();
         QVector<double> fronter_f1, fronter_f2;
         for(unsigned long i=0; i<fronters[k].size(); i++){
-            fronter_f1.push_back(fronters[k][i].GetFirstFitness());
-            fronter_f2.push_back(fronters[k][i].GetSecondFitness());
+            fronter_f1.push_back(fronters[k][i].GetIndexedFitness(0));
+            fronter_f2.push_back(fronters[k][i].GetIndexedFitness(1));
         }
-        int r = GenerateRandomNumber(0,255);
-        int g = GenerateRandomNumber(0,255);
-        int b = GenerateRandomNumber(0,255);
         ui->customplot->graph(k)->setLineStyle(QCPGraph::lsNone);
-        ui->customplot->graph(k)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::white, QColor(r,g,b,255),7));
+        ui->customplot->graph(k)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::white, m_color_qvec[k],7));
         ui->customplot->graph(k)->setData(fronter_f1,fronter_f2);
     }
 

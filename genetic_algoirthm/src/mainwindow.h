@@ -5,6 +5,7 @@
 
 #include "qcustomplot.h"
 #include "crowdingga.h"
+#include "nsga.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -27,5 +28,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     CrowdingGA* ga;
+    NSGA* nsga;
+    QVector<QColor> m_color_qvec;
 };
 #endif // MAINWINDOW_H

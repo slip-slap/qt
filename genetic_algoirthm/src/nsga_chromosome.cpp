@@ -1,29 +1,36 @@
 #include "nsga_chromosome.h"
 
 
-NSGAChromosome::NSGAChromosome(int max_length)
-{	
-	m_chromosome_length = max_length;	
-	GenerateRandomBinaryString(m_chromosome, m_chromosome_length);
-	UpdateFitness();
-}
 
 NSGAChromosome::NSGAChromosome(int chromosome_length, int number_of_gene)
 {
-
+    m_number_of_objectives = number_of_gene;
+    m_chromosome_length = chromosome_length;
+    m_crowding_distance = 0;
+    m_rank = -1;
+    for(int i=0; i<number_of_gene; i++){m_fitness_vector.push_back(0);}
+    GenerateRandomBinaryString(m_chromosome, m_chromosome_length);
+    UpdateFitness();
 }
 
 NSGAChromosome::NSGAChromosome(const NSGAChromosome& another)
 {
 	this->m_chromosome = another.m_chromosome;
     this->m_chromosome_length = another.m_chromosome_length;
-	UpdateFitness();
+    this->m_fitness_vector = another.m_fitness_vector;
+    this->m_crowding_distance = another.m_crowding_distance;
+    this->m_rank = another.m_rank;
+    this->m_number_of_objectives = another.m_number_of_objectives;
 }
 
 NSGAChromosome& NSGAChromosome::operator=(const NSGAChromosome& rhs)
 {
 	this->m_chromosome = rhs.m_chromosome;
-	UpdateFitness();
+    this->m_chromosome_length = rhs.m_chromosome_length;
+    this->m_fitness_vector = rhs.m_fitness_vector;
+    this->m_crowding_distance = rhs.m_crowding_distance;
+    this->m_rank = rhs.m_rank;
+    this->m_number_of_objectives = rhs.m_number_of_objectives;
 	return *this;
 }
 std::vector<int> NSGAChromosome::GetChromosome()
@@ -33,20 +40,27 @@ std::vector<int> NSGAChromosome::GetChromosome()
 void NSGAChromosome::SetChromosome(std::vector<int> chromo)
 {
 	this->m_chromosome = chromo;
+    UpdateFitness();
 }
-double NSGAChromosome::GetFirstFitness()
-{
-	return std::get<0>(m_fitness_tuple);
-}
-double NSGAChromosome::GetSecondFitness()
-{
-	return std::get<1>(m_fitness_tuple);
-}
-double NSGAChromosome::DistanceMeasure(NSGAChromosome& another)
-{
-	return 3;
 
+double NSGAChromosome::GetIndexedFitness(int index) const
+{
+    return m_fitness_vector[index];
 }
+
+double NSGAChromosome::GetCrowdingDistance() const
+{
+    return m_crowding_distance;
+}
+
+void NSGAChromosome::SetCrowdingDistance(double distance)
+{
+    m_crowding_distance = distance;
+}
+
+int NSGAChromosome::GetRank() const{return m_rank;}
+void NSGAChromosome::SetRank(int rank){m_rank = rank;}
+
 void NSGAChromosome::CrossoverOpeartor(NSGAChromosome& another, NSGAChromosome& child1,
 										    NSGAChromosome& child2) 
 {
@@ -63,9 +77,9 @@ void NSGAChromosome::MutationOperator()
 std::ostream& operator<<(std::ostream& out, NSGAChromosome& item)
 {
 	out<<"chromosome lenght: "<<item.m_chromosome_length<<",  first fitness: "
-		<<std::get<0>(item.m_fitness_tuple)
+        <<item.m_fitness_vector[0]
 		<<", second fitness:"
-		<<std::get<1>(item.m_fitness_tuple)
+        <<item.m_fitness_vector[1]
 		<<std::endl;
 	return out;
 }
@@ -77,7 +91,7 @@ void NSGAChromosome:: UpdateFitness()
     domain.push_back(std::make_pair(-5, 5));
     std::vector<double> real_value_vec;
     BinaryStringWithMultipleGenes2RealWithMinAndMax(m_chromosome,domain, real_value_vec);
-    std::get<0>(m_fitness_tuple) = problem::KUR::TargetFunction1(real_value_vec[0],real_value_vec[1], real_value_vec[2]);
-    std::get<1>(m_fitness_tuple) = problem::KUR::TargetFunction2(real_value_vec[0],real_value_vec[1], real_value_vec[2]);
+    m_fitness_vector[0]=problem::KUR::TargetFunction1(real_value_vec[0],real_value_vec[1], real_value_vec[2]);
+    m_fitness_vector[1]=problem::KUR::TargetFunction2(real_value_vec[0],real_value_vec[1], real_value_vec[2]);
 }
 

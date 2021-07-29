@@ -11,7 +11,11 @@ void GenerateRandomBinaryString(std::vector<int>& binary_string_vec, int length 
 double BinaryString2Real(std::vector<int>& binary_string);
 double BinaryString2RealNormalization(std::vector<int>& binary_string);
 double BinaryString2RealWithMinAndMax(std::vector<int>& binary_string, double min, double max);
-
+/*
+ * "binary_string" refers to the chromosome
+ * "domain" refers to the range of each variable.
+ *
+ */
 void BinaryStringWithMultipleGenes2RealWithMinAndMax(std::vector<int>& binary_string,
                                          std::vector<std::pair<double, double>>& domain,
                                          std::vector<double>& real_value_vec);

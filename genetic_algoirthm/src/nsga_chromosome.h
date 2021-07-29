@@ -10,17 +10,22 @@
 class NSGAChromosome 
 {
 	public:
-        NSGAChromosome(int chromosome_length);
         NSGAChromosome(int chromosome_length, int number_of_gene);
+
+        // copy and assignment function
 		NSGAChromosome(const NSGAChromosome& another);
 		NSGAChromosome& operator=(const NSGAChromosome& rhs);
+
 		std::vector<int> GetChromosome();
 		void SetChromosome(std::vector<int> chromo);
-		double GetFirstFitness();
-		double GetSecondFitness();
-		double DistanceMeasure(NSGAChromosome& another);
-		void CrossoverOpeartor(NSGAChromosome& another, NSGAChromosome& child1,
-												    NSGAChromosome& child2);
+        double GetIndexedFitness(int index) const;
+        double GetCrowdingDistance() const;
+        void   SetCrowdingDistance(double distance);
+        int GetRank() const;
+        void SetRank(int rank);
+        void CrossoverOpeartor(NSGAChromosome& another,
+                               NSGAChromosome& child1,
+                               NSGAChromosome& child2);
 		void MutationOperator();
 		friend std::ostream& operator<<(std::ostream& out, NSGAChromosome& item);
 
@@ -29,7 +34,9 @@ class NSGAChromosome
 
 	private:
 		std::vector<int> m_chromosome;
-		std::tuple<double, double> m_fitness_tuple;
         std::vector<double> m_fitness_vector;
-		int m_chromosome_length;
+        double m_crowding_distance;
+        int m_chromosome_length;
+        int m_rank;
+        int m_number_of_objectives;
 };
