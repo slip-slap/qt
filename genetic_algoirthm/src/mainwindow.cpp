@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     nsga = new NSGA(30);
 
+    m_color_qvec.push_back(QColor(0,0,0,255));
     m_color_qvec.push_back(QColor(255,0,0,255));
     m_color_qvec.push_back(QColor(0,255,0,255));
     m_color_qvec.push_back(QColor(0,0,255,255));
@@ -82,7 +83,7 @@ void MainWindow::on_pushButton_nsga_clicked()
         f2.push_back(itr->GetIndexedFitness(0));
     }
     ui->customplot->xAxis->setLabel("Mass");
-    ui->customplot->yAxis->setLabel("Strength Ratio");
+    ui->customplot->yAxis->setLabel("Negative of Strength Ratio");
     double min_x = *std::min_element(f1.constBegin(),f1.constEnd());
     double max_x = *std::max_element(f1.constBegin(),f1.constEnd());
     double min_y = *std::min_element(f2.constBegin(),f2.constEnd());
@@ -98,6 +99,7 @@ void MainWindow::on_pushButton_nsga_clicked()
     ui->customplot->yAxis->setRange(min_y, max_y);
     ui->customplot->graph(0)->setLineStyle(QCPGraph::lsNone);
     ui->customplot->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::white, Qt::red,7));
+    ui->customplot->graph(0)->data()->clear();
     ui->customplot->graph(0)->setData(f1,f2);
 
     //draw fronter
@@ -111,6 +113,7 @@ void MainWindow::on_pushButton_nsga_clicked()
         ui->customplot->graph(k)->setPen(QPen(m_color_qvec[k%6]));
         ui->customplot->graph(k)->setLineStyle(QCPGraph::lsLine);
         ui->customplot->graph(k)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::white, m_color_qvec[k%6],7));
+        ui->customplot->graph(k)->data()->clear();
         ui->customplot->graph(k)->setData(fronter_f1,fronter_f2);
     }
 
@@ -122,4 +125,40 @@ void MainWindow::on_pushButton_2_clicked()
 {
     std::cout<<"save picture"<<std::endl;
     ui->customplot->savePng("./plot");
+
+    std::ofstream myfile;
+    myfile.open("current_state.csv",std::ios::out);
+    myfile<<"number_of_angle_pi, "<< "number_of_angle_zero,"<< "strength_ratio, "<<"mass"<<std::endl;
+
+    std::vector<std::vector<NSGAChromosome>> fronters = nsga->GetFronters();
+    for(unsigned long k=0; k< fronters.size(); k++)
+    {
+         for(unsigned long i=0; i<fronters[k].size(); i++)
+         {
+             myfile<<fronters[k][i];
+         }
+    }
+    myfile.close();
+}
+
+void MainWindow::on_pushButton_display_first_fronter_clicked()
+{
+     std::vector<std::vector<NSGAChromosome>> fronters = nsga->GetFronters();
+     //draw fronter
+         ui->customplot->clearGraphs();
+         ui->customplot->addGraph();
+         QVector<double> fronter_f1, fronter_f2;
+         for(unsigned long i=0; i<fronters[0].size(); i++)
+         {
+             fronter_f1.push_back(fronters[0][i].GetIndexedFitness(1));
+             fronter_f2.push_back(fronters[0][i].GetIndexedFitness(0));
+         }
+         ui->customplot->graph(0)->setPen(QPen(m_color_qvec[0%6]));
+         ui->customplot->graph(0)->setLineStyle(QCPGraph::lsLine);
+         ui->customplot->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::white, m_color_qvec[0%6],7));
+         ui->customplot->graph(0)->data()->clear();
+         ui->customplot->graph(0)->setData(fronter_f1,fronter_f2);
+
+
+     ui->customplot->replot();
 }

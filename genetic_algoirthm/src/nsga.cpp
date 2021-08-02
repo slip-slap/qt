@@ -22,12 +22,12 @@ void CalculateFitnessForGA(std::vector<NSGAChromosome>& pop){
     int row_index = 0;
     while(in.read_row(number_of_angle_pi,number_of_angle_zero,strength_ratio, mass))
     {
-        if(strength_ratio < 0.5)
+        if(strength_ratio < 2)
         {
             pop[row_index].GetFitnessReference()[0] = 1000;
             pop[row_index].GetFitnessReference()[1] = 1000;
         }else{
-            pop[row_index].GetFitnessReference()[0] = strength_ratio;
+            pop[row_index].GetFitnessReference()[0] = -strength_ratio;
             pop[row_index].GetFitnessReference()[1] = mass;
         }
         row_index++;

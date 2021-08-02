@@ -28,6 +28,7 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_nsga;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_display_first_fronter;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -46,19 +47,22 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         customplot = new QCustomPlot(centralwidget);
         customplot->setObjectName(QString::fromUtf8("customplot"));
-        customplot->setGeometry(QRect(182, 30, 551, 411));
+        customplot->setGeometry(QRect(200, 30, 551, 411));
         sizePolicy.setHeightForWidth(customplot->sizePolicy().hasHeightForWidth());
         customplot->setSizePolicy(sizePolicy);
         customplot->setStyleSheet(QString::fromUtf8("background-color: rgb(146, 148, 154);"));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(360, 490, 121, 61));
+        pushButton->setGeometry(QRect(660, 490, 121, 61));
         pushButton_nsga = new QPushButton(centralwidget);
         pushButton_nsga->setObjectName(QString::fromUtf8("pushButton_nsga"));
-        pushButton_nsga->setGeometry(QRect(200, 490, 121, 61));
+        pushButton_nsga->setGeometry(QRect(20, 60, 131, 61));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(510, 490, 111, 61));
+        pushButton_2->setGeometry(QRect(30, 260, 111, 61));
+        pushButton_display_first_fronter = new QPushButton(centralwidget);
+        pushButton_display_first_fronter->setObjectName(QString::fromUtf8("pushButton_display_first_fronter"));
+        pushButton_display_first_fronter->setGeometry(QRect(20, 160, 151, 71));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -79,6 +83,7 @@ public:
         pushButton->setText(QCoreApplication::translate("MainWindow", "Crowding GA", nullptr));
         pushButton_nsga->setText(QCoreApplication::translate("MainWindow", "NSGA", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
+        pushButton_display_first_fronter->setText(QCoreApplication::translate("MainWindow", "Display First Fronter", nullptr));
     } // retranslateUi
 
 };

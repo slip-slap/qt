@@ -26,7 +26,7 @@
    <widget class="QCustomPlot" name="customplot" native="true">
     <property name="geometry">
      <rect>
-      <x>182</x>
+      <x>200</x>
       <y>30</y>
       <width>551</width>
       <height>411</height>
@@ -45,7 +45,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>660</x>
       <y>490</y>
       <width>121</width>
       <height>61</height>
@@ -58,9 +58,9 @@
    <widget class="QPushButton" name="pushButton_nsga">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>490</y>
-      <width>121</width>
+      <x>20</x>
+      <y>60</y>
+      <width>131</width>
       <height>61</height>
      </rect>
     </property>
@@ -71,14 +71,27 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>490</y>
+      <x>30</x>
+      <y>260</y>
       <width>111</width>
       <height>61</height>
      </rect>
     </property>
     <property name="text">
      <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_display_first_fronter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display First Fronter</string>
     </property>
    </widget>
   </widget>
