@@ -31,6 +31,7 @@ set(PROJECT_SOURCES ./src/qcustomplot.h ./src/qcustomplot.cpp
     ./src/nsga.h ./src/nsga.cpp
     ./src/selection_method.h ./src/selection_method.cpp
      ./src/csv.h
+     #mainwindow.ui
 	)
 
 include_directories(${Boost_INCLUDE_DIRS})

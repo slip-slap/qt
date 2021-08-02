@@ -27,6 +27,7 @@ public:
     QCustomPlot *customplot;
     QPushButton *pushButton;
     QPushButton *pushButton_nsga;
+    QPushButton *pushButton_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -55,6 +56,9 @@ public:
         pushButton_nsga = new QPushButton(centralwidget);
         pushButton_nsga->setObjectName(QString::fromUtf8("pushButton_nsga"));
         pushButton_nsga->setGeometry(QRect(200, 490, 121, 61));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(510, 490, 111, 61));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -74,6 +78,7 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Crowding GA", nullptr));
         pushButton_nsga->setText(QCoreApplication::translate("MainWindow", "NSGA", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Save", nullptr));
     } // retranslateUi
 
 };
