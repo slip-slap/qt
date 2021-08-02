@@ -7,6 +7,8 @@
 #include "ga_tool.h"
 #include "ga_problem.h"
 
+typedef int binary_t;
+
 class NSGAChromosome 
 {
 	public:
@@ -14,9 +16,11 @@ class NSGAChromosome
 
         // copy and assignment function
 		NSGAChromosome(const NSGAChromosome& another);
-		NSGAChromosome& operator=(const NSGAChromosome& rhs);
+        NSGAChromosome& operator=(NSGAChromosome rhs);
+        void swap(NSGAChromosome& first, NSGAChromosome& sec);
 
 		std::vector<int> GetChromosome();
+        std::vector<double>& GetFitnessReference();
 		void SetChromosome(std::vector<int> chromo);
         double GetIndexedFitness(int index) const;
         double GetCrowdingDistance() const;
@@ -33,7 +37,8 @@ class NSGAChromosome
 		void UpdateFitness();
 
 	private:
-		std::vector<int> m_chromosome;
+        std::vector<binary_t> m_chromosome;
+        std::vector<int> m_chromosome_int;
         std::vector<double> m_fitness_vector;
         double m_crowding_distance;
         int m_chromosome_length;

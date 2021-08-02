@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/genetic_algoirthm.dir/src/nsga.cpp.o"
   "CMakeFiles/genetic_algoirthm.dir/src/nsga_chromosome.cpp.o"
   "CMakeFiles/genetic_algoirthm.dir/src/qcustomplot.cpp.o"
+  "CMakeFiles/genetic_algoirthm.dir/src/selection_method.cpp.o"
   "genetic_algoirthm"
   "genetic_algoirthm.pdb"
 )

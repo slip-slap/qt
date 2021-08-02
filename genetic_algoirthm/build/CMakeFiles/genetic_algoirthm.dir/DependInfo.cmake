@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm.dir/src/nsga.cpp.o"
   "/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga_chromosome.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm.dir/src/nsga_chromosome.cpp.o"
   "/Users/kismet/Desktop/qt/genetic_algoirthm/src/qcustomplot.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm.dir/src/qcustomplot.cpp.o"
+  "/Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles/genetic_algoirthm.dir/src/selection_method.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

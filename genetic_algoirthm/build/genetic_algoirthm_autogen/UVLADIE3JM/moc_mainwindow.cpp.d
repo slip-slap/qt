@@ -188,6 +188,8 @@
   /Users/kismet/Desktop/qt/genetic_algoirthm/src/crowdingga.h \
   /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_problem.h \
   /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_tool.h \
+  /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.h \
+  /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga_chromosome.h \
   /Users/kismet/Desktop/qt/genetic_algoirthm/src/qcustomplot.h \
   /usr/local/Cellar/boost/1.76.0/include/boost/array.hpp \
   /usr/local/Cellar/boost/1.76.0/include/boost/assert.hpp \

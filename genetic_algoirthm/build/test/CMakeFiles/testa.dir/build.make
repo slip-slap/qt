@@ -116,9 +116,22 @@ test/CMakeFiles/testa.dir/test_ga_tool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testa.dir/test_ga_tool.cpp.s"
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/genetic_algoirthm/test/test_ga_tool.cpp -o CMakeFiles/testa.dir/test_ga_tool.cpp.s
 
+test/CMakeFiles/testa.dir/test_selection_method.cpp.o: test/CMakeFiles/testa.dir/flags.make
+test/CMakeFiles/testa.dir/test_selection_method.cpp.o: ../test/test_selection_method.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/testa.dir/test_selection_method.cpp.o"
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testa.dir/test_selection_method.cpp.o -c /Users/kismet/Desktop/qt/genetic_algoirthm/test/test_selection_method.cpp
+
+test/CMakeFiles/testa.dir/test_selection_method.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testa.dir/test_selection_method.cpp.i"
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/genetic_algoirthm/test/test_selection_method.cpp > CMakeFiles/testa.dir/test_selection_method.cpp.i
+
+test/CMakeFiles/testa.dir/test_selection_method.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testa.dir/test_selection_method.cpp.s"
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/genetic_algoirthm/test/test_selection_method.cpp -o CMakeFiles/testa.dir/test_selection_method.cpp.s
+
 test/CMakeFiles/testa.dir/__/src/nsga.cpp.o: test/CMakeFiles/testa.dir/flags.make
 test/CMakeFiles/testa.dir/__/src/nsga.cpp.o: ../src/nsga.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/testa.dir/__/src/nsga.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/testa.dir/__/src/nsga.cpp.o"
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testa.dir/__/src/nsga.cpp.o -c /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.cpp
 
 test/CMakeFiles/testa.dir/__/src/nsga.cpp.i: cmake_force
@@ -131,7 +144,7 @@ test/CMakeFiles/testa.dir/__/src/nsga.cpp.s: cmake_force
 
 test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o: test/CMakeFiles/testa.dir/flags.make
 test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o: ../src/nsga_chromosome.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o"
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o -c /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga_chromosome.cpp
 
 test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.i: cmake_force
@@ -144,7 +157,7 @@ test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.s: cmake_force
 
 test/CMakeFiles/testa.dir/__/src/ga_problem.cpp.o: test/CMakeFiles/testa.dir/flags.make
 test/CMakeFiles/testa.dir/__/src/ga_problem.cpp.o: ../src/ga_problem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/testa.dir/__/src/ga_problem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test/CMakeFiles/testa.dir/__/src/ga_problem.cpp.o"
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testa.dir/__/src/ga_problem.cpp.o -c /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_problem.cpp
 
 test/CMakeFiles/testa.dir/__/src/ga_problem.cpp.i: cmake_force
@@ -157,7 +170,7 @@ test/CMakeFiles/testa.dir/__/src/ga_problem.cpp.s: cmake_force
 
 test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.o: test/CMakeFiles/testa.dir/flags.make
 test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.o: ../src/ga_tool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.o"
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testa.dir/__/src/ga_tool.cpp.o -c /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_tool.cpp
 
 test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.i: cmake_force
@@ -168,15 +181,30 @@ test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testa.dir/__/src/ga_tool.cpp.s"
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_tool.cpp -o CMakeFiles/testa.dir/__/src/ga_tool.cpp.s
 
+test/CMakeFiles/testa.dir/__/src/selection_method.cpp.o: test/CMakeFiles/testa.dir/flags.make
+test/CMakeFiles/testa.dir/__/src/selection_method.cpp.o: ../src/selection_method.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object test/CMakeFiles/testa.dir/__/src/selection_method.cpp.o"
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testa.dir/__/src/selection_method.cpp.o -c /Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.cpp
+
+test/CMakeFiles/testa.dir/__/src/selection_method.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testa.dir/__/src/selection_method.cpp.i"
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.cpp > CMakeFiles/testa.dir/__/src/selection_method.cpp.i
+
+test/CMakeFiles/testa.dir/__/src/selection_method.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testa.dir/__/src/selection_method.cpp.s"
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.cpp -o CMakeFiles/testa.dir/__/src/selection_method.cpp.s
+
 # Object files for target testa
 testa_OBJECTS = \
 "CMakeFiles/testa.dir/testa_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/testa.dir/test_nsga.cpp.o" \
 "CMakeFiles/testa.dir/test_ga_tool.cpp.o" \
+"CMakeFiles/testa.dir/test_selection_method.cpp.o" \
 "CMakeFiles/testa.dir/__/src/nsga.cpp.o" \
 "CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o" \
 "CMakeFiles/testa.dir/__/src/ga_problem.cpp.o" \
-"CMakeFiles/testa.dir/__/src/ga_tool.cpp.o"
+"CMakeFiles/testa.dir/__/src/ga_tool.cpp.o" \
+"CMakeFiles/testa.dir/__/src/selection_method.cpp.o"
 
 # External object files for target testa
 testa_EXTERNAL_OBJECTS =
@@ -184,10 +212,12 @@ testa_EXTERNAL_OBJECTS =
 test/testa: test/CMakeFiles/testa.dir/testa_autogen/mocs_compilation.cpp.o
 test/testa: test/CMakeFiles/testa.dir/test_nsga.cpp.o
 test/testa: test/CMakeFiles/testa.dir/test_ga_tool.cpp.o
+test/testa: test/CMakeFiles/testa.dir/test_selection_method.cpp.o
 test/testa: test/CMakeFiles/testa.dir/__/src/nsga.cpp.o
 test/testa: test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o
 test/testa: test/CMakeFiles/testa.dir/__/src/ga_problem.cpp.o
 test/testa: test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.o
+test/testa: test/CMakeFiles/testa.dir/__/src/selection_method.cpp.o
 test/testa: test/CMakeFiles/testa.dir/build.make
 test/testa: /usr/local/lib/libgtest.a
 test/testa: /usr/local/lib/libgtest_main.a
@@ -230,7 +260,7 @@ test/testa: /usr/local/lib/libboost_filesystem-mt.dylib
 test/testa: /usr/local/lib/libboost_thread-mt.dylib
 test/testa: /usr/local/lib/libboost_serialization-mt.dylib
 test/testa: test/CMakeFiles/testa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable testa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kismet/Desktop/qt/genetic_algoirthm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable testa"
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testa.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

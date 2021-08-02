@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.1, 2021-07-27T21:06:12. -->
+<!-- Written by QtCreator 4.14.1, 2021-08-02T13:29:25. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -65,9 +65,11 @@
     <value type="bool" key="AutoTest.Framework.QtTest">true</value>
    </valuemap>
    <valuemap type="QVariantMap" key="AutoTest.CheckStates">
+    <value type="Qt::CheckState" key="/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_ga_tool.cpp:a">Checked</value>
     <value type="Qt::CheckState" key="/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_ga_tool.cpp:c">Checked</value>
-    <value type="Qt::CheckState" key="/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_nsga.cpp:a">Checked</value>
     <value type="Qt::CheckState" key="/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_nsga.cpp:b">Checked</value>
+    <value type="Qt::CheckState" key="/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_selection_method.cpp:GA">Checked</value>
+    <value type="Qt::CheckState" key="/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_selection_method.cpp:selection_method">Checked</value>
    </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>

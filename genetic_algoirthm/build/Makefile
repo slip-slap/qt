@@ -452,6 +452,33 @@ src/qcustomplot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genetic_algoirthm.dir/build.make CMakeFiles/genetic_algoirthm.dir/src/qcustomplot.cpp.s
 .PHONY : src/qcustomplot.cpp.s
 
+src/selection_method.o: src/selection_method.cpp.o
+
+.PHONY : src/selection_method.o
+
+# target to build an object file
+src/selection_method.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genetic_algoirthm.dir/build.make CMakeFiles/genetic_algoirthm.dir/src/selection_method.cpp.o
+.PHONY : src/selection_method.cpp.o
+
+src/selection_method.i: src/selection_method.cpp.i
+
+.PHONY : src/selection_method.i
+
+# target to preprocess a source file
+src/selection_method.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genetic_algoirthm.dir/build.make CMakeFiles/genetic_algoirthm.dir/src/selection_method.cpp.i
+.PHONY : src/selection_method.cpp.i
+
+src/selection_method.s: src/selection_method.cpp.s
+
+.PHONY : src/selection_method.s
+
+# target to generate assembly for a file
+src/selection_method.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genetic_algoirthm.dir/build.make CMakeFiles/genetic_algoirthm.dir/src/selection_method.cpp.s
+.PHONY : src/selection_method.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -494,6 +521,9 @@ help:
 	@echo "... src/qcustomplot.o"
 	@echo "... src/qcustomplot.i"
 	@echo "... src/qcustomplot.s"
+	@echo "... src/selection_method.o"
+	@echo "... src/selection_method.i"
+	@echo "... src/selection_method.s"
 .PHONY : help
 
 

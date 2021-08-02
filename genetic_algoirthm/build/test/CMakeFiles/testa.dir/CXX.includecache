@@ -6,6 +6,36 @@
 
 #IncludeRegexTransform: 
 
+../src/csv.h
+vector
+-
+string
+-
+cstring
+-
+algorithm
+-
+utility
+-
+cstdio
+-
+exception
+-
+mutex
+-
+thread
+-
+condition_variable
+-
+memory
+-
+cassert
+-
+cerrno
+-
+istream
+-
+
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_problem.h
 cmath
 -
@@ -25,6 +55,14 @@ boost/chrono.hpp
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.cpp
 nsga.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.h
+iostream
+-
+csv.h
+-
+fstream
+-
+stdlib.h
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/stdlib.h
 
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.h
 nsga_chromosome.h

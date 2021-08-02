@@ -28,6 +28,11 @@
 			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga_chromosome.h",
 			"MU",
 			"VNU7RW3YIC/moc_nsga_chromosome.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.h",
+			"MU",
+			"VNU7RW3YIC/moc_selection_method.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -126,10 +131,18 @@
 			"MU"
 		],
 		[
+			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.cpp",
+			"MU"
+		],
+		[
 			"/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_ga_tool.cpp",
 			"MU"
 		],
-		[ "/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_nsga.cpp", "MU" ]
+		[ "/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_nsga.cpp", "MU" ],
+		[
+			"/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_selection_method.cpp",
+			"MU"
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

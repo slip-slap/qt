@@ -20,6 +20,11 @@
 			"UVLADIE3JM/moc_crowdingga.cpp"
 		],
 		[
+			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/csv.h",
+			"MU",
+			"UVLADIE3JM/moc_csv.cpp"
+		],
+		[
 			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_problem.h",
 			"MU",
 			"UVLADIE3JM/moc_ga_problem.cpp"
@@ -48,6 +53,11 @@
 			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/qcustomplot.h",
 			"MU",
 			"UVLADIE3JM/moc_qcustomplot.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.h",
+			"MU",
+			"UVLADIE3JM/moc_selection_method.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -164,6 +174,10 @@
 		],
 		[
 			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/qcustomplot.cpp",
+			"MU"
+		],
+		[
+			"/Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.cpp",
 			"MU"
 		]
 	],

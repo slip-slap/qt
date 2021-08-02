@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_tool.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/__/src/ga_tool.cpp.o"
   "/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/__/src/nsga.cpp.o"
   "/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga_chromosome.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.o"
+  "/Users/kismet/Desktop/qt/genetic_algoirthm/src/selection_method.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/__/src/selection_method.cpp.o"
   "/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_ga_tool.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/test_ga_tool.cpp.o"
   "/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_nsga.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/test_nsga.cpp.o"
+  "/Users/kismet/Desktop/qt/genetic_algoirthm/test/test_selection_method.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/test_selection_method.cpp.o"
   "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/testa_autogen/mocs_compilation.cpp" "/Users/kismet/Desktop/qt/genetic_algoirthm/build/test/CMakeFiles/testa.dir/testa_autogen/mocs_compilation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

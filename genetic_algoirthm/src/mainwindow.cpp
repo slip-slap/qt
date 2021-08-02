@@ -1,3 +1,7 @@
+#include <iostream>
+#include <fstream>
+#include "stdlib.h"
+
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
@@ -5,6 +9,39 @@
 #include "crowdingga.h"
 #include "ga_tool.h"
 #include "nsga.h"
+#include "csv.h"
+
+void CalculateFitness(std::vector<NSGAChromosome>& pop){
+    std::ofstream myfile;
+    myfile.open("example.csv",std::ios::out);
+    myfile<<"number_of_angle_pi, "<< "number_of_angle_zero,"<< "strength_ratio, "<<"mass"<<std::endl;
+    for(auto i:pop){myfile<<i;}
+    myfile.close();
+
+    std::system("/Users/kismet/.pyenv/shims/python /Users/kismet/Documents/github/prec/recent/research/module1/laminate_multiple_component.py");
+
+    io::CSVReader<4> in("example.csv");
+    in.read_header(io::ignore_extra_column,"number_of_angle_pi",
+                   "number_of_angle_zero", "strength_ratio","mass");
+    int number_of_angle_pi, number_of_angle_zero;
+    double strength_ratio, mass;
+
+    int row_index = 0;
+    while(in.read_row(number_of_angle_pi,number_of_angle_zero,strength_ratio, mass))
+    {
+        if(strength_ratio < 0.5)
+        {
+            pop[row_index].GetFitnessReference()[0] = 1000;
+            pop[row_index].GetFitnessReference()[1] = 1000;
+        }else{
+            pop[row_index].GetFitnessReference()[0] = strength_ratio;
+            pop[row_index].GetFitnessReference()[1] = mass;
+        }
+        row_index++;
+
+    }
+
+}
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,7 +52,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->customplot->addGraph();
 
     ga = new CrowdingGA(20);
+
     nsga = new NSGA(30);
+
     m_color_qvec.push_back(QColor(255,0,0,255));
     m_color_qvec.push_back(QColor(0,255,0,255));
     m_color_qvec.push_back(QColor(0,0,255,255));
@@ -34,6 +73,8 @@ MainWindow::MainWindow(QWidget *parent)
     m_color_qvec.push_back(QColor(255,0,0,255));
     m_color_qvec.push_back(QColor(0,255,0,255));
     m_color_qvec.push_back(QColor(0,0,255,255));
+
+
 
 }
 
@@ -80,6 +121,7 @@ void MainWindow::on_pushButton_nsga_clicked()
     std::vector<std::vector<NSGAChromosome>> fronters = nsga->GetFronters();
 
 
+
     QVector<double> f1, f2;
     for(auto itr=pop.begin(); itr!=pop.end(); itr++)
     {
@@ -109,4 +151,5 @@ void MainWindow::on_pushButton_nsga_clicked()
     }
 
     ui->customplot->replot();
+
 }

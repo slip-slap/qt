@@ -6,6 +6,36 @@
 
 #IncludeRegexTransform: 
 
+../src/csv.h
+vector
+-
+string
+-
+cstring
+-
+algorithm
+-
+utility
+-
+cstdio
+-
+exception
+-
+mutex
+-
+thread
+-
+condition_variable
+-
+memory
+-
+cassert
+-
+cerrno
+-
+istream
+-
+
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/chromosome.h
 vector
 -
@@ -19,6 +49,36 @@ ga_problem.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/crowdingga.h
 chromosome.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/chromosome.h
+
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/csv.h
+vector
+-
+string
+-
+cstring
+-
+algorithm
+-
+utility
+-
+cstdio
+-
+exception
+-
+mutex
+-
+thread
+-
+condition_variable
+-
+memory
+-
+cassert
+-
+cerrno
+-
+istream
+-
 
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_problem.h
 cmath
@@ -37,6 +97,12 @@ boost/chrono.hpp
 -
 
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/mainwindow.cpp
+iostream
+-
+fstream
+-
+stdlib.h
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/stdlib.h
 mainwindow.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/mainwindow.h
 ./ui_mainwindow.h
@@ -49,6 +115,8 @@ ga_tool.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/ga_tool.h
 nsga.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.h
+csv.h
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/csv.h
 
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/mainwindow.h
 QMainWindow
@@ -57,6 +125,20 @@ qcustomplot.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/qcustomplot.h
 crowdingga.h
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/crowdingga.h
+nsga.h
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.h
+
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.cpp
+nsga.h
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.h
+iostream
+-
+csv.h
+-
+fstream
+-
+stdlib.h
+/Users/kismet/Desktop/qt/genetic_algoirthm/src/stdlib.h
 
 /Users/kismet/Desktop/qt/genetic_algoirthm/src/nsga.h
 nsga_chromosome.h

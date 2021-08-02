@@ -10,10 +10,10 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
+configure_file("input.csv" "input.csv" COPYONLY)
 
 find_package(QT NAMES Qt5 COMPONENTS Widgets PrintSupport REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets PrintSupport REQUIRED)
@@ -29,7 +29,8 @@ set(PROJECT_SOURCES ./src/qcustomplot.h ./src/qcustomplot.cpp
     ./src/mainwindow.h ./src/nsga_chromosome.h
     ./src/nsga_chromosome.cpp
     ./src/nsga.h ./src/nsga.cpp
-    mainwindow.ui
+    ./src/selection_method.h ./src/selection_method.cpp
+     ./src/csv.h
 	)
 
 include_directories(${Boost_INCLUDE_DIRS})

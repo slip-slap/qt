@@ -268,6 +268,33 @@ __/src/nsga_chromosome.cpp.s:
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/__/src/nsga_chromosome.cpp.s
 .PHONY : __/src/nsga_chromosome.cpp.s
 
+__/src/selection_method.o: __/src/selection_method.cpp.o
+
+.PHONY : __/src/selection_method.o
+
+# target to build an object file
+__/src/selection_method.cpp.o:
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/__/src/selection_method.cpp.o
+.PHONY : __/src/selection_method.cpp.o
+
+__/src/selection_method.i: __/src/selection_method.cpp.i
+
+.PHONY : __/src/selection_method.i
+
+# target to preprocess a source file
+__/src/selection_method.cpp.i:
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/__/src/selection_method.cpp.i
+.PHONY : __/src/selection_method.cpp.i
+
+__/src/selection_method.s: __/src/selection_method.cpp.s
+
+.PHONY : __/src/selection_method.s
+
+# target to generate assembly for a file
+__/src/selection_method.cpp.s:
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/__/src/selection_method.cpp.s
+.PHONY : __/src/selection_method.cpp.s
+
 test_ga_tool.o: test_ga_tool.cpp.o
 
 .PHONY : test_ga_tool.o
@@ -322,6 +349,33 @@ test_nsga.cpp.s:
 	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/test_nsga.cpp.s
 .PHONY : test_nsga.cpp.s
 
+test_selection_method.o: test_selection_method.cpp.o
+
+.PHONY : test_selection_method.o
+
+# target to build an object file
+test_selection_method.cpp.o:
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/test_selection_method.cpp.o
+.PHONY : test_selection_method.cpp.o
+
+test_selection_method.i: test_selection_method.cpp.i
+
+.PHONY : test_selection_method.i
+
+# target to preprocess a source file
+test_selection_method.cpp.i:
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/test_selection_method.cpp.i
+.PHONY : test_selection_method.cpp.i
+
+test_selection_method.s: test_selection_method.cpp.s
+
+.PHONY : test_selection_method.s
+
+# target to generate assembly for a file
+test_selection_method.cpp.s:
+	cd /Users/kismet/Desktop/qt/genetic_algoirthm/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/testa.dir/build.make test/CMakeFiles/testa.dir/test_selection_method.cpp.s
+.PHONY : test_selection_method.cpp.s
+
 testa_autogen/mocs_compilation.o: testa_autogen/mocs_compilation.cpp.o
 
 .PHONY : testa_autogen/mocs_compilation.o
@@ -371,12 +425,18 @@ help:
 	@echo "... __/src/nsga_chromosome.o"
 	@echo "... __/src/nsga_chromosome.i"
 	@echo "... __/src/nsga_chromosome.s"
+	@echo "... __/src/selection_method.o"
+	@echo "... __/src/selection_method.i"
+	@echo "... __/src/selection_method.s"
 	@echo "... test_ga_tool.o"
 	@echo "... test_ga_tool.i"
 	@echo "... test_ga_tool.s"
 	@echo "... test_nsga.o"
 	@echo "... test_nsga.i"
 	@echo "... test_nsga.s"
+	@echo "... test_selection_method.o"
+	@echo "... test_selection_method.i"
+	@echo "... test_selection_method.s"
 	@echo "... testa_autogen/mocs_compilation.o"
 	@echo "... testa_autogen/mocs_compilation.i"
 	@echo "... testa_autogen/mocs_compilation.s"
