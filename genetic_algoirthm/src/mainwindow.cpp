@@ -125,20 +125,6 @@ void MainWindow::on_pushButton_2_clicked()
 {
     std::cout<<"save picture"<<std::endl;
     ui->customplot->savePng("./plot");
-
-    std::ofstream myfile;
-    myfile.open("current_state.csv",std::ios::out);
-    myfile<<"number_of_angle_pi, "<< "number_of_angle_zero,"<< "strength_ratio, "<<"mass"<<std::endl;
-
-    std::vector<std::vector<NSGAChromosome>> fronters = nsga->GetFronters();
-    for(unsigned long k=0; k< fronters.size(); k++)
-    {
-         for(unsigned long i=0; i<fronters[k].size(); i++)
-         {
-             myfile<<fronters[k][i];
-         }
-    }
-    myfile.close();
 }
 
 void MainWindow::on_pushButton_display_first_fronter_clicked()
