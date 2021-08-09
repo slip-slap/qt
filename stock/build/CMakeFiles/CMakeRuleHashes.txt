@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+b20b76b99f0db2e7a037674087476098 CMakeFiles/stock_autogen

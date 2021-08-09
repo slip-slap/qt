@@ -19,7 +19,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->graphicsView->setScene(scene);
 
     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
-    scene->setSceneRect(0, 0, 350,250);
+    scene->setSceneRect(0, 0, 3500,2500);
     std::cout<<"width is: "<<scene->sceneRect().width()<<std::endl;
 
     QBrush redBrush(Qt::red);
@@ -102,6 +102,14 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::contextMenuEvent(QContextMenuEvent *event)
+{
+    std::cout<<"context menu event"<<std::endl;
+}
+
+
+
 
 
 void MainWindow::on_pushButton_clicked()

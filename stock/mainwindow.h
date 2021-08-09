@@ -2,11 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QGraphicsScene>
 #include <QTimer>
-#include <QContextMenuEvent>
+#include <QGraphicsScene>
 
-#include "dialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,22 +18,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void contextMenuEvent(QContextMenuEvent *event) override;
-
-
-
-private slots:
-    void on_pushButton_clicked();
-
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_3_clicked();
-
 private:
     Ui::MainWindow *ui;
-    QGraphicsScene *scene;
-    QGraphicsEllipseItem *ellipse;
     QTimer* timer;
 
+protected slots:
+    void foo();
+private slots:
+    void on_pushButton_clicked();
+    void on_pushButton_2_clicked();
 };
 #endif // MAINWINDOW_H
