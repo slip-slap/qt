@@ -1,9 +1,10 @@
 #include "stockgraphicsedge.h"
 
 
-StockGraphicsEdge::StockGraphicsEdge(StockEdge *stock_edge):QGraphicsPathItem()
+StockGraphicsEdge::StockGraphicsEdge():QGraphicsPathItem()
 {
-    m_stock_edge = stock_edge;
+    this->setFlag(QGraphicsItem::ItemIsMovable);
+    this->setFlag(QGraphicsItem::ItemIsSelectable);
 }
 
 QRectF StockGraphicsEdge::boundingRect() const
@@ -13,8 +14,23 @@ QRectF StockGraphicsEdge::boundingRect() const
 
 void StockGraphicsEdge::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    painter->setPen(Qt::yellow);
-    QPainterPath path(QPointF(0,0));
-    path.lineTo(QPointF(100,100));
+    QPen pen = QPen(Qt::red);
+    pen.setWidth(10);
+    painter->setPen(pen);
+    painter->setBrush(QBrush(Qt::red));
+    QPainterPath path(m_source);
+    path.lineTo(m_target);
     painter->drawPath(path);
+}
+
+void StockGraphicsEdge::SetSource(QPointF source)
+{
+    m_source = source;
+    this->update();
+}
+
+void StockGraphicsEdge::SetTarget(QPointF target)
+{
+    m_target = target;
+    this->update();
 }

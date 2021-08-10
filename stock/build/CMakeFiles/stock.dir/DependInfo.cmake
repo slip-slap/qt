@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/kismet/Desktop/stock/main.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/main.cpp.o"
-  "/Users/kismet/Desktop/stock/mainwindow.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/mainwindow.cpp.o"
-  "/Users/kismet/Desktop/stock/build/stock_autogen/mocs_compilation.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.o"
-  "/Users/kismet/Desktop/stock/stockedge.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stockedge.cpp.o"
-  "/Users/kismet/Desktop/stock/stockgraphicsedge.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stockgraphicsedge.cpp.o"
-  "/Users/kismet/Desktop/stock/stockgraphicsnode.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stockgraphicsnode.cpp.o"
-  "/Users/kismet/Desktop/stock/stockgraphicsscene.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stockgraphicsscene.cpp.o"
-  "/Users/kismet/Desktop/stock/stockgraphicssocket.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stockgraphicssocket.cpp.o"
-  "/Users/kismet/Desktop/stock/stockgraphicsview.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stockgraphicsview.cpp.o"
-  "/Users/kismet/Desktop/stock/stocknode.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stocknode.cpp.o"
-  "/Users/kismet/Desktop/stock/stocksocket.cpp" "/Users/kismet/Desktop/stock/build/CMakeFiles/stock.dir/stocksocket.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/main.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/main.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/mainwindow.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/mainwindow.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/build/stock_autogen/mocs_compilation.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stockedge.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stockedge.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stockgraphicsedge.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stockgraphicsedge.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stockgraphicsnode.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stockgraphicsnode.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stockgraphicsscene.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stockgraphicsscene.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stockgraphicssocket.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stockgraphicssocket.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stockgraphicsview.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stockgraphicsview.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stocknode.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stocknode.cpp.o"
+  "/Users/kismet/Desktop/qt/stock/stocksocket.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir/stocksocket.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -22,7 +22,6 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_CORE_LIB"
   "QT_GUI_LIB"
-  "QT_NO_DEBUG"
   "QT_WIDGETS_LIB"
   )
 

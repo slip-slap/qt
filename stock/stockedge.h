@@ -2,19 +2,21 @@
 #define STOCKEDGE_H
 
 #include "stockgraphicsscene.h"
-#include "stocksocket.h"
+#include "StockSocketInterface.h"
 #include "stockgraphicsedge.h"
-
-class StockEdge
+#include "stockscene.h"
+#include "stockedgeinterface.h"
+class StockEdge: public StockEdgeInterface
 {
 public:
-    StockEdge(StockGraphicsScene* scene, StockSocket* start_socket, StockSocket* end_socket);
-    void UpdatePosition();
+    StockEdge(StockGraphicsScene* scene, StockSocketInterface* start_socket, StockSocketInterface* end_socket);
+    StockEdge(StockScene* scene, StockSocketInterface* start_socket, StockSocketInterface* end_socket);
+    void UpdatePositions();
 
 private:
     StockGraphicsScene* m_scene;
-    StockSocket* m_start_socket;
-    StockSocket* m_end_socket;
+    StockSocketInterface* m_start_socket;
+    StockSocketInterface* m_end_socket;
     StockGraphicsEdge* m_edge;
 
 };

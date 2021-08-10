@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.3/bin/cmake
+CMAKE_COMMAND = /opt/local/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.17.3/bin/cmake -E rm -f
+RM = /opt/local/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kismet/Desktop/stock
+CMAKE_SOURCE_DIR = /Users/kismet/Desktop/qt/stock
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kismet/Desktop/stock/build
+CMAKE_BINARY_DIR = /Users/kismet/Desktop/qt/stock/build
 
 # Utility rule file for stock_autogen.
 
@@ -74,8 +74,8 @@ CMAKE_BINARY_DIR = /Users/kismet/Desktop/stock/build
 include CMakeFiles/stock_autogen.dir/progress.make
 
 CMakeFiles/stock_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/kismet/Desktop/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target stock"
-	/usr/local/Cellar/cmake/3.17.3/bin/cmake -E cmake_autogen /Users/kismet/Desktop/stock/build/CMakeFiles/stock_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target stock"
+	/opt/local/bin/cmake -E cmake_autogen /Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock_autogen.dir/AutogenInfo.json Debug
 
 stock_autogen: CMakeFiles/stock_autogen
 stock_autogen: CMakeFiles/stock_autogen.dir/build.make
@@ -92,6 +92,6 @@ CMakeFiles/stock_autogen.dir/clean:
 .PHONY : CMakeFiles/stock_autogen.dir/clean
 
 CMakeFiles/stock_autogen.dir/depend:
-	cd /Users/kismet/Desktop/stock/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kismet/Desktop/stock /Users/kismet/Desktop/stock /Users/kismet/Desktop/stock/build /Users/kismet/Desktop/stock/build /Users/kismet/Desktop/stock/build/CMakeFiles/stock_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/kismet/Desktop/qt/stock/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kismet/Desktop/qt/stock /Users/kismet/Desktop/qt/stock /Users/kismet/Desktop/qt/stock/build /Users/kismet/Desktop/qt/stock/build /Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/stock_autogen.dir/depend
 

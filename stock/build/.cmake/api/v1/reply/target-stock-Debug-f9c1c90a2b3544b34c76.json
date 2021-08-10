@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 48,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 50,
+				"line" : 52,
 				"parent" : 0
 			}
 		]
@@ -42,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk  "
+					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk  "
 				},
 				{
 					"backtrace" : 2,
@@ -64,24 +64,20 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "QT_NO_DEBUG"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "QT_WIDGETS_LIB"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"path" : "/Users/kismet/Desktop/stock/build"
+					"path" : "/Users/kismet/Desktop/qt/stock/build"
 				},
 				{
-					"path" : "/Users/kismet/Desktop/stock"
+					"path" : "/Users/kismet/Desktop/qt/stock"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/Users/kismet/Desktop/stock/build/stock_autogen/include"
+					"path" : "/Users/kismet/Desktop/qt/stock/build/stock_autogen/include"
 				},
 				{
 					"backtrace" : 2,
@@ -137,7 +133,7 @@
 				13,
 				15,
 				17,
-				19
+				21
 			]
 		}
 	],
@@ -153,6 +149,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -196,7 +196,7 @@
 				13,
 				15,
 				17,
-				19
+				21
 			]
 		},
 		{
@@ -211,7 +211,9 @@
 				14,
 				16,
 				18,
-				20
+				19,
+				20,
+				22
 			]
 		},
 		{
@@ -328,6 +330,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "stocksocket.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "stocksocketinterface.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "stocknodeinterface.h",
 			"sourceGroupIndex" : 1
 		},
 		{

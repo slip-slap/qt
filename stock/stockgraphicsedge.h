@@ -6,21 +6,23 @@
 #include <QWidget>
 #include <QStyleOptionGraphicsItem>
 
-class StockEdge;
 
 class StockGraphicsEdge: public QGraphicsPathItem
 {
 public:
-    StockGraphicsEdge(StockEdge* stockedge);
+    StockGraphicsEdge();
 
 
 public:
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                QWidget *widget) override;
+    void SetSource(QPointF source);
+    void SetTarget(QPointF target);
 
 private:
-    StockEdge* m_stock_edge;
+    QPointF m_source;
+    QPointF m_target;
 };
 
 #endif // GRAPHICSEDGE_H

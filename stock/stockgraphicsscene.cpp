@@ -6,13 +6,30 @@
 #include <QGraphicsSceneContextMenuEvent>
 #include <QGraphicsEllipseItem>
 #include "stockedge.h"
-
+#include "stockgraphicssocket.h"
+#include "stocksocket.h"
 StockGraphicsScene::StockGraphicsScene(): QGraphicsScene()
 {
-    StockNode* node1 = new StockNode(this,nullptr);
+    StockSocketInterface* socket1 = new StockSocket();
+    StockSocketInterface* socket2 = new StockSocket();
+
+    StockSocket* stocksocket1 = static_cast<StockSocket*>(socket1);
+    StockSocket* stocksocket2 = static_cast<StockSocket*>(socket2);
+    StockNode* node1 = new StockNode(this, socket1);
     node1->GetStockGraphicsNode()->setPos(500,0);
-    StockNode* node2 = new StockNode(this,nullptr);
-    new StockEdge(this,node1->GetStockSocket(), node2->GetStockSocket());
+    stocksocket1->SetStockNode(node1);
+
+
+    StockNode* node2 = new StockNode(this, socket2);
+    node2->GetStockGraphicsNode()->setPos(100,0);
+    stocksocket2->SetStockNode(node2);
+    new StockEdge(this, stocksocket1, stocksocket2);
+    //new StockEdge(this,node1->GetStockSocket(), node2->GetStockSocket());
+}
+
+StockGraphicsScene::StockGraphicsScene(StockScene *stock_scene)
+{
+    m_stock_scene = stock_scene;
 }
 
 void StockGraphicsScene::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
@@ -29,8 +46,10 @@ void StockGraphicsScene::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
     //ellipse->setFlag(QGraphicsItem::ItemIsMovable,true);
     //ellipse->setFlag(QGraphicsItem::ItemIsSelectable);
 
-    //std::cout<<"my node x: "<<m_node->GetGraphicsNode()->mapToScene(0,80).rx()<<std::endl;
-    //std::cout<<"my node y: "<<m_node->GetGraphicsNode()->mapToScene(0,80).ry()<<std::endl;
-    //std::cout<<"context menu"<<std::endl;
+}
+
+void StockGraphicsScene::mouseMoveEvent(QGraphicsSceneMouseEvent*event)
+{
+    QGraphicsScene::mouseMoveEvent(event);
 
 }

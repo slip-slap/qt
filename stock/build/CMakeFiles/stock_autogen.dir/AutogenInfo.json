@@ -1,64 +1,74 @@
 {
-	"BUILD_DIR" : "/Users/kismet/Desktop/stock/build/stock_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/kismet/Desktop/stock/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/kismet/Desktop/stock/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/kismet/Desktop/stock",
-	"CMAKE_EXECUTABLE" : "/usr/local/Cellar/cmake/3.17.3/bin/cmake",
-	"CMAKE_SOURCE_DIR" : "/Users/kismet/Desktop/stock",
+	"BUILD_DIR" : "/Users/kismet/Desktop/qt/stock/build/stock_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/kismet/Desktop/qt/stock/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/kismet/Desktop/qt/stock/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/kismet/Desktop/qt/stock",
+	"CMAKE_EXECUTABLE" : "/opt/local/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/Users/kismet/Desktop/qt/stock",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/Users/kismet/Desktop/stock/mainwindow.h",
+			"/Users/kismet/Desktop/qt/stock/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stockedge.h",
+			"/Users/kismet/Desktop/qt/stock/stockedge.h",
 			"MU",
 			"EWIEGA46WW/moc_stockedge.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stockgraphicsedge.h",
+			"/Users/kismet/Desktop/qt/stock/stockgraphicsedge.h",
 			"MU",
 			"EWIEGA46WW/moc_stockgraphicsedge.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stockgraphicsnode.h",
+			"/Users/kismet/Desktop/qt/stock/stockgraphicsnode.h",
 			"MU",
 			"EWIEGA46WW/moc_stockgraphicsnode.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stockgraphicsscene.h",
+			"/Users/kismet/Desktop/qt/stock/stockgraphicsscene.h",
 			"MU",
 			"EWIEGA46WW/moc_stockgraphicsscene.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stockgraphicssocket.h",
+			"/Users/kismet/Desktop/qt/stock/stockgraphicssocket.h",
 			"MU",
 			"EWIEGA46WW/moc_stockgraphicssocket.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stockgraphicsview.h",
+			"/Users/kismet/Desktop/qt/stock/stockgraphicsview.h",
 			"MU",
 			"EWIEGA46WW/moc_stockgraphicsview.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stocknode.h",
+			"/Users/kismet/Desktop/qt/stock/stocknode.h",
 			"MU",
 			"EWIEGA46WW/moc_stocknode.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/stock/stocksocket.h",
+			"/Users/kismet/Desktop/qt/stock/stocknodeinterface.h",
+			"MU",
+			"EWIEGA46WW/moc_stocknodeinterface.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/stock/stocksocket.h",
 			"MU",
 			"EWIEGA46WW/moc_stocksocket.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/stock/stocksocketinterface.h",
+			"MU",
+			"EWIEGA46WW/moc_stocksocketinterface.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/kismet/Desktop/stock/build/stock_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/kismet/Desktop/stock/build/stock_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"INCLUDE_DIR" : "/Users/kismet/Desktop/qt/stock/build/stock_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/kismet/Desktop/qt/stock/build/stock_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -68,8 +78,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/Users/kismet/Desktop/stock/build",
-		"/Users/kismet/Desktop/stock",
+		"/Users/kismet/Desktop/qt/stock/build",
+		"/Users/kismet/Desktop/qt/stock",
 		"/usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework",
 		"/usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers",
 		"/usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework",
@@ -92,31 +102,31 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/usr/local/Cellar/cmake/3.17.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+		"/opt/local/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/kismet/Desktop/stock/build/stock_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/kismet/Desktop/qt/stock/build/stock_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/Users/kismet/Desktop/stock/build/CMakeFiles/stock_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/local/Cellar/qt@5/5.15.2/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/local/Cellar/qt@5/5.15.2/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/Users/kismet/Desktop/stock/build/CMakeFiles/stock_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/kismet/Desktop/stock/main.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/mainwindow.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stockedge.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stockgraphicsedge.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stockgraphicsnode.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stockgraphicsscene.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stockgraphicssocket.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stockgraphicsview.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stocknode.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/stock/stocksocket.cpp", "MU" ]
+		[ "/Users/kismet/Desktop/qt/stock/main.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/mainwindow.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stockedge.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsedge.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsnode.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsscene.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stockgraphicssocket.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsview.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stocknode.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stocksocket.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

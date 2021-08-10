@@ -40,8 +40,13 @@ set(PROJECT_SOURCES
         stocknode.h
         stocksocket.cpp
         stocksocket.h
+        stocksocketinterface.h
+        stocknodeinterface.h
+        stockedgeinterface.h
         stockedge.cpp
         stockedge.h
+        stockscene.cpp
+        stockscene.h
 )
 
 
