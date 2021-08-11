@@ -16,7 +16,7 @@ StockEdge::StockEdge(StockGraphicsScene *scene, StockSocketInterface *start_sock
 
 StockEdge::StockEdge(StockScene *scene, StockSocketInterface *start_socket, StockSocketInterface *end_socket)
 {
-
+    m_stock_scene = scene;
     m_start_socket = start_socket;
     m_end_socket = end_socket;
     m_edge = new StockGraphicsEdge();
@@ -24,19 +24,20 @@ StockEdge::StockEdge(StockScene *scene, StockSocketInterface *start_socket, Stoc
     m_edge->SetTarget(m_end_socket->GetSocketPosition()+QPointF(10,10));
     m_start_socket->SetStockEdge(this);
     m_end_socket->SetStockEdge(this);
-    scene->GetGraphicsScenePtr()->addItem(m_edge);
-    scene->AddEdge(this);
+    m_stock_scene->GetGraphicsScenePtr()->addItem(m_edge);
+    m_stock_scene->AddEdge(this);
 }
 
 StockEdge::StockEdge(StockScene *scene, StockSocketInterface *start_socket, QPointF pos)
 {
+    m_stock_scene = scene;
     m_start_socket = start_socket;
     m_edge = new StockGraphicsEdge();
     m_edge->SetSource(m_start_socket->GetSocketPosition()+QPointF(10,10));
-    m_edge->SetTarget(pos);
+    m_edge->SetTarget(pos+QPointF(10,10));
     m_start_socket->SetStockEdge(this);
-    scene->GetGraphicsScenePtr()->addItem(m_edge);
-    scene->AddEdge(this);
+    m_stock_scene->GetStockGraphicsScene()->addItem(m_edge);
+    m_stock_scene->AddEdge(this);
 }
 
 void StockEdge::SetTarget(QPointF des)

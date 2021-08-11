@@ -18,8 +18,8 @@ void StockGraphicsView::mouseMoveEvent(QMouseEvent *event)
 {
      std::cout<<"mouse is moving"<<std::endl;
      QGraphicsView::mouseMoveEvent(event);
-     //StockEdge* stock_edge = static_cast<StockEdge*>(this->m_drag_stock_edge_interface);
-     //stock_edge->SetTarget(event->pos());
+     StockEdge* stock_edge = static_cast<StockEdge*>(this->m_drag_stock_edge_interface);
+     stock_edge->SetTarget(event->pos());
 }
 
 void StockGraphicsView::mousePressEvent(QMouseEvent *event)
@@ -31,9 +31,10 @@ void StockGraphicsView::mousePressEvent(QMouseEvent *event)
         if(StockGraphicsSocket* v=dynamic_cast<StockGraphicsSocket*>(item)){
             if(this->m_mode == MODE_NO_OPERATION){
                 m_mode = MODE_EDGE_DRAG;
+                //StockSocketInterface* temp =  v->GetStockSocketInterface();
                 std::cout<<"start draging edge, and assign start socket"<<std::endl;
-                //StockSocketInterface* stock_socket_inference = v->GetStockSocketInterface();
-                //this->m_drag_stock_edge_interface = new StockEdge(m_stock_graphics_scene->GetStockScene(),v->GetStockSocketInterface(),event->pos());
+                //StockScene* stock_scene = m_stock_graphics_scene->GetStockScene();
+                this->m_drag_stock_edge_interface = new StockEdge(m_stock_graphics_scene->GetStockScene(),v->GetStockSocketInterface(),event->pos());
                 return;
             }
         }

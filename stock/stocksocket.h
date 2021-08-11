@@ -9,7 +9,6 @@ class StockSocket: public StockSocketInterface
 {
 public:
     StockSocket();
-    StockSocket(StockNodeInterface* stock_node_interface);
     StockGraphicsSocket *GetStockGraphicsSocket() override;
     QPointF GetSocketPosition() override;
     void SetStockNode(StockNodeInterface* stock_node) override;

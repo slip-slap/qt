@@ -15,9 +15,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    /*ui->statusbar->setStyleSheet("background-color: rgb(255,255,255); color : black;");
-    ui->menubar->setStyleSheet("background-color: rgb(255,255,255); color : black;");
-    ui->toolBar->setStyleSheet("background: white; spacing: 0px;");*/
     ui->menubar->setNativeMenuBar(false);
     StockScene* scene = new StockScene();
     StockSocket* socket11 = new StockSocket();
@@ -26,12 +23,22 @@ MainWindow::MainWindow(QWidget *parent)
     StockSocket* socket22 = new StockSocket();
     StockSocket* socket31 = new StockSocket();
     StockSocket* socket32 = new StockSocket();
-    (new StockNode(scene,"first",socket11,socket12))->SetStockNodePosition(QPointF(50,50));
-    (new StockNode(scene,"second",socket21, socket22))->SetStockNodePosition(QPointF(200,200));
-    (new StockNode(scene,"third",socket31, socket32))->SetStockNodePosition(QPointF(400,100));
-
+    StockNode* stock_node1 = new StockNode(scene,"first",socket11,socket12);
+    socket11->SetStockNode(stock_node1);
+    socket12->SetStockNode(stock_node1);
+    StockNode* stock_node2 = new StockNode(scene,"second",socket21, socket22);
+    socket21->SetStockNode(stock_node2);
+    socket22->SetStockNode(stock_node2);
+    StockNode* stock_node3 = new StockNode(scene,"third",socket31, socket32);
+    socket31->SetStockNode(stock_node3);
+    socket32->SetStockNode(stock_node3);
+    stock_node1->SetStockNodePosition(QPointF(50,50));
+    stock_node2->SetStockNodePosition(QPointF(200,200));
+    stock_node3->SetStockNodePosition(QPointF(400,100));
     new StockEdge(scene, socket12,socket21);
     new StockEdge(scene, socket22,socket31);
+
+
     this->ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     this->ui->graphicsView->setRenderHint(QPainter::HighQualityAntialiasing);
     this->ui->graphicsView->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);

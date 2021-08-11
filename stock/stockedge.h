@@ -16,10 +16,11 @@ public:
     void UpdatePositions();
 
 private:
-    StockGraphicsScene* m_scene=nullptr;
+    //StockGraphicsScene* m_scene=nullptr;
     StockSocketInterface* m_start_socket=nullptr;
     StockSocketInterface* m_end_socket=nullptr;
     StockGraphicsEdge* m_edge=nullptr;
+    StockScene* m_stock_scene;
 
 };
 

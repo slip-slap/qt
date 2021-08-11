@@ -16,6 +16,7 @@ public:
     void RemoveNode();
     void RemoveEdge();
     QGraphicsScene *GetGraphicsScenePtr();
+    QGraphicsScene* GetStockGraphicsScene();
 
 private:
     QGraphicsScene* m_stock_graphics_scene=nullptr;

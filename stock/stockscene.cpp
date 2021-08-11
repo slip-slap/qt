@@ -3,7 +3,7 @@
 
 StockScene::StockScene()
 {
-    m_stock_graphics_scene = new StockGraphicsScene();
+    m_stock_graphics_scene = new StockGraphicsScene(this);
 }
 
 void StockScene::AddNode(StockNodeInterface *stock_node_interface)
@@ -19,6 +19,11 @@ void StockScene::AddEdge(StockEdgeInterface *stock_edge)
 }
 
 QGraphicsScene* StockScene::GetGraphicsScenePtr()
+{
+    return m_stock_graphics_scene;
+}
+
+QGraphicsScene *StockScene::GetStockGraphicsScene()
 {
     return m_stock_graphics_scene;
 }
