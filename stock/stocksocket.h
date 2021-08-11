@@ -9,6 +9,7 @@ class StockSocket: public StockSocketInterface
 {
 public:
     StockSocket();
+    StockSocket(StockNodeInterface* stock_node_interface);
     StockGraphicsSocket *GetStockGraphicsSocket() override;
     QPointF GetSocketPosition() override;
     void SetStockNode(StockNodeInterface* stock_node) override;
@@ -17,9 +18,9 @@ public:
     StockEdgeInterface* GetStockEdge() override;
 
 private:
-    StockNodeInterface* m_stock_node_interface;
-    StockEdgeInterface* m_stock_edge_interface;
-    StockGraphicsSocket* m_stock_graphics_socket;
+    StockNodeInterface* m_stock_node_interface=nullptr;
+    StockEdgeInterface* m_stock_edge_interface=nullptr;
+    StockGraphicsSocket* m_stock_graphics_socket=nullptr;
 };
 
 #endif // STOCKSOCKET_H

@@ -47,6 +47,7 @@ set(PROJECT_SOURCES
         stockedge.h
         stockscene.cpp
         stockscene.h
+        stocksceneinterface.h
 )
 
 

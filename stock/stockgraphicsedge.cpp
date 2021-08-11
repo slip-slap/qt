@@ -15,7 +15,7 @@ QRectF StockGraphicsEdge::boundingRect() const
 void StockGraphicsEdge::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     QPen pen = QPen(Qt::red);
-    pen.setWidth(10);
+    pen.setWidth(5);
     painter->setPen(pen);
     painter->setBrush(QBrush(Qt::red));
     QPainterPath path(m_source);

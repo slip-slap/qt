@@ -11,13 +11,15 @@ class StockEdge: public StockEdgeInterface
 public:
     StockEdge(StockGraphicsScene* scene, StockSocketInterface* start_socket, StockSocketInterface* end_socket);
     StockEdge(StockScene* scene, StockSocketInterface* start_socket, StockSocketInterface* end_socket);
+    StockEdge(StockScene* scene, StockSocketInterface* start_socket, QPointF pos);
+    void SetTarget(QPointF des);
     void UpdatePositions();
 
 private:
-    StockGraphicsScene* m_scene;
-    StockSocketInterface* m_start_socket;
-    StockSocketInterface* m_end_socket;
-    StockGraphicsEdge* m_edge;
+    StockGraphicsScene* m_scene=nullptr;
+    StockSocketInterface* m_start_socket=nullptr;
+    StockSocketInterface* m_end_socket=nullptr;
+    StockGraphicsEdge* m_edge=nullptr;
 
 };
 

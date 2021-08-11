@@ -6,6 +6,17 @@ StockGraphicsSocket::StockGraphicsSocket()
     this->setFlag(QGraphicsItem::ItemIsMovable);
 }
 
+StockGraphicsSocket::StockGraphicsSocket(StockSocketInterface *stock_socket)
+{
+    this->setFlag(QGraphicsItem::ItemIsMovable);
+    this->m_stock_socket_interface = stock_socket;
+}
+
+StockSocketInterface *StockGraphicsSocket::GetStockSocketInterface()
+{
+    return m_stock_socket_interface;
+}
+
 
 QRectF StockGraphicsSocket::boundingRect() const
 {

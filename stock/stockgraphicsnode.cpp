@@ -3,12 +3,16 @@
 
 
 StockGraphicsNode::StockGraphicsNode(): QGraphicsItem()
-{
+{  
+    this->setFlag(QGraphicsItem::ItemIsSelectable);
+    this->setFlag(QGraphicsItem::ItemIsFocusable);
     this->setFlag(QGraphicsItem::ItemIsMovable);
 }
 
 StockGraphicsNode::StockGraphicsNode(std::string title)
 {
+    this->setFlag(QGraphicsItem::ItemIsSelectable);
+    this->setFlag(QGraphicsItem::ItemIsFocusable);
     this->setFlag(QGraphicsItem::ItemIsMovable);
     m_title = title;
 }
@@ -17,6 +21,8 @@ StockGraphicsNode::StockGraphicsNode(StockNodeInterface *stock_node_interface, s
 {
     m_stock_node_interface = stock_node_interface;
     m_title = title;
+    this->setFlag(QGraphicsItem::ItemIsSelectable);
+    this->setFlag(QGraphicsItem::ItemIsFocusable);
     this->setFlag(QGraphicsItem::ItemIsMovable);
 }
 
@@ -32,13 +38,13 @@ void StockGraphicsNode::paint(QPainter *painter, const QStyleOptionGraphicsItem 
     QPainterPath* title = new QPainterPath();
 
     title->setFillRule(Qt::WindingFill);
-    title->addRoundedRect(0,0,180,40,5,5);
+    title->addRoundedRect(0,0,90,20,5,5);
     title->addText(0,0,QFont("Times",20),"Tencent");
     title->addText(80,0,QFont("Times",20),m_title.c_str());
     painter->drawPath(title->simplified());
 
     painter->setBrush(Qt::NoBrush);
-    painter->drawRoundedRect(0,0,180,240,10,10);
+    painter->drawRoundedRect(0,0,90,120,10,10);
 
 }
 

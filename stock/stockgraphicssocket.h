@@ -6,17 +6,21 @@
 #include <QWidget>
 #include <QStyleOptionGraphicsItem>
 
-
+#include "StockSocketInterface.h"
 
 class StockGraphicsSocket:public QGraphicsItem
 {
 public:
     StockGraphicsSocket();
+    StockGraphicsSocket(StockSocketInterface* stock_socket);
+    StockSocketInterface* GetStockSocketInterface();
 
 public:
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                QWidget *widget) override;
+private:
+    StockSocketInterface* m_stock_socket_interface;
 };
 
 #endif // GRAPHICSSOCKET_H

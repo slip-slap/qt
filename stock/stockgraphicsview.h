@@ -13,7 +13,7 @@
 #include <QKeyEvent>
 #include <QMouseEvent>
 #include <QPaintEvent>
-
+#include "stockgraphicsscene.h"
 
 class StockGraphicsView : public QGraphicsView
 {
@@ -23,10 +23,18 @@ public:
     StockGraphicsView(QGraphicsScene* scene, QWidget* parent=nullptr);
     ~StockGraphicsView();
 
+public:
+    void SetStockGraphicScene(StockGraphicsScene* stock_graphics_scene);
+
 protected:
     void mouseMoveEvent(QMouseEvent* event) override;
     void mousePressEvent(QMouseEvent* event) override;
     void mouseReleaseEvent(QMouseEvent* event) override;
+
+private:
+    StockGraphicsScene* m_stock_graphics_scene;
+    int m_mode=1;
+    StockEdgeInterface* m_drag_stock_edge_interface;
 
 };
 

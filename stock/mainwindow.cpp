@@ -16,12 +16,18 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     StockScene* scene = new StockScene();
-    StockSocket* socket1 = new StockSocket();
-    StockSocket* socket2 = new StockSocket();
-    (new StockNode(scene,"first",socket1))->SetStockNodePosition(QPointF(50,50));
-    (new StockNode(scene,"second",socket2))->SetStockNodePosition(QPointF(200,200));
+    StockSocket* socket11 = new StockSocket();
+    StockSocket* socket12 = new StockSocket();
+    StockSocket* socket21 = new StockSocket();
+    StockSocket* socket22 = new StockSocket();
+    StockSocket* socket31 = new StockSocket();
+    StockSocket* socket32 = new StockSocket();
+    (new StockNode(scene,"first",socket11,socket12))->SetStockNodePosition(QPointF(50,50));
+    (new StockNode(scene,"second",socket21, socket22))->SetStockNodePosition(QPointF(200,200));
+    (new StockNode(scene,"third",socket31, socket32))->SetStockNodePosition(QPointF(400,100));
 
-    new StockEdge(scene, socket1,socket2);
+    new StockEdge(scene, socket12,socket21);
+    new StockEdge(scene, socket22,socket31);
     this->ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     this->ui->graphicsView->setRenderHint(QPainter::HighQualityAntialiasing);
     this->ui->graphicsView->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
@@ -29,12 +35,10 @@ MainWindow::MainWindow(QWidget *parent)
     this->ui->graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
     this->ui->graphicsView->setScene(scene->GetGraphicsScenePtr());
+    this->ui->graphicsView->SetStockGraphicScene((StockGraphicsScene*)(scene->GetGraphicsScenePtr()));
 
     scene->GetGraphicsScenePtr()->setBackgroundBrush(Qt::black);
     scene->GetGraphicsScenePtr()->setSceneRect(-100,-100,1000,1000);
-    QGraphicsEllipseItem* item = scene->GetGraphicsScenePtr()->addEllipse(0,0,60,60,QPen(Qt::white));
-    item->setFlag(QGraphicsItem::ItemIsMovable);
-    item->setFlag(QGraphicsItem::ItemIsSelectable);
 
     timer = new QTimer(this);
     //connect(timer, SIGNAL(timeout()),scene,SLOT(advance()));

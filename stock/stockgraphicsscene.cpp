@@ -10,26 +10,16 @@
 #include "stocksocket.h"
 StockGraphicsScene::StockGraphicsScene(): QGraphicsScene()
 {
-    StockSocketInterface* socket1 = new StockSocket();
-    StockSocketInterface* socket2 = new StockSocket();
-
-    StockSocket* stocksocket1 = static_cast<StockSocket*>(socket1);
-    StockSocket* stocksocket2 = static_cast<StockSocket*>(socket2);
-    StockNode* node1 = new StockNode(this, socket1);
-    node1->GetStockGraphicsNode()->setPos(500,0);
-    stocksocket1->SetStockNode(node1);
-
-
-    StockNode* node2 = new StockNode(this, socket2);
-    node2->GetStockGraphicsNode()->setPos(100,0);
-    stocksocket2->SetStockNode(node2);
-    new StockEdge(this, stocksocket1, stocksocket2);
-    //new StockEdge(this,node1->GetStockSocket(), node2->GetStockSocket());
 }
 
 StockGraphicsScene::StockGraphicsScene(StockScene *stock_scene)
 {
     m_stock_scene = stock_scene;
+}
+
+StockScene *StockGraphicsScene::GetStockScene()
+{
+    return m_stock_scene;
 }
 
 void StockGraphicsScene::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)

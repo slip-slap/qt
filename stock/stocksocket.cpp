@@ -3,7 +3,14 @@
 
 StockSocket::StockSocket()
 {
-    m_stock_graphics_socket = new StockGraphicsSocket();
+    m_stock_graphics_socket = new StockGraphicsSocket(this);
+}
+
+StockSocket::StockSocket(StockNodeInterface *stock_node_interface)
+{
+    m_stock_graphics_socket = new StockGraphicsSocket(this);
+    m_stock_node_interface = stock_node_interface;
+    m_stock_graphics_socket->setPos(m_stock_node_interface->GetStockNodePosition());
 }
 
 StockGraphicsSocket *StockSocket::GetStockGraphicsSocket()

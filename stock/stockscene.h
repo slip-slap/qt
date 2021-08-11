@@ -3,8 +3,9 @@
 
 #include <QGraphicsScene>
 #include <vector>
-#include <stocknodeinterface.h>
-#include <stockedgeinterface.h>
+#include "stocksceneinterface.h"
+#include "stocknodeinterface.h"
+#include "stockedgeinterface.h"
 
 class StockScene
 {
@@ -17,7 +18,7 @@ public:
     QGraphicsScene *GetGraphicsScenePtr();
 
 private:
-    QGraphicsScene* m_graphics_scene;
+    QGraphicsScene* m_stock_graphics_scene=nullptr;
     std::vector<StockNodeInterface*> m_stock_node_interface_vec;
     std::vector<StockEdgeInterface*> m_stock_edge_interface_vec;
 };

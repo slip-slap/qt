@@ -28,6 +28,9 @@ public:
     StockGraphicsScene();
     StockGraphicsScene(StockScene* stock_scene);
 
+public:
+    StockScene* GetStockScene();
+
 protected:
     void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override;
 
