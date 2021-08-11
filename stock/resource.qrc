@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>resource/img/new.svg</file>
+        <file>resource/img/folder.svg</file>
+        <file>resource/img/zoomin.png</file>
+        <file>resource/img/zoomout.png</file>
+    </qresource>
+</RCC>

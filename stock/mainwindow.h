@@ -25,7 +25,9 @@ private:
 protected slots:
     void foo();
 private slots:
-    void on_pushButton_clicked();
-    void on_pushButton_2_clicked();
+    void on_actionExit_2_triggered();
+    void on_actionOpen_triggered();
+    void on_actionZoom_In_triggered();
+    void on_actionZoom_Out_triggered();
 };
 #endif // MAINWINDOW_H

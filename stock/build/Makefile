@@ -210,6 +210,33 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+qrc_resource.o: qrc_resource.cpp.o
+
+.PHONY : qrc_resource.o
+
+# target to build an object file
+qrc_resource.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/qrc_resource.cpp.o
+.PHONY : qrc_resource.cpp.o
+
+qrc_resource.i: qrc_resource.cpp.i
+
+.PHONY : qrc_resource.i
+
+# target to preprocess a source file
+qrc_resource.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/qrc_resource.cpp.i
+.PHONY : qrc_resource.cpp.i
+
+qrc_resource.s: qrc_resource.cpp.s
+
+.PHONY : qrc_resource.s
+
+# target to generate assembly for a file
+qrc_resource.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/qrc_resource.cpp.s
+.PHONY : qrc_resource.cpp.s
+
 stock_autogen/mocs_compilation.o: stock_autogen/mocs_compilation.cpp.o
 
 .PHONY : stock_autogen/mocs_compilation.o
@@ -426,6 +453,33 @@ stocknode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stocknode.cpp.s
 .PHONY : stocknode.cpp.s
 
+stockscene.o: stockscene.cpp.o
+
+.PHONY : stockscene.o
+
+# target to build an object file
+stockscene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockscene.cpp.o
+.PHONY : stockscene.cpp.o
+
+stockscene.i: stockscene.cpp.i
+
+.PHONY : stockscene.i
+
+# target to preprocess a source file
+stockscene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockscene.cpp.i
+.PHONY : stockscene.cpp.i
+
+stockscene.s: stockscene.cpp.s
+
+.PHONY : stockscene.s
+
+# target to generate assembly for a file
+stockscene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockscene.cpp.s
+.PHONY : stockscene.cpp.s
+
 stocksocket.o: stocksocket.cpp.o
 
 .PHONY : stocksocket.o
@@ -469,6 +523,9 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... qrc_resource.o"
+	@echo "... qrc_resource.i"
+	@echo "... qrc_resource.s"
 	@echo "... stock_autogen/mocs_compilation.o"
 	@echo "... stock_autogen/mocs_compilation.i"
 	@echo "... stock_autogen/mocs_compilation.s"
@@ -493,6 +550,9 @@ help:
 	@echo "... stocknode.o"
 	@echo "... stocknode.i"
 	@echo "... stocknode.s"
+	@echo "... stockscene.o"
+	@echo "... stockscene.i"
+	@echo "... stockscene.s"
 	@echo "... stocksocket.o"
 	@echo "... stocksocket.i"
 	@echo "... stocksocket.s"

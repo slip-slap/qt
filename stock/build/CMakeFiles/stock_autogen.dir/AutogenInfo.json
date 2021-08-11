@@ -20,6 +20,11 @@
 			"EWIEGA46WW/moc_stockedge.cpp"
 		],
 		[
+			"/Users/kismet/Desktop/qt/stock/stockedgeinterface.h",
+			"MU",
+			"EWIEGA46WW/moc_stockedgeinterface.cpp"
+		],
+		[
 			"/Users/kismet/Desktop/qt/stock/stockgraphicsedge.h",
 			"MU",
 			"EWIEGA46WW/moc_stockgraphicsedge.cpp"
@@ -53,6 +58,16 @@
 			"/Users/kismet/Desktop/qt/stock/stocknodeinterface.h",
 			"MU",
 			"EWIEGA46WW/moc_stocknodeinterface.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/stock/stockscene.h",
+			"MU",
+			"EWIEGA46WW/moc_stockscene.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/stock/stocksceneinterface.h",
+			"MU",
+			"EWIEGA46WW/moc_stocksceneinterface.cpp"
 		],
 		[
 			"/Users/kismet/Desktop/qt/stock/stocksocket.h",
@@ -126,6 +141,7 @@
 		[ "/Users/kismet/Desktop/qt/stock/stockgraphicssocket.cpp", "MU" ],
 		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsview.cpp", "MU" ],
 		[ "/Users/kismet/Desktop/qt/stock/stocknode.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/stockscene.cpp", "MU" ],
 		[ "/Users/kismet/Desktop/qt/stock/stocksocket.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],

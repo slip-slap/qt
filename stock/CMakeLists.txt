@@ -17,7 +17,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
-
+file(COPY "resource" DESTINATION ".")
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
@@ -50,7 +50,7 @@ set(PROJECT_SOURCES
         stocksceneinterface.h
 )
 
-
+qt5_add_resources(PROJECT_SOURCES resource.qrc)
 add_executable(stock           ${PROJECT_SOURCES})
 
 target_link_libraries(stock PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

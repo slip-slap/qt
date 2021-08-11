@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "stock_autogen"
   "CMakeFiles/stock.dir/main.cpp.o"
   "CMakeFiles/stock.dir/mainwindow.cpp.o"
+  "CMakeFiles/stock.dir/qrc_resource.cpp.o"
   "CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/stock.dir/stockedge.cpp.o"
   "CMakeFiles/stock.dir/stockgraphicsedge.cpp.o"
@@ -12,7 +13,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/stock.dir/stockgraphicssocket.cpp.o"
   "CMakeFiles/stock.dir/stockgraphicsview.cpp.o"
   "CMakeFiles/stock.dir/stocknode.cpp.o"
+  "CMakeFiles/stock.dir/stockscene.cpp.o"
   "CMakeFiles/stock.dir/stocksocket.cpp.o"
+  "qrc_resource.cpp"
   "stock"
   "stock.pdb"
 )

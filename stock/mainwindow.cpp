@@ -15,6 +15,10 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    /*ui->statusbar->setStyleSheet("background-color: rgb(255,255,255); color : black;");
+    ui->menubar->setStyleSheet("background-color: rgb(255,255,255); color : black;");
+    ui->toolBar->setStyleSheet("background: white; spacing: 0px;");*/
+    ui->menubar->setNativeMenuBar(false);
     StockScene* scene = new StockScene();
     StockSocket* socket11 = new StockSocket();
     StockSocket* socket12 = new StockSocket();
@@ -61,12 +65,22 @@ void MainWindow::foo()
 }
 
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_actionExit_2_triggered()
 {
-    ui->graphicsView->scale(3,3);
+    QApplication::quit();
 }
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_actionOpen_triggered()
 {
-    ui->graphicsView->scale(0.3, 0.3);
+    ui->statusbar->showMessage("you are going open file");
+}
+
+void MainWindow::on_actionZoom_In_triggered()
+{
+     ui->graphicsView->scale(2,2);
+}
+
+void MainWindow::on_actionZoom_Out_triggered()
+{
+     ui->graphicsView->scale(0.5, 0.5);
 }
