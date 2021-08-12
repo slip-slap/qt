@@ -45,5 +45,11 @@ void StockEdge::UpdatePositions()
 
 void StockEdge::RemoveEdge()
 {
+    //Find Stock Socket Related to this edge, and remove reference to this edge
+    //std::vector<StockEdgeInterface*> related_edges = m_start_socket->GetAllRelatedEdge();
+    //related_edges.erase(std::remove(related_edges.begin(),related_edges.end(),this),related_edges.end());
+    //related_edges = m_end_socket->GetAllRelatedEdge();
+    //related_edges.erase(std::remove(related_edges.begin(),related_edges.end(),this),related_edges.end());
+    //Remove edges from the scene
     m_scene->GetGraphicsScenePtr()->removeItem(m_edge);
 }
