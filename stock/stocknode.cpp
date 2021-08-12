@@ -68,13 +68,17 @@ void StockNode::UpdateConnectedEdge()
 {
     std::cout<<"update edges with related socket"<<std::endl;
     if(m_stock_socket_interface1!=nullptr){
-        if(m_stock_socket_interface1->GetStockEdge()!=nullptr){
-           m_stock_socket_interface1->GetStockEdge()->UpdatePositions();
-        }
+       std::vector<StockEdgeInterface*> relatedEdge = m_stock_socket_interface1->GetAllRelatedEdge();
+       for(auto v:relatedEdge)
+       {
+           v->UpdatePositions();
+       }
     }
     if(m_stock_socket_interface2!=nullptr){
-        if(m_stock_socket_interface2->GetStockEdge()!=nullptr){
-           m_stock_socket_interface2->GetStockEdge()->UpdatePositions();
+        std::vector<StockEdgeInterface*> relatedEdge = m_stock_socket_interface2->GetAllRelatedEdge();
+        for(auto v:relatedEdge)
+        {
+            v->UpdatePositions();
         }
     }
 }

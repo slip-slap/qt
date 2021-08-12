@@ -28,9 +28,15 @@ void StockSocket::SetStockNode(StockNodeInterface *stock_node)
     m_stock_node_interface = stock_node;
 }
 
-void StockSocket::SetStockEdge(StockEdgeInterface *stock_edge)
+
+void StockSocket::AddRelatedEdge(StockEdgeInterface *stock_edge_interface)
 {
-    m_stock_edge_interface = stock_edge;
+    m_stock_edge_interface_vec.push_back(stock_edge_interface);
+}
+
+std::vector<StockEdgeInterface *> StockSocket::GetAllRelatedEdge()
+{
+    return m_stock_edge_interface_vec;
 }
 
 StockNodeInterface *StockSocket::GetStockNode()
@@ -38,7 +44,3 @@ StockNodeInterface *StockSocket::GetStockNode()
     return m_stock_node_interface;
 }
 
-StockEdgeInterface *StockSocket::GetStockEdge()
-{
-    return m_stock_edge_interface;
-}

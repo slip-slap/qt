@@ -8,9 +8,8 @@
 #include "stockedge.h"
 #include "stockgraphicssocket.h"
 #include "stocksocket.h"
-StockGraphicsScene::StockGraphicsScene(): QGraphicsScene()
-{
-}
+
+
 
 StockGraphicsScene::StockGraphicsScene(StockScene *stock_scene)
 {

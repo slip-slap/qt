@@ -15,6 +15,7 @@
 #include <QPaintEvent>
 #include "stockgraphicsscene.h"
 #include "stockgraphicscuttingline.h"
+#include "StockSocketInterface.h"
 
 class StockGraphicsView : public QGraphicsView
 {
@@ -44,10 +45,13 @@ protected:
     void contextMenuEvent(QContextMenuEvent* event) override;
 
 private:
-    StockGraphicsScene* m_stock_graphics_scene;
     int m_mode=1;
-    StockEdgeInterface* m_drag_stock_edge_interface;
+    StockGraphicsScene* m_stock_graphics_scene;  
     StockGraphicsCuttingLine* m_stock_graphics_cutting_line;
+
+    StockEdgeInterface* m_drag_stock_edge_interface;
+    StockSocketInterface* m_drag_stock_edge_start;
+    StockSocketInterface* m_drag_stock_edge_end;
 
 };
 

@@ -32,19 +32,24 @@ void StockGraphicsView::SetStockGraphicsCuttingLine(StockGraphicsCuttingLine *st
 
 void StockGraphicsView::mouseMoveEvent(QMouseEvent *event)
 {
-     std::cout<<"mouse is moving"<<std::endl;
+     //std::cout<<"mouse is moving"<<std::endl;
      if(this->m_mode == MODE_CUTTING_LINE)
      {
          QPointF pos = mapToScene(event->pos());
-         std::cout<<"mouse is moving"<<pos.rx()<<std::endl;
          m_stock_graphics_cutting_line->AppendQPoint(pos.toPoint());
          m_stock_graphics_cutting_line->update();
      }
 
-
+     if(this->m_mode == MODE_EDGE_DRAG)
+     {
+         StockEdge* stock_edge = static_cast<StockEdge*>(this->m_drag_stock_edge_interface);
+         if(stock_edge!=nullptr)
+         {
+             stock_edge->SetTarget(mapToScene(event->pos()));
+         }
+     }
      QGraphicsView::mouseMoveEvent(event);
-     //StockEdge* stock_edge = static_cast<StockEdge*>(this->m_drag_stock_edge_interface);
-     //stock_edge->SetTarget(event->pos());
+
 }
 
 void StockGraphicsView::mousePressEvent(QMouseEvent *event)
@@ -67,12 +72,18 @@ void StockGraphicsView::mousePressEvent(QMouseEvent *event)
            if(m_mode == MODE_NO_OPERATION)
            {
                this->m_mode = MODE_EDGE_DRAG;
-               std::cout<<"end dragging edge"<<std::endl;
+               std::cout<<"start dragging edge"<<std::endl;
                if(StockGraphicsSocket* v=dynamic_cast<StockGraphicsSocket*>(item))
                {
-                   std::cout<<"assign end socket"<<std::endl;
+                   std::cout<<"assign start socket"<<std::endl;
+                   StockScene* stock_scene = m_stock_graphics_scene->GetStockScene();
+                   m_drag_stock_edge_start = v->GetStockSocketInterface();
+
+                   QPointF start = m_drag_stock_edge_start->GetSocketPosition();
+                   QPointF end = mapToScene(event->pos());
+                   this->m_drag_stock_edge_interface = new StockEdge(stock_scene,start,end);
+                   return;
                }
-               return;
            }
         }
     }
@@ -88,20 +99,6 @@ void StockGraphicsView::mousePressEvent(QMouseEvent *event)
                                              , event->modifiers() | Qt::ControlModifier);
         QGraphicsView::mousePressEvent(fake_event);
         return;
-    }
-
-    if(event->button() == Qt::LeftButton)
-    {
-        //this->setDragMode(QGraphicsView::ScrollHandDrag);
-        if(StockGraphicsSocket* v=dynamic_cast<StockGraphicsSocket*>(item)){
-            if(this->m_mode == MODE_NO_OPERATION){
-                m_mode = MODE_EDGE_DRAG;
-                std::cout<<"start draging edge, and assign start socket"<<std::endl;
-                //StockSocketInterface* stock_socket_inference = v->GetStockSocketInterface();
-                //this->m_drag_stock_edge_interface = new StockEdge(m_stock_graphics_scene->GetStockScene(),v->GetStockSocketInterface(),event->pos());
-                return;
-            }
-        }
     }*/
 
     QGraphicsView::mousePressEvent(event);
@@ -124,6 +121,11 @@ void StockGraphicsView::mouseReleaseEvent(QMouseEvent *event)
             std::cout<<"end dragging edge"<<std::endl;
             if(StockGraphicsSocket* v=dynamic_cast<StockGraphicsSocket*>(item))
             {
+                //StockEdge* stock_edge = static_cast<StockEdge*>(m_drag_stock_edge_interface);
+                StockScene* stock_scene = m_stock_graphics_scene->GetStockScene();
+                m_drag_stock_edge_end =  v->GetStockSocketInterface();
+                new StockEdge(stock_scene, m_drag_stock_edge_start,m_drag_stock_edge_end);
+                stock_scene->RemoveEdge(m_drag_stock_edge_interface);
                 std::cout<<"assign end socket"<<std::endl;
             }
             return;

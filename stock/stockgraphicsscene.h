@@ -25,7 +25,6 @@
 class StockGraphicsScene: public QGraphicsScene
 {
 public:
-    StockGraphicsScene();
     StockGraphicsScene(StockScene* stock_scene);
 
 public:
