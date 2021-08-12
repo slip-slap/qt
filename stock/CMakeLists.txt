@@ -48,6 +48,9 @@ set(PROJECT_SOURCES
         stockscene.cpp
         stockscene.h
         stocksceneinterface.h
+
+        stockgraphicscuttingline.cpp
+        stockgraphicscuttingline.h
 )
 
 qt5_add_resources(PROJECT_SOURCES resource.qrc)

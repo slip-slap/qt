@@ -3,18 +3,24 @@
 #include <iostream>
 StockGraphicsSocket::StockGraphicsSocket()
 {
-    this->setFlag(QGraphicsItem::ItemIsMovable);
+    this->InitUI();
 }
 
 StockGraphicsSocket::StockGraphicsSocket(StockSocketInterface *stock_socket)
 {
-    this->setFlag(QGraphicsItem::ItemIsMovable);
+    this->InitUI();
     this->m_stock_socket_interface = stock_socket;
 }
 
 StockSocketInterface *StockGraphicsSocket::GetStockSocketInterface()
 {
     return m_stock_socket_interface;
+}
+
+void StockGraphicsSocket::InitUI()
+{
+    this->setFlag(QGraphicsItem::ItemIsMovable);
+    this->setFlag(QGraphicsItem::ItemIsSelectable);
 }
 
 
@@ -27,6 +33,10 @@ void StockGraphicsSocket::paint(QPainter *painter, const QStyleOptionGraphicsIte
 {
     painter->setPen(QColor(Qt::red));
     painter->setBrush(QColor(Qt::red));
+    if(this->isSelected()){
+        painter->setPen(QColor(Qt::yellow));
+        painter->drawEllipse(0,0,21,21);
+    }
     painter->drawEllipse(0,0,20,20);
 }
 

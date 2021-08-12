@@ -4,7 +4,9 @@
 CMakeFiles/stock.dir/main.cpp.o
  /Users/kismet/Desktop/qt/stock/main.cpp
  /Users/kismet/Desktop/qt/stock/mainwindow.h
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/QFile
  /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/QTimer
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qfile.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qtimer.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QApplication
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsScene

@@ -18,6 +18,16 @@ void StockScene::AddEdge(StockEdgeInterface *stock_edge)
     m_stock_edge_interface_vec.push_back(stock_edge);
 }
 
+std::vector<StockNodeInterface *> StockScene::GetStockNodesVector()
+{
+    return m_stock_node_interface_vec;
+}
+
+std::vector<StockEdgeInterface *> StockScene::GetStockEdgesVector()
+{
+    return m_stock_edge_interface_vec;
+}
+
 QGraphicsScene* StockScene::GetGraphicsScenePtr()
 {
     return m_stock_graphics_scene;

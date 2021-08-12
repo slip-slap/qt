@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[7];
-    char stringdata0[112];
+    char stringdata0[121];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,16 +35,16 @@ static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 3), // "foo"
 QT_MOC_LITERAL(2, 15, 0), // ""
-QT_MOC_LITERAL(3, 16, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(4, 38, 23), // "on_pushButton_2_clicked"
-QT_MOC_LITERAL(5, 62, 25), // "on_actionExit_2_triggered"
-QT_MOC_LITERAL(6, 88, 23) // "on_actionOpen_triggered"
+QT_MOC_LITERAL(3, 16, 25), // "on_actionExit_2_triggered"
+QT_MOC_LITERAL(4, 42, 23), // "on_actionOpen_triggered"
+QT_MOC_LITERAL(5, 66, 26), // "on_actionZoom_In_triggered"
+QT_MOC_LITERAL(6, 93, 27) // "on_actionZoom_Out_triggered"
 
     },
-    "MainWindow\0foo\0\0on_pushButton_clicked\0"
-    "on_pushButton_2_clicked\0"
-    "on_actionExit_2_triggered\0"
-    "on_actionOpen_triggered"
+    "MainWindow\0foo\0\0on_actionExit_2_triggered\0"
+    "on_actionOpen_triggered\0"
+    "on_actionZoom_In_triggered\0"
+    "on_actionZoom_Out_triggered"
 };
 #undef QT_MOC_LITERAL
 
@@ -85,10 +85,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->foo(); break;
-        case 1: _t->on_pushButton_clicked(); break;
-        case 2: _t->on_pushButton_2_clicked(); break;
-        case 3: _t->on_actionExit_2_triggered(); break;
-        case 4: _t->on_actionOpen_triggered(); break;
+        case 1: _t->on_actionExit_2_triggered(); break;
+        case 2: _t->on_actionOpen_triggered(); break;
+        case 3: _t->on_actionZoom_In_triggered(); break;
+        case 4: _t->on_actionZoom_Out_triggered(); break;
         default: ;
         }
     }

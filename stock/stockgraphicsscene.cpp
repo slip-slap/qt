@@ -22,6 +22,7 @@ StockScene *StockGraphicsScene::GetStockScene()
     return m_stock_scene;
 }
 
+/*
 void StockGraphicsScene::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
 {
     QMenu menu;
@@ -36,7 +37,7 @@ void StockGraphicsScene::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
     //ellipse->setFlag(QGraphicsItem::ItemIsMovable,true);
     //ellipse->setFlag(QGraphicsItem::ItemIsSelectable);
 
-}
+}*/
 
 void StockGraphicsScene::mouseMoveEvent(QGraphicsSceneMouseEvent*event)
 {

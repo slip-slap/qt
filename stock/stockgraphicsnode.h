@@ -14,6 +14,8 @@ public:
     StockGraphicsNode();
     StockGraphicsNode(std::string title);
     StockGraphicsNode(StockNodeInterface* stock_node_interface,std::string title);
+private:
+    void InitUI();
 
 public:
     QRectF boundingRect() const override;

@@ -79,6 +79,8 @@ include CMakeFiles/stock.dir/flags.make
 
 qrc_resource.cpp: ../resource/img/new.svg
 qrc_resource.cpp: ../resource/img/folder.svg
+qrc_resource.cpp: ../resource/img/zoomin.png
+qrc_resource.cpp: ../resource/img/zoomout.png
 qrc_resource.cpp: resource.qrc.depends
 qrc_resource.cpp: ../resource.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating qrc_resource.cpp"

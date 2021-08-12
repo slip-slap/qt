@@ -12,11 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
@@ -36,15 +34,14 @@ public:
     QAction *actionDelete;
     QAction *actionExit_2;
     QAction *actionNew;
+    QAction *actionZoom_In;
+    QAction *actionZoom_Out;
     QWidget *centralwidget;
     StockGraphicsView *graphicsView;
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuEdit;
+    QMenu *menuTool;
     QStatusBar *statusbar;
     QToolBar *toolBar;
 
@@ -52,9 +49,8 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
-        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"background-color: rgb(195, 197, 197);"));
+        MainWindow->resize(816, 645);
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(40, 40, 40);"));
         actionUndo = new QAction(MainWindow);
         actionUndo->setObjectName(QString::fromUtf8("actionUndo"));
         actionCopy = new QAction(MainWindow);
@@ -79,35 +75,31 @@ public:
         QIcon icon1;
         icon1.addFile(QString::fromUtf8(":/rec/resource/img/new.svg"), QSize(), QIcon::Normal, QIcon::On);
         actionNew->setIcon(icon1);
+        actionZoom_In = new QAction(MainWindow);
+        actionZoom_In->setObjectName(QString::fromUtf8("actionZoom_In"));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/rec/resource/img/zoomin.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionZoom_In->setIcon(icon2);
+        actionZoom_Out = new QAction(MainWindow);
+        actionZoom_Out->setObjectName(QString::fromUtf8("actionZoom_Out"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/rec/resource/img/zoomout.png"), QSize(), QIcon::Normal, QIcon::On);
+        actionZoom_Out->setIcon(icon3);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         graphicsView = new StockGraphicsView(centralwidget);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
         graphicsView->setGeometry(QRect(10, 20, 781, 481));
-        layoutWidget = new QWidget(centralwidget);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(110, 500, 391, 51));
-        horizontalLayout = new QHBoxLayout(layoutWidget);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton = new QPushButton(layoutWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-
-        horizontalLayout->addWidget(pushButton);
-
-        pushButton_2 = new QPushButton(layoutWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-
-        horizontalLayout->addWidget(pushButton_2);
-
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 22));
+        menubar->setGeometry(QRect(0, 0, 816, 22));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         menuEdit = new QMenu(menubar);
         menuEdit->setObjectName(QString::fromUtf8("menuEdit"));
+        menuTool = new QMenu(menubar);
+        menuTool->setObjectName(QString::fromUtf8("menuTool"));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -118,6 +110,7 @@ public:
 
         menubar->addAction(menuFile->menuAction());
         menubar->addAction(menuEdit->menuAction());
+        menubar->addAction(menuTool->menuAction());
         menuFile->addAction(actionNew);
         menuFile->addAction(actionOpen);
         menuFile->addAction(actionSave);
@@ -128,8 +121,12 @@ public:
         menuEdit->addAction(actionCopy);
         menuEdit->addSeparator();
         menuEdit->addAction(actionDelete);
+        menuTool->addAction(actionZoom_In);
+        menuTool->addAction(actionZoom_Out);
         toolBar->addAction(actionOpen);
         toolBar->addAction(actionNew);
+        toolBar->addAction(actionZoom_In);
+        toolBar->addAction(actionZoom_Out);
 
         retranslateUi(MainWindow);
 
@@ -148,10 +145,11 @@ public:
         actionDelete->setText(QCoreApplication::translate("MainWindow", "Delete", nullptr));
         actionExit_2->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
         actionNew->setText(QCoreApplication::translate("MainWindow", "New", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Zoom Out", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Zoom In", nullptr));
+        actionZoom_In->setText(QCoreApplication::translate("MainWindow", "Zoom In", nullptr));
+        actionZoom_Out->setText(QCoreApplication::translate("MainWindow", "Zoom Out", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
+        menuTool->setTitle(QCoreApplication::translate("MainWindow", "Tool", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi
 

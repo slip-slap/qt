@@ -3,8 +3,7 @@
 
 StockGraphicsEdge::StockGraphicsEdge():QGraphicsPathItem()
 {
-    this->setFlag(QGraphicsItem::ItemIsMovable);
-    this->setFlag(QGraphicsItem::ItemIsSelectable);
+    this->setFlag(QGraphicsItem::ItemIsSelectable,true);
 }
 
 QRectF StockGraphicsEdge::boundingRect() const

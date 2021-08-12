@@ -3,7 +3,9 @@
 
 CMakeFiles/stock.dir/main.cpp.o: ../main.cpp
 CMakeFiles/stock.dir/main.cpp.o: ../mainwindow.h
+CMakeFiles/stock.dir/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/QFile
 CMakeFiles/stock.dir/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/QTimer
+CMakeFiles/stock.dir/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qfile.h
 CMakeFiles/stock.dir/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qtimer.h
 CMakeFiles/stock.dir/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QApplication
 CMakeFiles/stock.dir/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsScene

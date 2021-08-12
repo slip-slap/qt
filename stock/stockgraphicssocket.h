@@ -15,6 +15,9 @@ public:
     StockGraphicsSocket(StockSocketInterface* stock_socket);
     StockSocketInterface* GetStockSocketInterface();
 
+private:
+    void InitUI();
+
 public:
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,

@@ -12,8 +12,6 @@ StockNode::StockNode(QGraphicsScene *scene, StockSocketInterface* stock_socket_i
 
 }
 
-
-
 StockNode::StockNode(StockScene *stock_scene, std::string title,
                      StockSocketInterface* socket1)
 {
@@ -28,6 +26,7 @@ StockNode::StockNode(StockScene *stock_scene, std::string title,
 
 StockNode::StockNode(StockScene *stock_scene, std::string title, StockSocketInterface *socket1, StockSocketInterface *socket2)
 {
+    m_stock_scene = stock_scene;
     m_stock_graphics_node = new StockGraphicsNode(this,title);
     m_stock_socket_interface1= socket1;
     m_stock_socket_interface2= socket2;
@@ -42,6 +41,11 @@ StockNode::StockNode(StockScene *stock_scene, std::string title, StockSocketInte
 StockGraphicsNode *StockNode::GetStockGraphicsNode()
 {
     return m_stock_graphics_node;
+}
+
+StockScene *StockNode::GetStockScene()
+{
+    return m_stock_scene;
 }
 
 

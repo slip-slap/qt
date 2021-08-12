@@ -20,6 +20,7 @@ public:
               StockSocketInterface* socket1,
               StockSocketInterface* socket2);
     StockGraphicsNode *GetStockGraphicsNode();
+    StockScene* GetStockScene();
     QPointF GetStockSocketPosition();
 
     StockSocketInterface *GetStockSocketInterface();
@@ -31,6 +32,7 @@ private:
     StockGraphicsNode* m_stock_graphics_node;
     StockSocketInterface* m_stock_socket_interface1=nullptr;
     StockSocketInterface* m_stock_socket_interface2=nullptr;
+    StockScene* m_stock_scene;
 };
 
 #endif // STOCKNODE_H

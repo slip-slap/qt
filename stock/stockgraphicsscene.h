@@ -32,7 +32,7 @@ public:
     StockScene* GetStockScene();
 
 protected:
-    void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override;
+    //void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override;
 
     void mouseMoveEvent(QGraphicsSceneMouseEvent* event) override;
 
