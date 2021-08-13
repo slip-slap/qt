@@ -30,8 +30,9 @@ QWidget
 
 
 StockGraphicsView, QUndoView {
+    /* use padding to control inner border */
     background-color: @output-bg-color;
-    border-width: 20px;
+    border-width: 1px;
     border-radius: 201px;
     border-style: inset;
     border-color: @view-border-dark;

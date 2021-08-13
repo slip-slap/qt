@@ -10,74 +10,89 @@
 	"HEADERS" : 
 	[
 		[
-			"/Users/kismet/Desktop/qt/stock/mainwindow.h",
+			"/Users/kismet/Desktop/qt/stock/src/GMSerializable.h",
 			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp"
+			"UVLADIE3JM/moc_GMSerializable.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockedge.h",
+			"/Users/kismet/Desktop/qt/stock/src/gmedge.h",
 			"MU",
-			"EWIEGA46WW/moc_stockedge.cpp"
+			"UVLADIE3JM/moc_gmedge.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockedgeinterface.h",
+			"/Users/kismet/Desktop/qt/stock/src/gmgraphicsview.h",
 			"MU",
-			"EWIEGA46WW/moc_stockedgeinterface.cpp"
+			"UVLADIE3JM/moc_gmgraphicsview.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockgraphicsedge.h",
+			"/Users/kismet/Desktop/qt/stock/src/gmnode.h",
 			"MU",
-			"EWIEGA46WW/moc_stockgraphicsedge.cpp"
+			"UVLADIE3JM/moc_gmnode.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockgraphicsnode.h",
+			"/Users/kismet/Desktop/qt/stock/src/gmobject.h",
 			"MU",
-			"EWIEGA46WW/moc_stockgraphicsnode.cpp"
+			"UVLADIE3JM/moc_gmobject.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockgraphicsscene.h",
+			"/Users/kismet/Desktop/qt/stock/src/gmscene.h",
 			"MU",
-			"EWIEGA46WW/moc_stockgraphicsscene.cpp"
+			"UVLADIE3JM/moc_gmscene.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockgraphicssocket.h",
+			"/Users/kismet/Desktop/qt/stock/src/gmsocket.h",
 			"MU",
-			"EWIEGA46WW/moc_stockgraphicssocket.cpp"
+			"UVLADIE3JM/moc_gmsocket.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockgraphicsview.h",
+			"/Users/kismet/Desktop/qt/stock/src/mainwindow.h",
 			"MU",
-			"EWIEGA46WW/moc_stockgraphicsview.cpp"
+			"UVLADIE3JM/moc_mainwindow.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stocknode.h",
+			"/Users/kismet/Desktop/qt/stock/src/stockedgeinterface.h",
 			"MU",
-			"EWIEGA46WW/moc_stocknode.cpp"
+			"UVLADIE3JM/moc_stockedgeinterface.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stocknodeinterface.h",
+			"/Users/kismet/Desktop/qt/stock/src/stockgraphicscuttingline.h",
 			"MU",
-			"EWIEGA46WW/moc_stocknodeinterface.cpp"
+			"UVLADIE3JM/moc_stockgraphicscuttingline.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stockscene.h",
+			"/Users/kismet/Desktop/qt/stock/src/stockgraphicsedge.h",
 			"MU",
-			"EWIEGA46WW/moc_stockscene.cpp"
+			"UVLADIE3JM/moc_stockgraphicsedge.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stocksceneinterface.h",
+			"/Users/kismet/Desktop/qt/stock/src/stockgraphicsnode.h",
 			"MU",
-			"EWIEGA46WW/moc_stocksceneinterface.cpp"
+			"UVLADIE3JM/moc_stockgraphicsnode.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stocksocket.h",
+			"/Users/kismet/Desktop/qt/stock/src/stockgraphicsscene.h",
 			"MU",
-			"EWIEGA46WW/moc_stocksocket.cpp"
+			"UVLADIE3JM/moc_stockgraphicsscene.cpp"
 		],
 		[
-			"/Users/kismet/Desktop/qt/stock/stocksocketinterface.h",
+			"/Users/kismet/Desktop/qt/stock/src/stockgraphicssocket.h",
 			"MU",
-			"EWIEGA46WW/moc_stocksocketinterface.cpp"
+			"UVLADIE3JM/moc_stockgraphicssocket.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/stock/src/stocknodeinterface.h",
+			"MU",
+			"UVLADIE3JM/moc_stocknodeinterface.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/stock/src/stocksceneinterface.h",
+			"MU",
+			"UVLADIE3JM/moc_stocksceneinterface.cpp"
+		],
+		[
+			"/Users/kismet/Desktop/qt/stock/src/stocksocketinterface.h",
+			"MU",
+			"UVLADIE3JM/moc_stocksocketinterface.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -95,6 +110,8 @@
 	[
 		"/Users/kismet/Desktop/qt/stock/build",
 		"/Users/kismet/Desktop/qt/stock",
+		"/Users/kismet/Desktop/qt/stock/src",
+		"/Users/kismet/Desktop/qt/stock/include",
 		"/usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework",
 		"/usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers",
 		"/usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework",
@@ -132,17 +149,21 @@
 	"SETTINGS_FILE" : "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/kismet/Desktop/qt/stock/main.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/mainwindow.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stockedge.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsedge.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsnode.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsscene.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stockgraphicssocket.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stockgraphicsview.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stocknode.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stockscene.cpp", "MU" ],
-		[ "/Users/kismet/Desktop/qt/stock/stocksocket.cpp", "MU" ]
+		[ "/Users/kismet/Desktop/qt/stock/src/gmedge.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/gmgraphicsview.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/gmnode.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/gmscene.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/gmsocket.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/main.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/mainwindow.cpp", "MU" ],
+		[
+			"/Users/kismet/Desktop/qt/stock/src/stockgraphicscuttingline.cpp",
+			"MU"
+		],
+		[ "/Users/kismet/Desktop/qt/stock/src/stockgraphicsedge.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/stockgraphicsnode.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/stockgraphicsscene.cpp", "MU" ],
+		[ "/Users/kismet/Desktop/qt/stock/src/stockgraphicssocket.cpp", "MU" ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -12,13 +12,14 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
-#include "stockgraphicsview.h"
+#include "gmgraphicsview.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -37,7 +38,8 @@ public:
     QAction *actionZoom_In;
     QAction *actionZoom_Out;
     QWidget *centralwidget;
-    StockGraphicsView *graphicsView;
+    QGridLayout *gridLayout_2;
+    GMGraphicsView *graphicsView;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuEdit;
@@ -50,6 +52,12 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(816, 645);
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setMinimumSize(QSize(600, 400));
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(40, 40, 40);"));
         actionUndo = new QAction(MainWindow);
         actionUndo->setObjectName(QString::fromUtf8("actionUndo"));
@@ -87,9 +95,14 @@ public:
         actionZoom_Out->setIcon(icon3);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        graphicsView = new StockGraphicsView(centralwidget);
+        gridLayout_2 = new QGridLayout(centralwidget);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        graphicsView = new GMGraphicsView(centralwidget);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
-        graphicsView->setGeometry(QRect(10, 20, 781, 481));
+        graphicsView->setMinimumSize(QSize(200, 0));
+
+        gridLayout_2->addWidget(graphicsView, 0, 0, 1, 1);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));

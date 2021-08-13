@@ -156,60 +156,6 @@ stock_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock_autogen.dir/build.make CMakeFiles/stock_autogen.dir/build
 .PHONY : stock_autogen/fast
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-mainwindow.o: mainwindow.cpp.o
-
-.PHONY : mainwindow.o
-
-# target to build an object file
-mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/mainwindow.cpp.o
-.PHONY : mainwindow.cpp.o
-
-mainwindow.i: mainwindow.cpp.i
-
-.PHONY : mainwindow.i
-
-# target to preprocess a source file
-mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/mainwindow.cpp.i
-.PHONY : mainwindow.cpp.i
-
-mainwindow.s: mainwindow.cpp.s
-
-.PHONY : mainwindow.s
-
-# target to generate assembly for a file
-mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/mainwindow.cpp.s
-.PHONY : mainwindow.cpp.s
-
 qrc_resource.o: qrc_resource.cpp.o
 
 .PHONY : qrc_resource.o
@@ -236,6 +182,330 @@ qrc_resource.s: qrc_resource.cpp.s
 qrc_resource.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/qrc_resource.cpp.s
 .PHONY : qrc_resource.cpp.s
+
+src/gmedge.o: src/gmedge.cpp.o
+
+.PHONY : src/gmedge.o
+
+# target to build an object file
+src/gmedge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmedge.cpp.o
+.PHONY : src/gmedge.cpp.o
+
+src/gmedge.i: src/gmedge.cpp.i
+
+.PHONY : src/gmedge.i
+
+# target to preprocess a source file
+src/gmedge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmedge.cpp.i
+.PHONY : src/gmedge.cpp.i
+
+src/gmedge.s: src/gmedge.cpp.s
+
+.PHONY : src/gmedge.s
+
+# target to generate assembly for a file
+src/gmedge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmedge.cpp.s
+.PHONY : src/gmedge.cpp.s
+
+src/gmgraphicsview.o: src/gmgraphicsview.cpp.o
+
+.PHONY : src/gmgraphicsview.o
+
+# target to build an object file
+src/gmgraphicsview.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmgraphicsview.cpp.o
+.PHONY : src/gmgraphicsview.cpp.o
+
+src/gmgraphicsview.i: src/gmgraphicsview.cpp.i
+
+.PHONY : src/gmgraphicsview.i
+
+# target to preprocess a source file
+src/gmgraphicsview.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmgraphicsview.cpp.i
+.PHONY : src/gmgraphicsview.cpp.i
+
+src/gmgraphicsview.s: src/gmgraphicsview.cpp.s
+
+.PHONY : src/gmgraphicsview.s
+
+# target to generate assembly for a file
+src/gmgraphicsview.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmgraphicsview.cpp.s
+.PHONY : src/gmgraphicsview.cpp.s
+
+src/gmnode.o: src/gmnode.cpp.o
+
+.PHONY : src/gmnode.o
+
+# target to build an object file
+src/gmnode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmnode.cpp.o
+.PHONY : src/gmnode.cpp.o
+
+src/gmnode.i: src/gmnode.cpp.i
+
+.PHONY : src/gmnode.i
+
+# target to preprocess a source file
+src/gmnode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmnode.cpp.i
+.PHONY : src/gmnode.cpp.i
+
+src/gmnode.s: src/gmnode.cpp.s
+
+.PHONY : src/gmnode.s
+
+# target to generate assembly for a file
+src/gmnode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmnode.cpp.s
+.PHONY : src/gmnode.cpp.s
+
+src/gmscene.o: src/gmscene.cpp.o
+
+.PHONY : src/gmscene.o
+
+# target to build an object file
+src/gmscene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmscene.cpp.o
+.PHONY : src/gmscene.cpp.o
+
+src/gmscene.i: src/gmscene.cpp.i
+
+.PHONY : src/gmscene.i
+
+# target to preprocess a source file
+src/gmscene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmscene.cpp.i
+.PHONY : src/gmscene.cpp.i
+
+src/gmscene.s: src/gmscene.cpp.s
+
+.PHONY : src/gmscene.s
+
+# target to generate assembly for a file
+src/gmscene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmscene.cpp.s
+.PHONY : src/gmscene.cpp.s
+
+src/gmsocket.o: src/gmsocket.cpp.o
+
+.PHONY : src/gmsocket.o
+
+# target to build an object file
+src/gmsocket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmsocket.cpp.o
+.PHONY : src/gmsocket.cpp.o
+
+src/gmsocket.i: src/gmsocket.cpp.i
+
+.PHONY : src/gmsocket.i
+
+# target to preprocess a source file
+src/gmsocket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmsocket.cpp.i
+.PHONY : src/gmsocket.cpp.i
+
+src/gmsocket.s: src/gmsocket.cpp.s
+
+.PHONY : src/gmsocket.s
+
+# target to generate assembly for a file
+src/gmsocket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/gmsocket.cpp.s
+.PHONY : src/gmsocket.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/mainwindow.o: src/mainwindow.cpp.o
+
+.PHONY : src/mainwindow.o
+
+# target to build an object file
+src/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/mainwindow.cpp.o
+.PHONY : src/mainwindow.cpp.o
+
+src/mainwindow.i: src/mainwindow.cpp.i
+
+.PHONY : src/mainwindow.i
+
+# target to preprocess a source file
+src/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/mainwindow.cpp.i
+.PHONY : src/mainwindow.cpp.i
+
+src/mainwindow.s: src/mainwindow.cpp.s
+
+.PHONY : src/mainwindow.s
+
+# target to generate assembly for a file
+src/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/mainwindow.cpp.s
+.PHONY : src/mainwindow.cpp.s
+
+src/stockgraphicscuttingline.o: src/stockgraphicscuttingline.cpp.o
+
+.PHONY : src/stockgraphicscuttingline.o
+
+# target to build an object file
+src/stockgraphicscuttingline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.o
+.PHONY : src/stockgraphicscuttingline.cpp.o
+
+src/stockgraphicscuttingline.i: src/stockgraphicscuttingline.cpp.i
+
+.PHONY : src/stockgraphicscuttingline.i
+
+# target to preprocess a source file
+src/stockgraphicscuttingline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.i
+.PHONY : src/stockgraphicscuttingline.cpp.i
+
+src/stockgraphicscuttingline.s: src/stockgraphicscuttingline.cpp.s
+
+.PHONY : src/stockgraphicscuttingline.s
+
+# target to generate assembly for a file
+src/stockgraphicscuttingline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.s
+.PHONY : src/stockgraphicscuttingline.cpp.s
+
+src/stockgraphicsedge.o: src/stockgraphicsedge.cpp.o
+
+.PHONY : src/stockgraphicsedge.o
+
+# target to build an object file
+src/stockgraphicsedge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.o
+.PHONY : src/stockgraphicsedge.cpp.o
+
+src/stockgraphicsedge.i: src/stockgraphicsedge.cpp.i
+
+.PHONY : src/stockgraphicsedge.i
+
+# target to preprocess a source file
+src/stockgraphicsedge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.i
+.PHONY : src/stockgraphicsedge.cpp.i
+
+src/stockgraphicsedge.s: src/stockgraphicsedge.cpp.s
+
+.PHONY : src/stockgraphicsedge.s
+
+# target to generate assembly for a file
+src/stockgraphicsedge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.s
+.PHONY : src/stockgraphicsedge.cpp.s
+
+src/stockgraphicsnode.o: src/stockgraphicsnode.cpp.o
+
+.PHONY : src/stockgraphicsnode.o
+
+# target to build an object file
+src/stockgraphicsnode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.o
+.PHONY : src/stockgraphicsnode.cpp.o
+
+src/stockgraphicsnode.i: src/stockgraphicsnode.cpp.i
+
+.PHONY : src/stockgraphicsnode.i
+
+# target to preprocess a source file
+src/stockgraphicsnode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.i
+.PHONY : src/stockgraphicsnode.cpp.i
+
+src/stockgraphicsnode.s: src/stockgraphicsnode.cpp.s
+
+.PHONY : src/stockgraphicsnode.s
+
+# target to generate assembly for a file
+src/stockgraphicsnode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.s
+.PHONY : src/stockgraphicsnode.cpp.s
+
+src/stockgraphicsscene.o: src/stockgraphicsscene.cpp.o
+
+.PHONY : src/stockgraphicsscene.o
+
+# target to build an object file
+src/stockgraphicsscene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.o
+.PHONY : src/stockgraphicsscene.cpp.o
+
+src/stockgraphicsscene.i: src/stockgraphicsscene.cpp.i
+
+.PHONY : src/stockgraphicsscene.i
+
+# target to preprocess a source file
+src/stockgraphicsscene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.i
+.PHONY : src/stockgraphicsscene.cpp.i
+
+src/stockgraphicsscene.s: src/stockgraphicsscene.cpp.s
+
+.PHONY : src/stockgraphicsscene.s
+
+# target to generate assembly for a file
+src/stockgraphicsscene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.s
+.PHONY : src/stockgraphicsscene.cpp.s
+
+src/stockgraphicssocket.o: src/stockgraphicssocket.cpp.o
+
+.PHONY : src/stockgraphicssocket.o
+
+# target to build an object file
+src/stockgraphicssocket.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.o
+.PHONY : src/stockgraphicssocket.cpp.o
+
+src/stockgraphicssocket.i: src/stockgraphicssocket.cpp.i
+
+.PHONY : src/stockgraphicssocket.i
+
+# target to preprocess a source file
+src/stockgraphicssocket.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.i
+.PHONY : src/stockgraphicssocket.cpp.i
+
+src/stockgraphicssocket.s: src/stockgraphicssocket.cpp.s
+
+.PHONY : src/stockgraphicssocket.s
+
+# target to generate assembly for a file
+src/stockgraphicssocket.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.s
+.PHONY : src/stockgraphicssocket.cpp.s
 
 stock_autogen/mocs_compilation.o: stock_autogen/mocs_compilation.cpp.o
 
@@ -264,249 +534,6 @@ stock_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.s
 .PHONY : stock_autogen/mocs_compilation.cpp.s
 
-stockedge.o: stockedge.cpp.o
-
-.PHONY : stockedge.o
-
-# target to build an object file
-stockedge.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockedge.cpp.o
-.PHONY : stockedge.cpp.o
-
-stockedge.i: stockedge.cpp.i
-
-.PHONY : stockedge.i
-
-# target to preprocess a source file
-stockedge.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockedge.cpp.i
-.PHONY : stockedge.cpp.i
-
-stockedge.s: stockedge.cpp.s
-
-.PHONY : stockedge.s
-
-# target to generate assembly for a file
-stockedge.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockedge.cpp.s
-.PHONY : stockedge.cpp.s
-
-stockgraphicsedge.o: stockgraphicsedge.cpp.o
-
-.PHONY : stockgraphicsedge.o
-
-# target to build an object file
-stockgraphicsedge.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsedge.cpp.o
-.PHONY : stockgraphicsedge.cpp.o
-
-stockgraphicsedge.i: stockgraphicsedge.cpp.i
-
-.PHONY : stockgraphicsedge.i
-
-# target to preprocess a source file
-stockgraphicsedge.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsedge.cpp.i
-.PHONY : stockgraphicsedge.cpp.i
-
-stockgraphicsedge.s: stockgraphicsedge.cpp.s
-
-.PHONY : stockgraphicsedge.s
-
-# target to generate assembly for a file
-stockgraphicsedge.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsedge.cpp.s
-.PHONY : stockgraphicsedge.cpp.s
-
-stockgraphicsnode.o: stockgraphicsnode.cpp.o
-
-.PHONY : stockgraphicsnode.o
-
-# target to build an object file
-stockgraphicsnode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsnode.cpp.o
-.PHONY : stockgraphicsnode.cpp.o
-
-stockgraphicsnode.i: stockgraphicsnode.cpp.i
-
-.PHONY : stockgraphicsnode.i
-
-# target to preprocess a source file
-stockgraphicsnode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsnode.cpp.i
-.PHONY : stockgraphicsnode.cpp.i
-
-stockgraphicsnode.s: stockgraphicsnode.cpp.s
-
-.PHONY : stockgraphicsnode.s
-
-# target to generate assembly for a file
-stockgraphicsnode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsnode.cpp.s
-.PHONY : stockgraphicsnode.cpp.s
-
-stockgraphicsscene.o: stockgraphicsscene.cpp.o
-
-.PHONY : stockgraphicsscene.o
-
-# target to build an object file
-stockgraphicsscene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsscene.cpp.o
-.PHONY : stockgraphicsscene.cpp.o
-
-stockgraphicsscene.i: stockgraphicsscene.cpp.i
-
-.PHONY : stockgraphicsscene.i
-
-# target to preprocess a source file
-stockgraphicsscene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsscene.cpp.i
-.PHONY : stockgraphicsscene.cpp.i
-
-stockgraphicsscene.s: stockgraphicsscene.cpp.s
-
-.PHONY : stockgraphicsscene.s
-
-# target to generate assembly for a file
-stockgraphicsscene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsscene.cpp.s
-.PHONY : stockgraphicsscene.cpp.s
-
-stockgraphicssocket.o: stockgraphicssocket.cpp.o
-
-.PHONY : stockgraphicssocket.o
-
-# target to build an object file
-stockgraphicssocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicssocket.cpp.o
-.PHONY : stockgraphicssocket.cpp.o
-
-stockgraphicssocket.i: stockgraphicssocket.cpp.i
-
-.PHONY : stockgraphicssocket.i
-
-# target to preprocess a source file
-stockgraphicssocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicssocket.cpp.i
-.PHONY : stockgraphicssocket.cpp.i
-
-stockgraphicssocket.s: stockgraphicssocket.cpp.s
-
-.PHONY : stockgraphicssocket.s
-
-# target to generate assembly for a file
-stockgraphicssocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicssocket.cpp.s
-.PHONY : stockgraphicssocket.cpp.s
-
-stockgraphicsview.o: stockgraphicsview.cpp.o
-
-.PHONY : stockgraphicsview.o
-
-# target to build an object file
-stockgraphicsview.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsview.cpp.o
-.PHONY : stockgraphicsview.cpp.o
-
-stockgraphicsview.i: stockgraphicsview.cpp.i
-
-.PHONY : stockgraphicsview.i
-
-# target to preprocess a source file
-stockgraphicsview.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsview.cpp.i
-.PHONY : stockgraphicsview.cpp.i
-
-stockgraphicsview.s: stockgraphicsview.cpp.s
-
-.PHONY : stockgraphicsview.s
-
-# target to generate assembly for a file
-stockgraphicsview.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockgraphicsview.cpp.s
-.PHONY : stockgraphicsview.cpp.s
-
-stocknode.o: stocknode.cpp.o
-
-.PHONY : stocknode.o
-
-# target to build an object file
-stocknode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stocknode.cpp.o
-.PHONY : stocknode.cpp.o
-
-stocknode.i: stocknode.cpp.i
-
-.PHONY : stocknode.i
-
-# target to preprocess a source file
-stocknode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stocknode.cpp.i
-.PHONY : stocknode.cpp.i
-
-stocknode.s: stocknode.cpp.s
-
-.PHONY : stocknode.s
-
-# target to generate assembly for a file
-stocknode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stocknode.cpp.s
-.PHONY : stocknode.cpp.s
-
-stockscene.o: stockscene.cpp.o
-
-.PHONY : stockscene.o
-
-# target to build an object file
-stockscene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockscene.cpp.o
-.PHONY : stockscene.cpp.o
-
-stockscene.i: stockscene.cpp.i
-
-.PHONY : stockscene.i
-
-# target to preprocess a source file
-stockscene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockscene.cpp.i
-.PHONY : stockscene.cpp.i
-
-stockscene.s: stockscene.cpp.s
-
-.PHONY : stockscene.s
-
-# target to generate assembly for a file
-stockscene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stockscene.cpp.s
-.PHONY : stockscene.cpp.s
-
-stocksocket.o: stocksocket.cpp.o
-
-.PHONY : stocksocket.o
-
-# target to build an object file
-stocksocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stocksocket.cpp.o
-.PHONY : stocksocket.cpp.o
-
-stocksocket.i: stocksocket.cpp.i
-
-.PHONY : stocksocket.i
-
-# target to preprocess a source file
-stocksocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stocksocket.cpp.i
-.PHONY : stocksocket.cpp.i
-
-stocksocket.s: stocksocket.cpp.s
-
-.PHONY : stocksocket.s
-
-# target to generate assembly for a file
-stocksocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stock.dir/build.make CMakeFiles/stock.dir/stocksocket.cpp.s
-.PHONY : stocksocket.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -517,45 +544,48 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... stock_autogen"
 	@echo "... stock"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... mainwindow.o"
-	@echo "... mainwindow.i"
-	@echo "... mainwindow.s"
 	@echo "... qrc_resource.o"
 	@echo "... qrc_resource.i"
 	@echo "... qrc_resource.s"
+	@echo "... src/gmedge.o"
+	@echo "... src/gmedge.i"
+	@echo "... src/gmedge.s"
+	@echo "... src/gmgraphicsview.o"
+	@echo "... src/gmgraphicsview.i"
+	@echo "... src/gmgraphicsview.s"
+	@echo "... src/gmnode.o"
+	@echo "... src/gmnode.i"
+	@echo "... src/gmnode.s"
+	@echo "... src/gmscene.o"
+	@echo "... src/gmscene.i"
+	@echo "... src/gmscene.s"
+	@echo "... src/gmsocket.o"
+	@echo "... src/gmsocket.i"
+	@echo "... src/gmsocket.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/mainwindow.o"
+	@echo "... src/mainwindow.i"
+	@echo "... src/mainwindow.s"
+	@echo "... src/stockgraphicscuttingline.o"
+	@echo "... src/stockgraphicscuttingline.i"
+	@echo "... src/stockgraphicscuttingline.s"
+	@echo "... src/stockgraphicsedge.o"
+	@echo "... src/stockgraphicsedge.i"
+	@echo "... src/stockgraphicsedge.s"
+	@echo "... src/stockgraphicsnode.o"
+	@echo "... src/stockgraphicsnode.i"
+	@echo "... src/stockgraphicsnode.s"
+	@echo "... src/stockgraphicsscene.o"
+	@echo "... src/stockgraphicsscene.i"
+	@echo "... src/stockgraphicsscene.s"
+	@echo "... src/stockgraphicssocket.o"
+	@echo "... src/stockgraphicssocket.i"
+	@echo "... src/stockgraphicssocket.s"
 	@echo "... stock_autogen/mocs_compilation.o"
 	@echo "... stock_autogen/mocs_compilation.i"
 	@echo "... stock_autogen/mocs_compilation.s"
-	@echo "... stockedge.o"
-	@echo "... stockedge.i"
-	@echo "... stockedge.s"
-	@echo "... stockgraphicsedge.o"
-	@echo "... stockgraphicsedge.i"
-	@echo "... stockgraphicsedge.s"
-	@echo "... stockgraphicsnode.o"
-	@echo "... stockgraphicsnode.i"
-	@echo "... stockgraphicsnode.s"
-	@echo "... stockgraphicsscene.o"
-	@echo "... stockgraphicsscene.i"
-	@echo "... stockgraphicsscene.s"
-	@echo "... stockgraphicssocket.o"
-	@echo "... stockgraphicssocket.i"
-	@echo "... stockgraphicssocket.s"
-	@echo "... stockgraphicsview.o"
-	@echo "... stockgraphicsview.i"
-	@echo "... stockgraphicsview.s"
-	@echo "... stocknode.o"
-	@echo "... stocknode.i"
-	@echo "... stocknode.s"
-	@echo "... stockscene.o"
-	@echo "... stockscene.i"
-	@echo "... stockscene.s"
-	@echo "... stocksocket.o"
-	@echo "... stocksocket.i"
-	@echo "... stocksocket.s"
 .PHONY : help
 
 

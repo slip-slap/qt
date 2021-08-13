@@ -99,152 +99,165 @@ CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/build/stock_autogen/mocs_compilation.cpp -o CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/stock.dir/main.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/stock.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/main.cpp.o -c /Users/kismet/Desktop/qt/stock/main.cpp
+CMakeFiles/stock.dir/src/main.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/stock.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/main.cpp.o -c /Users/kismet/Desktop/qt/stock/src/main.cpp
 
-CMakeFiles/stock.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/main.cpp > CMakeFiles/stock.dir/main.cpp.i
+CMakeFiles/stock.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/main.cpp > CMakeFiles/stock.dir/src/main.cpp.i
 
-CMakeFiles/stock.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/main.cpp -o CMakeFiles/stock.dir/main.cpp.s
+CMakeFiles/stock.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/main.cpp -o CMakeFiles/stock.dir/src/main.cpp.s
 
-CMakeFiles/stock.dir/mainwindow.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/mainwindow.cpp.o: ../mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/stock.dir/mainwindow.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/mainwindow.cpp.o -c /Users/kismet/Desktop/qt/stock/mainwindow.cpp
+CMakeFiles/stock.dir/src/mainwindow.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/mainwindow.cpp.o: ../src/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/stock.dir/src/mainwindow.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/mainwindow.cpp.o -c /Users/kismet/Desktop/qt/stock/src/mainwindow.cpp
 
-CMakeFiles/stock.dir/mainwindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/mainwindow.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/mainwindow.cpp > CMakeFiles/stock.dir/mainwindow.cpp.i
+CMakeFiles/stock.dir/src/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/mainwindow.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/mainwindow.cpp > CMakeFiles/stock.dir/src/mainwindow.cpp.i
 
-CMakeFiles/stock.dir/mainwindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/mainwindow.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/mainwindow.cpp -o CMakeFiles/stock.dir/mainwindow.cpp.s
+CMakeFiles/stock.dir/src/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/mainwindow.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/mainwindow.cpp -o CMakeFiles/stock.dir/src/mainwindow.cpp.s
 
-CMakeFiles/stock.dir/stockgraphicsview.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stockgraphicsview.cpp.o: ../stockgraphicsview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/stock.dir/stockgraphicsview.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stockgraphicsview.cpp.o -c /Users/kismet/Desktop/qt/stock/stockgraphicsview.cpp
+CMakeFiles/stock.dir/src/gmgraphicsview.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/gmgraphicsview.cpp.o: ../src/gmgraphicsview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/stock.dir/src/gmgraphicsview.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/gmgraphicsview.cpp.o -c /Users/kismet/Desktop/qt/stock/src/gmgraphicsview.cpp
 
-CMakeFiles/stock.dir/stockgraphicsview.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stockgraphicsview.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stockgraphicsview.cpp > CMakeFiles/stock.dir/stockgraphicsview.cpp.i
+CMakeFiles/stock.dir/src/gmgraphicsview.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/gmgraphicsview.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/gmgraphicsview.cpp > CMakeFiles/stock.dir/src/gmgraphicsview.cpp.i
 
-CMakeFiles/stock.dir/stockgraphicsview.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stockgraphicsview.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stockgraphicsview.cpp -o CMakeFiles/stock.dir/stockgraphicsview.cpp.s
+CMakeFiles/stock.dir/src/gmgraphicsview.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/gmgraphicsview.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/gmgraphicsview.cpp -o CMakeFiles/stock.dir/src/gmgraphicsview.cpp.s
 
-CMakeFiles/stock.dir/stockgraphicsscene.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stockgraphicsscene.cpp.o: ../stockgraphicsscene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/stock.dir/stockgraphicsscene.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stockgraphicsscene.cpp.o -c /Users/kismet/Desktop/qt/stock/stockgraphicsscene.cpp
+CMakeFiles/stock.dir/src/gmscene.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/gmscene.cpp.o: ../src/gmscene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/stock.dir/src/gmscene.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/gmscene.cpp.o -c /Users/kismet/Desktop/qt/stock/src/gmscene.cpp
 
-CMakeFiles/stock.dir/stockgraphicsscene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stockgraphicsscene.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stockgraphicsscene.cpp > CMakeFiles/stock.dir/stockgraphicsscene.cpp.i
+CMakeFiles/stock.dir/src/gmscene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/gmscene.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/gmscene.cpp > CMakeFiles/stock.dir/src/gmscene.cpp.i
 
-CMakeFiles/stock.dir/stockgraphicsscene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stockgraphicsscene.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stockgraphicsscene.cpp -o CMakeFiles/stock.dir/stockgraphicsscene.cpp.s
+CMakeFiles/stock.dir/src/gmscene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/gmscene.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/gmscene.cpp -o CMakeFiles/stock.dir/src/gmscene.cpp.s
 
-CMakeFiles/stock.dir/stockgraphicsedge.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stockgraphicsedge.cpp.o: ../stockgraphicsedge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/stock.dir/stockgraphicsedge.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stockgraphicsedge.cpp.o -c /Users/kismet/Desktop/qt/stock/stockgraphicsedge.cpp
+CMakeFiles/stock.dir/src/gmnode.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/gmnode.cpp.o: ../src/gmnode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/stock.dir/src/gmnode.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/gmnode.cpp.o -c /Users/kismet/Desktop/qt/stock/src/gmnode.cpp
 
-CMakeFiles/stock.dir/stockgraphicsedge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stockgraphicsedge.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stockgraphicsedge.cpp > CMakeFiles/stock.dir/stockgraphicsedge.cpp.i
+CMakeFiles/stock.dir/src/gmnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/gmnode.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/gmnode.cpp > CMakeFiles/stock.dir/src/gmnode.cpp.i
 
-CMakeFiles/stock.dir/stockgraphicsedge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stockgraphicsedge.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stockgraphicsedge.cpp -o CMakeFiles/stock.dir/stockgraphicsedge.cpp.s
+CMakeFiles/stock.dir/src/gmnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/gmnode.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/gmnode.cpp -o CMakeFiles/stock.dir/src/gmnode.cpp.s
 
-CMakeFiles/stock.dir/stockgraphicsnode.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stockgraphicsnode.cpp.o: ../stockgraphicsnode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/stock.dir/stockgraphicsnode.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stockgraphicsnode.cpp.o -c /Users/kismet/Desktop/qt/stock/stockgraphicsnode.cpp
+CMakeFiles/stock.dir/src/gmedge.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/gmedge.cpp.o: ../src/gmedge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/stock.dir/src/gmedge.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/gmedge.cpp.o -c /Users/kismet/Desktop/qt/stock/src/gmedge.cpp
 
-CMakeFiles/stock.dir/stockgraphicsnode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stockgraphicsnode.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stockgraphicsnode.cpp > CMakeFiles/stock.dir/stockgraphicsnode.cpp.i
+CMakeFiles/stock.dir/src/gmedge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/gmedge.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/gmedge.cpp > CMakeFiles/stock.dir/src/gmedge.cpp.i
 
-CMakeFiles/stock.dir/stockgraphicsnode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stockgraphicsnode.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stockgraphicsnode.cpp -o CMakeFiles/stock.dir/stockgraphicsnode.cpp.s
+CMakeFiles/stock.dir/src/gmedge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/gmedge.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/gmedge.cpp -o CMakeFiles/stock.dir/src/gmedge.cpp.s
 
-CMakeFiles/stock.dir/stockgraphicssocket.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stockgraphicssocket.cpp.o: ../stockgraphicssocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/stock.dir/stockgraphicssocket.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stockgraphicssocket.cpp.o -c /Users/kismet/Desktop/qt/stock/stockgraphicssocket.cpp
+CMakeFiles/stock.dir/src/gmsocket.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/gmsocket.cpp.o: ../src/gmsocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/stock.dir/src/gmsocket.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/gmsocket.cpp.o -c /Users/kismet/Desktop/qt/stock/src/gmsocket.cpp
 
-CMakeFiles/stock.dir/stockgraphicssocket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stockgraphicssocket.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stockgraphicssocket.cpp > CMakeFiles/stock.dir/stockgraphicssocket.cpp.i
+CMakeFiles/stock.dir/src/gmsocket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/gmsocket.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/gmsocket.cpp > CMakeFiles/stock.dir/src/gmsocket.cpp.i
 
-CMakeFiles/stock.dir/stockgraphicssocket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stockgraphicssocket.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stockgraphicssocket.cpp -o CMakeFiles/stock.dir/stockgraphicssocket.cpp.s
+CMakeFiles/stock.dir/src/gmsocket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/gmsocket.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/gmsocket.cpp -o CMakeFiles/stock.dir/src/gmsocket.cpp.s
 
-CMakeFiles/stock.dir/stocknode.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stocknode.cpp.o: ../stocknode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/stock.dir/stocknode.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stocknode.cpp.o -c /Users/kismet/Desktop/qt/stock/stocknode.cpp
+CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.o: ../src/stockgraphicsscene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.o -c /Users/kismet/Desktop/qt/stock/src/stockgraphicsscene.cpp
 
-CMakeFiles/stock.dir/stocknode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stocknode.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stocknode.cpp > CMakeFiles/stock.dir/stocknode.cpp.i
+CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/stockgraphicsscene.cpp > CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.i
 
-CMakeFiles/stock.dir/stocknode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stocknode.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stocknode.cpp -o CMakeFiles/stock.dir/stocknode.cpp.s
+CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/stockgraphicsscene.cpp -o CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.s
 
-CMakeFiles/stock.dir/stocksocket.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stocksocket.cpp.o: ../stocksocket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/stock.dir/stocksocket.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stocksocket.cpp.o -c /Users/kismet/Desktop/qt/stock/stocksocket.cpp
+CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.o: ../src/stockgraphicsedge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.o -c /Users/kismet/Desktop/qt/stock/src/stockgraphicsedge.cpp
 
-CMakeFiles/stock.dir/stocksocket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stocksocket.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stocksocket.cpp > CMakeFiles/stock.dir/stocksocket.cpp.i
+CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/stockgraphicsedge.cpp > CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.i
 
-CMakeFiles/stock.dir/stocksocket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stocksocket.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stocksocket.cpp -o CMakeFiles/stock.dir/stocksocket.cpp.s
+CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/stockgraphicsedge.cpp -o CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.s
 
-CMakeFiles/stock.dir/stockedge.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stockedge.cpp.o: ../stockedge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/stock.dir/stockedge.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stockedge.cpp.o -c /Users/kismet/Desktop/qt/stock/stockedge.cpp
+CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.o: ../src/stockgraphicsnode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.o -c /Users/kismet/Desktop/qt/stock/src/stockgraphicsnode.cpp
 
-CMakeFiles/stock.dir/stockedge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stockedge.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stockedge.cpp > CMakeFiles/stock.dir/stockedge.cpp.i
+CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/stockgraphicsnode.cpp > CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.i
 
-CMakeFiles/stock.dir/stockedge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stockedge.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stockedge.cpp -o CMakeFiles/stock.dir/stockedge.cpp.s
+CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/stockgraphicsnode.cpp -o CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.s
 
-CMakeFiles/stock.dir/stockscene.cpp.o: CMakeFiles/stock.dir/flags.make
-CMakeFiles/stock.dir/stockscene.cpp.o: ../stockscene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/stock.dir/stockscene.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/stockscene.cpp.o -c /Users/kismet/Desktop/qt/stock/stockscene.cpp
+CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.o: ../src/stockgraphicssocket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.o -c /Users/kismet/Desktop/qt/stock/src/stockgraphicssocket.cpp
 
-CMakeFiles/stock.dir/stockscene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/stockscene.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/stockscene.cpp > CMakeFiles/stock.dir/stockscene.cpp.i
+CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/stockgraphicssocket.cpp > CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.i
 
-CMakeFiles/stock.dir/stockscene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/stockscene.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/stockscene.cpp -o CMakeFiles/stock.dir/stockscene.cpp.s
+CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/stockgraphicssocket.cpp -o CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.s
+
+CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.o: CMakeFiles/stock.dir/flags.make
+CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.o: ../src/stockgraphicscuttingline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.o -c /Users/kismet/Desktop/qt/stock/src/stockgraphicscuttingline.cpp
+
+CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kismet/Desktop/qt/stock/src/stockgraphicscuttingline.cpp > CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.i
+
+CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kismet/Desktop/qt/stock/src/stockgraphicscuttingline.cpp -o CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.s
 
 CMakeFiles/stock.dir/qrc_resource.cpp.o: CMakeFiles/stock.dir/flags.make
 CMakeFiles/stock.dir/qrc_resource.cpp.o: qrc_resource.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/stock.dir/qrc_resource.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/stock.dir/qrc_resource.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/stock.dir/qrc_resource.cpp.o -c /Users/kismet/Desktop/qt/stock/build/qrc_resource.cpp
 
 CMakeFiles/stock.dir/qrc_resource.cpp.i: cmake_force
@@ -258,41 +271,43 @@ CMakeFiles/stock.dir/qrc_resource.cpp.s: cmake_force
 # Object files for target stock
 stock_OBJECTS = \
 "CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/stock.dir/main.cpp.o" \
-"CMakeFiles/stock.dir/mainwindow.cpp.o" \
-"CMakeFiles/stock.dir/stockgraphicsview.cpp.o" \
-"CMakeFiles/stock.dir/stockgraphicsscene.cpp.o" \
-"CMakeFiles/stock.dir/stockgraphicsedge.cpp.o" \
-"CMakeFiles/stock.dir/stockgraphicsnode.cpp.o" \
-"CMakeFiles/stock.dir/stockgraphicssocket.cpp.o" \
-"CMakeFiles/stock.dir/stocknode.cpp.o" \
-"CMakeFiles/stock.dir/stocksocket.cpp.o" \
-"CMakeFiles/stock.dir/stockedge.cpp.o" \
-"CMakeFiles/stock.dir/stockscene.cpp.o" \
+"CMakeFiles/stock.dir/src/main.cpp.o" \
+"CMakeFiles/stock.dir/src/mainwindow.cpp.o" \
+"CMakeFiles/stock.dir/src/gmgraphicsview.cpp.o" \
+"CMakeFiles/stock.dir/src/gmscene.cpp.o" \
+"CMakeFiles/stock.dir/src/gmnode.cpp.o" \
+"CMakeFiles/stock.dir/src/gmedge.cpp.o" \
+"CMakeFiles/stock.dir/src/gmsocket.cpp.o" \
+"CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.o" \
+"CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.o" \
+"CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.o" \
+"CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.o" \
+"CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.o" \
 "CMakeFiles/stock.dir/qrc_resource.cpp.o"
 
 # External object files for target stock
 stock_EXTERNAL_OBJECTS =
 
 stock: CMakeFiles/stock.dir/stock_autogen/mocs_compilation.cpp.o
-stock: CMakeFiles/stock.dir/main.cpp.o
-stock: CMakeFiles/stock.dir/mainwindow.cpp.o
-stock: CMakeFiles/stock.dir/stockgraphicsview.cpp.o
-stock: CMakeFiles/stock.dir/stockgraphicsscene.cpp.o
-stock: CMakeFiles/stock.dir/stockgraphicsedge.cpp.o
-stock: CMakeFiles/stock.dir/stockgraphicsnode.cpp.o
-stock: CMakeFiles/stock.dir/stockgraphicssocket.cpp.o
-stock: CMakeFiles/stock.dir/stocknode.cpp.o
-stock: CMakeFiles/stock.dir/stocksocket.cpp.o
-stock: CMakeFiles/stock.dir/stockedge.cpp.o
-stock: CMakeFiles/stock.dir/stockscene.cpp.o
+stock: CMakeFiles/stock.dir/src/main.cpp.o
+stock: CMakeFiles/stock.dir/src/mainwindow.cpp.o
+stock: CMakeFiles/stock.dir/src/gmgraphicsview.cpp.o
+stock: CMakeFiles/stock.dir/src/gmscene.cpp.o
+stock: CMakeFiles/stock.dir/src/gmnode.cpp.o
+stock: CMakeFiles/stock.dir/src/gmedge.cpp.o
+stock: CMakeFiles/stock.dir/src/gmsocket.cpp.o
+stock: CMakeFiles/stock.dir/src/stockgraphicsscene.cpp.o
+stock: CMakeFiles/stock.dir/src/stockgraphicsedge.cpp.o
+stock: CMakeFiles/stock.dir/src/stockgraphicsnode.cpp.o
+stock: CMakeFiles/stock.dir/src/stockgraphicssocket.cpp.o
+stock: CMakeFiles/stock.dir/src/stockgraphicscuttingline.cpp.o
 stock: CMakeFiles/stock.dir/qrc_resource.cpp.o
 stock: CMakeFiles/stock.dir/build.make
 stock: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/QtWidgets
 stock: /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/QtGui
 stock: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/QtCore
 stock: CMakeFiles/stock.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable stock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable stock"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stock.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
