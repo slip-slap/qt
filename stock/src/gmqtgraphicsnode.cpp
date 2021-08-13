@@ -1,38 +1,38 @@
-#include "stockgraphicsnode.h"
+#include "gmqtgraphicsnode.h"
 #include <QPainterPath>
 #include "gmnode.h"
 
-StockGraphicsNode::StockGraphicsNode(): QGraphicsItem()
+GMQtGraphicsNode::GMQtGraphicsNode(): QGraphicsItem()
 {
     InitUI();
 }
 
-StockGraphicsNode::StockGraphicsNode(std::string title)
+GMQtGraphicsNode::GMQtGraphicsNode(std::string title)
 {
     InitUI();
     m_title = title;
 }
 
-StockGraphicsNode::StockGraphicsNode(StockNodeInterface *stock_node_interface, std::string title)
+GMQtGraphicsNode::GMQtGraphicsNode(StockNodeInterface *stock_node_interface, std::string title)
 {
     m_stock_node_interface = stock_node_interface;
     m_title = title;
     InitUI();
 }
 
-void StockGraphicsNode::InitUI()
+void GMQtGraphicsNode::InitUI()
 {
     this->setFlag(QGraphicsItem::ItemIsSelectable);
     this->setFlag(QGraphicsItem::ItemIsFocusable);
     this->setFlag(QGraphicsItem::ItemIsMovable);
 }
 
-QRectF StockGraphicsNode::boundingRect() const
+QRectF GMQtGraphicsNode::boundingRect() const
 {
     return QRectF(0,0,90,120);
 }
 
-void StockGraphicsNode::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
+void GMQtGraphicsNode::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
 
 
@@ -53,7 +53,7 @@ void StockGraphicsNode::paint(QPainter *painter, const QStyleOptionGraphicsItem 
     painter->drawRoundedRect(0,0,90,120,10,10);
 }
 
-void StockGraphicsNode::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
+void GMQtGraphicsNode::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
     GMNode* stock_node = static_cast<GMNode*>(m_stock_node_interface);
     std::vector<StockNodeInterface*> nodes_vec = stock_node->GetGMScene()->GetStockNodesVector();

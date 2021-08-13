@@ -6,13 +6,13 @@
 #include <QStyleOptionGraphicsItem>
 #include <string>
 #include <QGraphicsSceneMouseEvent>
-#include "stockgraphicsscene.h"
+#include "gmqtgraphicsscene.h"
 
-class StockGraphicsCuttingLine: public QGraphicsItem
+class GMQtGraphicsCuttingLine: public QGraphicsItem
 {
 public:
-    StockGraphicsCuttingLine();
-    StockGraphicsCuttingLine(StockGraphicsScene* stock_graphics_scene);
+    GMQtGraphicsCuttingLine();
+    GMQtGraphicsCuttingLine(GMQtGraphicScene* stock_graphics_scene);
     void AppendQPoint(QPoint point);
     void ClearPoint();
 

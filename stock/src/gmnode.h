@@ -4,7 +4,7 @@
 
 #include "StockSocketInterface.h"
 #include "stocknodeinterface.h"
-#include "stockgraphicsnode.h"
+#include "gmqtgraphicsnode.h"
 #include "gmscene.h"
 #include <QGraphicsScene>
 #include <string>
@@ -22,7 +22,7 @@ public:
     GMNode(GMScene* stock_scene, std::string title,
               StockSocketInterface* socket1,
               StockSocketInterface* socket2);
-    StockGraphicsNode *GetStockGraphicsNode();
+    GMQtGraphicsNode *GetStockGraphicsNode();
     GMScene* GetGMScene();
     QPointF GetStockSocketPosition();
 
@@ -38,7 +38,7 @@ public:
     GMObject deserialize(std::string str) override;
     friend std::ostream& operator<<(std::ostream& out, const GMNode& obj);
 private:
-    StockGraphicsNode* m_stock_graphics_node;
+    GMQtGraphicsNode* m_stock_graphics_node;
     StockSocketInterface* m_stock_socket_interface1=nullptr;
     StockSocketInterface* m_stock_socket_interface2=nullptr;
     GMScene* m_gm_scene;

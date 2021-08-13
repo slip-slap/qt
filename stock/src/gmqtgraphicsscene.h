@@ -22,10 +22,10 @@
 #include "gmscene.h"
 
 
-class StockGraphicsScene: public QGraphicsScene
+class GMQtGraphicScene: public QGraphicsScene
 {
 public:
-    StockGraphicsScene(GMScene* gm_scene);
+    GMQtGraphicScene(GMScene* gm_scene);
 
 public:
     GMScene* GetGMScene();

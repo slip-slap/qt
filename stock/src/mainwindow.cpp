@@ -9,7 +9,7 @@
 #include "gmnode.h"
 #include "gmsocket.h"
 #include "gmedge.h"
-#include "stockgraphicscuttingline.h"
+#include "gmqtgraphicscuttingline.h"
 #include <fstream>
 
 #include "json/json.hpp"
@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->toolBar->setStyleSheet("background: white; spacing: 0px;");*/
     ui->menubar->setNativeMenuBar(false);
     GMScene* scene = new GMScene();
-    StockGraphicsCuttingLine* cutting_line = new StockGraphicsCuttingLine((StockGraphicsScene*)scene->GetGraphicsScenePtr());
+    GMQtGraphicsCuttingLine* cutting_line = new GMQtGraphicsCuttingLine((GMQtGraphicScene*)scene->GetGraphicsScenePtr());
     GMSocket* socket11 = new GMSocket();
     GMSocket* socket12 = new GMSocket();
     GMSocket* socket21 = new GMSocket();
@@ -49,8 +49,8 @@ MainWindow::MainWindow(QWidget *parent)
     this->ui->graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
     this->ui->graphicsView->setScene(scene->GetGraphicsScenePtr());
-    this->ui->graphicsView->SetStockGraphicScene((StockGraphicsScene*)(scene->GetGraphicsScenePtr()));
-    this->ui->graphicsView->SetStockGraphicsCuttingLine(cutting_line);
+    this->ui->graphicsView->SetStockGraphicScene((GMQtGraphicScene*)(scene->GetGraphicsScenePtr()));
+    this->ui->graphicsView->SetGMQtGraphicsCuttingLine(cutting_line);
     this->ui->graphicsView->setDragMode(QGraphicsView::RubberBandDrag);
 
     scene->GetGraphicsScenePtr()->setBackgroundBrush(Qt::black);

@@ -6,7 +6,7 @@
 GMNode::GMNode(QGraphicsScene *scene, StockSocketInterface* stock_socket_interface)
 {
     m_stock_socket_interface1 = stock_socket_interface;
-    m_stock_graphics_node = new StockGraphicsNode();
+    m_stock_graphics_node = new GMQtGraphicsNode();
     m_stock_socket_interface1->GetStockGraphicsSocket()->setParentItem(m_stock_graphics_node);
     scene->addItem(m_stock_graphics_node);
     scene->addItem(m_stock_socket_interface1->GetStockGraphicsSocket());
@@ -16,7 +16,7 @@ GMNode::GMNode(QGraphicsScene *scene, StockSocketInterface* stock_socket_interfa
 GMNode::GMNode(GMScene *stock_scene, std::string title,
                      StockSocketInterface* socket1)
 {
-    m_stock_graphics_node = new StockGraphicsNode(this,title);
+    m_stock_graphics_node = new GMQtGraphicsNode(this,title);
     m_stock_socket_interface1 = socket1;
     //m_stock_socket_interface = new StockSocket(this);
     m_stock_socket_interface1->GetStockGraphicsSocket()->setPos(m_stock_graphics_node->pos()+ QPointF(80,0));
@@ -28,7 +28,7 @@ GMNode::GMNode(GMScene *stock_scene, std::string title,
 GMNode::GMNode(GMScene *stock_scene, std::string title, StockSocketInterface *socket1, StockSocketInterface *socket2)
 {
     m_gm_scene = stock_scene;
-    m_stock_graphics_node = new StockGraphicsNode(this,title);
+    m_stock_graphics_node = new GMQtGraphicsNode(this,title);
     m_stock_socket_interface1= socket1;
     m_stock_socket_interface2= socket2;
     //m_stock_socket_interface = new StockSocket(this);
@@ -39,7 +39,7 @@ GMNode::GMNode(GMScene *stock_scene, std::string title, StockSocketInterface *so
     stock_scene->AddNode(this);
 }
 
-StockGraphicsNode *GMNode::GetStockGraphicsNode()
+GMQtGraphicsNode *GMNode::GetStockGraphicsNode()
 {
     return m_stock_graphics_node;
 }

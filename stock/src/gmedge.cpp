@@ -5,7 +5,7 @@ GMEdge::GMEdge(GMScene *scene, StockSocketInterface *start_socket, StockSocketIn
     m_scene = scene;
     m_start_socket = start_socket;
     m_end_socket = end_socket;
-    m_edge = new StockGraphicsEdge();
+    m_edge = new GMQtGraphicsEdge();
     m_edge->SetSource(m_start_socket->GetSocketPosition()+QPointF(10,10));
     m_edge->SetTarget(m_end_socket->GetSocketPosition()+QPointF(10,10));
     // Add Related Edge to socket
@@ -18,7 +18,7 @@ GMEdge::GMEdge(GMScene *scene, StockSocketInterface *start_socket, StockSocketIn
 
 GMEdge::GMEdge(GMScene *scene, QPointF start, QPointF end)
 {   m_scene = scene;
-    m_edge = new StockGraphicsEdge();
+    m_edge = new GMQtGraphicsEdge();
     scene->GetGraphicsScenePtr()->addItem(m_edge);
     m_edge->SetSource(start);
     m_edge->SetTarget(end);

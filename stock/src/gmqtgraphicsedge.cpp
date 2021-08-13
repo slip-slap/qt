@@ -1,17 +1,17 @@
-#include "stockgraphicsedge.h"
+#include "gmqtgraphicsedge.h"
 
 
-StockGraphicsEdge::StockGraphicsEdge():QGraphicsPathItem()
+GMQtGraphicsEdge::GMQtGraphicsEdge():QGraphicsPathItem()
 {
     this->setFlag(QGraphicsItem::ItemIsSelectable,true);
 }
 
-QRectF StockGraphicsEdge::boundingRect() const
+QRectF GMQtGraphicsEdge::boundingRect() const
 {
     return QRectF(0,0,200,200);
 }
 
-void StockGraphicsEdge::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
+void GMQtGraphicsEdge::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     QPen pen = QPen(Qt::red);
     pen.setWidth(5);
@@ -27,13 +27,13 @@ void StockGraphicsEdge::paint(QPainter *painter, const QStyleOptionGraphicsItem 
     }
 }
 
-void StockGraphicsEdge::SetSource(QPointF source)
+void GMQtGraphicsEdge::SetSource(QPointF source)
 {
     m_source = source;
     this->update();
 }
 
-void StockGraphicsEdge::SetTarget(QPointF target)
+void GMQtGraphicsEdge::SetTarget(QPointF target)
 {
     m_target = target;
     this->update();

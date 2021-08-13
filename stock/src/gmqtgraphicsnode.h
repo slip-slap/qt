@@ -8,12 +8,12 @@
 #include <QGraphicsSceneMouseEvent>
 #include "stocknodeinterface.h"
 
-class StockGraphicsNode: public QGraphicsItem
+class GMQtGraphicsNode: public QGraphicsItem
 {
 public:
-    StockGraphicsNode();
-    StockGraphicsNode(std::string title);
-    StockGraphicsNode(StockNodeInterface* stock_node_interface,std::string title);
+    GMQtGraphicsNode();
+    GMQtGraphicsNode(std::string title);
+    GMQtGraphicsNode(StockNodeInterface* stock_node_interface,std::string title);
 private:
     void InitUI();
 

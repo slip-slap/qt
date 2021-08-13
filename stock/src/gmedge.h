@@ -1,9 +1,9 @@
 #ifndef STOCKEDGE_H
 #define STOCKEDGE_H
 
-#include "stockgraphicsscene.h"
+#include "gmqtgraphicsscene.h"
 #include "StockSocketInterface.h"
-#include "stockgraphicsedge.h"
+#include "gmqtgraphicsedge.h"
 #include "gmscene.h"
 #include "stockedgeinterface.h"
 class GMEdge: public StockEdgeInterface
@@ -19,7 +19,7 @@ private:
     GMScene* m_scene=nullptr;
     StockSocketInterface* m_start_socket=nullptr;
     StockSocketInterface* m_end_socket=nullptr;
-    StockGraphicsEdge* m_edge=nullptr;
+    GMQtGraphicsEdge* m_edge=nullptr;
 
 
 

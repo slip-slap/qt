@@ -7,10 +7,10 @@
 #include <QStyleOptionGraphicsItem>
 
 
-class StockGraphicsEdge: public QGraphicsPathItem
+class GMQtGraphicsEdge: public QGraphicsPathItem
 {
 public:
-    StockGraphicsEdge();
+    GMQtGraphicsEdge();
 
 
 public:

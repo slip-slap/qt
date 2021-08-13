@@ -19,12 +19,12 @@ GMGraphicsView::GMGraphicsView(QWidget *parent): QGraphicsView(parent){
 GMGraphicsView::~GMGraphicsView(){}
 
 
-void GMGraphicsView::SetStockGraphicScene(StockGraphicsScene *stock_graphics_scene)
+void GMGraphicsView::SetStockGraphicScene(GMQtGraphicScene *stock_graphics_scene)
 {
     m_stock_graphics_scene = stock_graphics_scene;
 }
 
-void GMGraphicsView::SetStockGraphicsCuttingLine(StockGraphicsCuttingLine *stock_graphics_cutting_line)
+void GMGraphicsView::SetGMQtGraphicsCuttingLine(GMQtGraphicsCuttingLine *stock_graphics_cutting_line)
 {
     this->m_stock_graphics_cutting_line = stock_graphics_cutting_line;
 }

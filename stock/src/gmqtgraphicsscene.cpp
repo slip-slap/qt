@@ -1,4 +1,4 @@
-#include "stockgraphicsscene.h"
+#include "gmqtgraphicsscene.h"
 #include "gmnode.h"
 #include <iostream>
 #include <QMenu>
@@ -9,18 +9,18 @@
 
 
 
-StockGraphicsScene::StockGraphicsScene(GMScene *gm_scene)
+GMQtGraphicScene::GMQtGraphicScene(GMScene *gm_scene)
 {
     m_gm_scene = gm_scene;
 }
 
-GMScene *StockGraphicsScene::GetGMScene()
+GMScene *GMQtGraphicScene::GetGMScene()
 {
     return m_gm_scene;
 }
 
 
-void StockGraphicsScene::mouseMoveEvent(QGraphicsSceneMouseEvent*event)
+void GMQtGraphicScene::mouseMoveEvent(QGraphicsSceneMouseEvent*event)
 {
     QGraphicsScene::mouseMoveEvent(event);
 

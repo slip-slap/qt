@@ -13,8 +13,8 @@
 #include <QKeyEvent>
 #include <QMouseEvent>
 #include <QPaintEvent>
-#include "stockgraphicsscene.h"
-#include "stockgraphicscuttingline.h"
+#include "gmqtgraphicsscene.h"
+#include "gmqtgraphicscuttingline.h"
 #include "StockSocketInterface.h"
 
 class GMGraphicsView : public QGraphicsView
@@ -28,8 +28,8 @@ public:
     ~GMGraphicsView();
 
 public:
-    void SetStockGraphicScene(StockGraphicsScene* stock_graphics_scene);
-    void SetStockGraphicsCuttingLine(StockGraphicsCuttingLine* stock_graphics_cutting_line);
+    void SetStockGraphicScene(GMQtGraphicScene* stock_graphics_scene);
+    void SetGMQtGraphicsCuttingLine(GMQtGraphicsCuttingLine* stock_graphics_cutting_line);
 
 public slots:
     void RemoveSelectedItems();
@@ -46,8 +46,8 @@ protected:
 
 private:
     int m_mode=1;
-    StockGraphicsScene* m_stock_graphics_scene;  
-    StockGraphicsCuttingLine* m_stock_graphics_cutting_line;
+    GMQtGraphicScene* m_stock_graphics_scene;  
+    GMQtGraphicsCuttingLine* m_stock_graphics_cutting_line;
 
     StockEdgeInterface* m_drag_stock_edge_interface;
     StockSocketInterface* m_drag_stock_edge_start;

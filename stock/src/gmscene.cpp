@@ -1,12 +1,12 @@
 #include "gmscene.h"
-#include "stockgraphicsscene.h"
+#include "gmqtgraphicsscene.h"
 #include "gmedge.h"
 #include "json/json.hpp"
 #include <algorithm>
 
 GMScene::GMScene()
 {
-    m_stock_graphics_scene = new StockGraphicsScene(this);
+    m_stock_graphics_scene = new GMQtGraphicScene(this);
 }
 
 void GMScene::AddNode(StockNodeInterface *stock_node_interface)
