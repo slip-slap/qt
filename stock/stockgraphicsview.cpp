@@ -64,6 +64,7 @@ void StockGraphicsView::mousePressEvent(QMouseEvent *event)
                                                  event->screenPos(), Qt::LeftButton, Qt::NoButton,
                                                  event->modifiers());
             QGraphicsView::mouseReleaseEvent(fake_event);
+
             QApplication::setOverrideCursor(Qt::CrossCursor);
             return;
         }
@@ -112,6 +113,9 @@ void StockGraphicsView::mouseReleaseEvent(QMouseEvent *event)
         if(this->m_mode == MODE_CUTTING_LINE)
         {
             m_mode = MODE_NO_OPERATION;
+            // remove all the cutting line
+            m_stock_graphics_cutting_line->ClearPoint();
+            m_stock_graphics_cutting_line->update();
             QApplication::setOverrideCursor(Qt::ArrowCursor);
         }
 

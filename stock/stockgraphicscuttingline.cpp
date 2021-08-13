@@ -15,6 +15,11 @@ void StockGraphicsCuttingLine::AppendQPoint(QPoint point)
     m_qpoints.append(point);
 }
 
+void StockGraphicsCuttingLine::ClearPoint()
+{
+    m_qpoints.clear();
+}
+
 
 QRectF StockGraphicsCuttingLine::boundingRect() const
 {

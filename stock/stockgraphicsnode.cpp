@@ -29,7 +29,7 @@ void StockGraphicsNode::InitUI()
 
 QRectF StockGraphicsNode::boundingRect() const
 {
-    return QRectF(0,0,200,200);
+    return QRectF(0,0,90,120);
 }
 
 void StockGraphicsNode::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)

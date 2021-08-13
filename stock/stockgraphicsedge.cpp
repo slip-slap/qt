@@ -20,6 +20,11 @@ void StockGraphicsEdge::paint(QPainter *painter, const QStyleOptionGraphicsItem 
     QPainterPath path(m_source);
     path.lineTo(m_target);
     painter->drawPath(path);
+    if(this->isSelected()){
+        pen.setColor(Qt::white);
+        painter->setPen(pen);
+        painter->drawPath(path);
+    }
 }
 
 void StockGraphicsEdge::SetSource(QPointF source)

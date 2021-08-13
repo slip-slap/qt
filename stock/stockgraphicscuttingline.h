@@ -14,6 +14,7 @@ public:
     StockGraphicsCuttingLine();
     StockGraphicsCuttingLine(StockGraphicsScene* stock_graphics_scene);
     void AppendQPoint(QPoint point);
+    void ClearPoint();
 
 public:
     QRectF boundingRect() const override;
