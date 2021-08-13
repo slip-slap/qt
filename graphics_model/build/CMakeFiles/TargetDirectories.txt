@@ -1,0 +1,4 @@
+/Users/kismet/Desktop/qt/stock/build/CMakeFiles/rebuild_cache.dir
+/Users/kismet/Desktop/qt/stock/build/CMakeFiles/edit_cache.dir
+/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir
+/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM_autogen.dir

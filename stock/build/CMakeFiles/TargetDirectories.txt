@@ -1,4 +1,0 @@
-/Users/kismet/Desktop/qt/stock/build/CMakeFiles/rebuild_cache.dir
-/Users/kismet/Desktop/qt/stock/build/CMakeFiles/edit_cache.dir
-/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock.dir
-/Users/kismet/Desktop/qt/stock/build/CMakeFiles/stock_autogen.dir
