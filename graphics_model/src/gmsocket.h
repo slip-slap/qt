@@ -7,7 +7,7 @@
 #include "gmobject.h"
 #include "gmserializable.h"
 
-class GMSocket: public GMSocketInterface, public GMObject, public GMSerializable
+class GMSocket: public GMSocketInterface
 {
 public:
     GMSocket();

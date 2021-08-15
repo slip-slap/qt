@@ -14,7 +14,7 @@
 
 enum POSITION {NORTH_ANCHOR, SOUTH_ANCHOR, EAST_ANCHOR, WEST_ANCHOR};
 
-class GMNode: public StockNodeInterface, public GMSerializable, public GMObject
+class GMNode: public StockNodeInterface, public GMSerializable
 {
 public:
     GMNode(GMScene* scene);

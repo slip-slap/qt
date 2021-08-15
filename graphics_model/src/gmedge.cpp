@@ -1,6 +1,7 @@
 #include "gmedge.h"
 #include "json/json.hpp"
-
+#include <sstream>
+#include <iostream>
 GMEdge::GMEdge(GMScene *scene, GMSocketInterface *start_socket, GMSocketInterface *end_socket)
 {
     m_gm_scene = scene;
@@ -38,6 +39,12 @@ GMEdge::GMEdge(GMScene *scene, GMNode *node1, int pos1, GMNode *node2, int pos2)
     m_end_socket->AddRelatedEdge(this);
     m_gm_scene->GetGraphicsScenePtr()->addItem(m_gmqt_edge);
     m_gm_scene->AddEdge(this);
+}
+
+GMEdge::GMEdge(GMScene *scene)
+{
+    m_gm_scene = scene;
+    m_gmqt_edge = new GMQtGraphicsEdge();
 }
 
 void GMEdge::SetTarget(QPointF des)
@@ -121,5 +128,10 @@ std::string GMEdge::serialize()
 
 GMObject* GMEdge::deserialize(std::string str)
 {
-
+    std::stringstream ss;
+    ss<<str;
+    nlohmann::json js;
+    ss>>js;
+    std::cout<<js["socket"]<<std::endl;
+    return nullptr;
 }

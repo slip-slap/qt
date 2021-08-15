@@ -81,10 +81,8 @@ std::string GMSocket::serialize()
 {
     GMQtGraphicSocket* socket = static_cast<GMQtGraphicSocket*>(m_gmqt_graphics_socket);
     nlohmann::json js;
-    js = {
-        {"identifier", reinterpret_cast<std::uintptr_t>(this)},
-        {"position", m_position},
-    };
+    js = {"identifier", reinterpret_cast<std::uintptr_t>(this)};
+
     return js.dump();
 }
 

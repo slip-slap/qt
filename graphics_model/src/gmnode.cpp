@@ -118,6 +118,7 @@ std::pair<double, double> GMNode::GetAnchor(int pos)
     if(pos == POSITION::EAST_ANCHOR){
         return GetEastAnchor();
     }
+    return GetEastAnchor();
 }
 
 std::string GMNode::serialize()

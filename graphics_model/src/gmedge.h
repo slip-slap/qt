@@ -15,10 +15,11 @@ public:
     GMEdge(GMScene* scene, GMSocketInterface* start_socket, GMSocketInterface* end_socket);
     GMEdge(GMScene* scene, QPointF start, QPointF end);
     GMEdge(GMScene* scene, GMNode* node1, int pos1, GMNode* node2, int pos2);
+    GMEdge(GMScene* scene);
     void SetTarget(QPointF des);
     std::pair<double, double> GetSource();
     std::pair<double, double> GetTarget();
-    void UpdatePositions();
+    void UpdatePositions() override;
     void RemoveEdge();
     void ConnectGMNodes(GMScene* scene, GMNode* node1, int pos1, GMNode* node2, int pos2);
 

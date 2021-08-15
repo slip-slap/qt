@@ -9,8 +9,10 @@
 #include "gmobject.h"
 #include "gmserializable.h"
 
+
 class GMScene: public GMObject, public GMSerializable
 {
+
 public:
     GMScene();
     void AddNode(StockNodeInterface* stock_node);
@@ -32,6 +34,7 @@ private:
     QGraphicsScene* m_stock_graphics_scene=nullptr;
     std::vector<StockNodeInterface*> m_stock_node_interface_vec;
     std::vector<StockEdgeInterface*> m_stock_edge_interface_vec;
+    std::map<int, GMObject*> m_id_qmobject_map;
 };
 
 #endif // GMScene_H

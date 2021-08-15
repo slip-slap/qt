@@ -6,6 +6,8 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+
+
 GMScene::GMScene()
 {
     m_stock_graphics_scene = new GMQtGraphicScene(this);
@@ -16,6 +18,7 @@ void GMScene::AddNode(StockNodeInterface *stock_node_interface)
    GMNode* stock_node = (GMNode*)stock_node_interface;
    m_stock_graphics_scene->addItem(stock_node->GetStockGraphicsNode());
    m_stock_node_interface_vec.push_back(stock_node);
+
 }
 
 void GMScene::AddEdge(StockEdgeInterface *stock_edge)
@@ -120,13 +123,19 @@ GMObject* GMScene::deserialize(std::string str)
 {
     std::stringstream ss; ss<<str;
     nlohmann::json js;    ss>>js;
-    //deserialize socket
+    //deserialize node
     for(int i=0; i < js["node"].size(); i++)
     {
         GMNode* gm_node = new GMNode(this);
         gm_node->deserialize(js["node"][i].dump());
     }
+    //deserialize edge
+    for(int i=0; i < js["edge"].size(); i++)
+    {
 
+        GMEdge* gm_edge = new GMEdge(this);
+        gm_edge->deserialize(js["edge"][i].dump());
+    }
 
 
     return nullptr;
