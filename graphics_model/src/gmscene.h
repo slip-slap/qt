@@ -17,6 +17,9 @@ public:
     void AddEdge(StockEdgeInterface* stock_edge);
     void RemoveNode(StockNodeInterface* stock_node);
     void RemoveEdge(StockEdgeInterface* stock_edge);
+    void RemoveAllEdges();
+    void RemoveAllNodes();
+    void ClearScene();
     std::vector<StockNodeInterface*> GetStockNodesVector();
     std::vector<StockEdgeInterface*> GetStockEdgesVector();
     QGraphicsScene *GetGraphicsScenePtr();

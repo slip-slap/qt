@@ -6,13 +6,13 @@ GMQtGraphicSocket::GMQtGraphicSocket()
     this->InitUI();
 }
 
-GMQtGraphicSocket::GMQtGraphicSocket(StockSocketInterface *stock_socket)
+GMQtGraphicSocket::GMQtGraphicSocket(GMSocketInterface *stock_socket)
 {
     this->InitUI();
     this->m_stock_socket_interface = stock_socket;
 }
 
-StockSocketInterface *GMQtGraphicSocket::GetStockSocketInterface()
+GMSocketInterface *GMQtGraphicSocket::GetStockSocketInterface()
 {
     return m_stock_socket_interface;
 }

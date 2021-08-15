@@ -5,8 +5,10 @@
 #include <QPointF>
 #include "stocknodeinterface.h"
 #include "stockedgeinterface.h"
+#include "gmserializable.h"
 
-class StockSocketInterface{
+class GMSocketInterface: public GMSerializable
+{
 public:
     virtual QPointF GetSocketPosition()=0;
     virtual QGraphicsItem* GetStockGraphicsSocket()=0;

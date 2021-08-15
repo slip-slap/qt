@@ -12,12 +12,15 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QSplitter>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QTreeWidget>
 #include <QtWidgets/QWidget>
 #include "gmgraphicsview.h"
 
@@ -37,9 +40,12 @@ public:
     QAction *actionNew;
     QAction *actionZoom_In;
     QAction *actionZoom_Out;
+    QAction *actionClear;
     QWidget *centralwidget;
-    QGridLayout *gridLayout_2;
+    QHBoxLayout *horizontalLayout;
+    QSplitter *splitter;
     GMGraphicsView *graphicsView;
+    QTreeWidget *treeWidget;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuEdit;
@@ -70,6 +76,9 @@ public:
         actionOpen->setIcon(icon);
         actionSave = new QAction(MainWindow);
         actionSave->setObjectName(QString::fromUtf8("actionSave"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/rec/resource/img/save.png"), QSize(), QIcon::Normal, QIcon::On);
+        actionSave->setIcon(icon1);
         actionSave_As = new QAction(MainWindow);
         actionSave_As->setObjectName(QString::fromUtf8("actionSave_As"));
         actionExit = new QAction(MainWindow);
@@ -80,28 +89,48 @@ public:
         actionExit_2->setObjectName(QString::fromUtf8("actionExit_2"));
         actionNew = new QAction(MainWindow);
         actionNew->setObjectName(QString::fromUtf8("actionNew"));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/rec/resource/img/new.svg"), QSize(), QIcon::Normal, QIcon::On);
-        actionNew->setIcon(icon1);
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/rec/resource/img/new.svg"), QSize(), QIcon::Normal, QIcon::On);
+        actionNew->setIcon(icon2);
         actionZoom_In = new QAction(MainWindow);
         actionZoom_In->setObjectName(QString::fromUtf8("actionZoom_In"));
-        QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/rec/resource/img/zoomin.png"), QSize(), QIcon::Normal, QIcon::Off);
-        actionZoom_In->setIcon(icon2);
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/rec/resource/img/zoomin.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionZoom_In->setIcon(icon3);
         actionZoom_Out = new QAction(MainWindow);
         actionZoom_Out->setObjectName(QString::fromUtf8("actionZoom_Out"));
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/rec/resource/img/zoomout.png"), QSize(), QIcon::Normal, QIcon::On);
-        actionZoom_Out->setIcon(icon3);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/rec/resource/img/zoomout.png"), QSize(), QIcon::Normal, QIcon::On);
+        actionZoom_Out->setIcon(icon4);
+        actionClear = new QAction(MainWindow);
+        actionClear->setObjectName(QString::fromUtf8("actionClear"));
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8(":/rec/resource/img/clear.png"), QSize(), QIcon::Normal, QIcon::Off);
+        actionClear->setIcon(icon5);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        gridLayout_2 = new QGridLayout(centralwidget);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        graphicsView = new GMGraphicsView(centralwidget);
+        horizontalLayout = new QHBoxLayout(centralwidget);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        splitter = new QSplitter(centralwidget);
+        splitter->setObjectName(QString::fromUtf8("splitter"));
+        splitter->setCursor(QCursor(Qt::SplitHCursor));
+        splitter->setStyleSheet(QString::fromUtf8(""));
+        splitter->setFrameShadow(QFrame::Plain);
+        splitter->setOrientation(Qt::Horizontal);
+        splitter->setHandleWidth(2);
+        graphicsView = new GMGraphicsView(splitter);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
         graphicsView->setMinimumSize(QSize(200, 0));
+        splitter->addWidget(graphicsView);
+        treeWidget = new QTreeWidget(splitter);
+        QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem();
+        __qtreewidgetitem->setText(0, QString::fromUtf8("1"));
+        treeWidget->setHeaderItem(__qtreewidgetitem);
+        treeWidget->setObjectName(QString::fromUtf8("treeWidget"));
+        treeWidget->setMinimumSize(QSize(120, 0));
+        splitter->addWidget(treeWidget);
 
-        gridLayout_2->addWidget(graphicsView, 0, 0, 1, 1);
+        horizontalLayout->addWidget(splitter);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -136,8 +165,11 @@ public:
         menuEdit->addAction(actionDelete);
         menuTool->addAction(actionZoom_In);
         menuTool->addAction(actionZoom_Out);
+        menuTool->addAction(actionClear);
         toolBar->addAction(actionOpen);
         toolBar->addAction(actionNew);
+        toolBar->addAction(actionSave);
+        toolBar->addAction(actionClear);
         toolBar->addAction(actionZoom_In);
         toolBar->addAction(actionZoom_Out);
 
@@ -160,6 +192,7 @@ public:
         actionNew->setText(QCoreApplication::translate("MainWindow", "New", nullptr));
         actionZoom_In->setText(QCoreApplication::translate("MainWindow", "Zoom In", nullptr));
         actionZoom_Out->setText(QCoreApplication::translate("MainWindow", "Zoom Out", nullptr));
+        actionClear->setText(QCoreApplication::translate("MainWindow", "Clear", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuTool->setTitle(QCoreApplication::translate("MainWindow", "Tool", nullptr));

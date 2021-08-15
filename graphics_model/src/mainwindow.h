@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QGraphicsScene>
-
+#include <gmscene.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,6 +21,7 @@ public:
 private:
     Ui::MainWindow *ui;
     QTimer* timer;
+    GMScene* m_scene;
 
 protected slots:
     void foo();
@@ -29,5 +30,7 @@ private slots:
     void on_actionOpen_triggered();
     void on_actionZoom_In_triggered();
     void on_actionZoom_Out_triggered();
+    void on_actionSave_triggered();
+    void on_actionClear_triggered();
 };
 #endif // MAINWINDOW_H

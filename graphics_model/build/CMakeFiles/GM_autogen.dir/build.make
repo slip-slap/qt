@@ -63,10 +63,10 @@ RM = /opt/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kismet/Desktop/qt/stock
+CMAKE_SOURCE_DIR = /Users/kismet/Desktop/qt/graphics_model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kismet/Desktop/qt/stock/build
+CMAKE_BINARY_DIR = /Users/kismet/Desktop/qt/graphics_model/build
 
 # Utility rule file for GM_autogen.
 
@@ -74,8 +74,8 @@ CMAKE_BINARY_DIR = /Users/kismet/Desktop/qt/stock/build
 include CMakeFiles/GM_autogen.dir/progress.make
 
 CMakeFiles/GM_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/kismet/Desktop/qt/stock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target GM"
-	/opt/local/bin/cmake -E cmake_autogen /Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target GM"
+	/opt/local/bin/cmake -E cmake_autogen /Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM_autogen.dir/AutogenInfo.json Debug
 
 GM_autogen: CMakeFiles/GM_autogen
 GM_autogen: CMakeFiles/GM_autogen.dir/build.make
@@ -92,6 +92,6 @@ CMakeFiles/GM_autogen.dir/clean:
 .PHONY : CMakeFiles/GM_autogen.dir/clean
 
 CMakeFiles/GM_autogen.dir/depend:
-	cd /Users/kismet/Desktop/qt/stock/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kismet/Desktop/qt/stock /Users/kismet/Desktop/qt/stock /Users/kismet/Desktop/qt/stock/build /Users/kismet/Desktop/qt/stock/build /Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/kismet/Desktop/qt/graphics_model/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kismet/Desktop/qt/graphics_model /Users/kismet/Desktop/qt/graphics_model /Users/kismet/Desktop/qt/graphics_model/build /Users/kismet/Desktop/qt/graphics_model/build /Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GM_autogen.dir/depend
 

@@ -83,22 +83,22 @@
 			"includes" : 
 			[
 				{
-					"path" : "/Users/kismet/Desktop/qt/stock/build"
+					"path" : "/Users/kismet/Desktop/qt/graphics_model/build"
 				},
 				{
-					"path" : "/Users/kismet/Desktop/qt/stock"
+					"path" : "/Users/kismet/Desktop/qt/graphics_model"
 				},
 				{
 					"backtrace" : 0,
-					"path" : "/Users/kismet/Desktop/qt/stock/build/GM_autogen/include"
+					"path" : "/Users/kismet/Desktop/qt/graphics_model/build/GM_autogen/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/Users/kismet/Desktop/qt/stock/./src"
+					"path" : "/Users/kismet/Desktop/qt/graphics_model/./src"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/Users/kismet/Desktop/qt/stock/./include"
+					"path" : "/Users/kismet/Desktop/qt/graphics_model/./include"
 				},
 				{
 					"backtrace" : 2,
@@ -406,7 +406,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/stocksocketinterface.h",
+			"path" : "src/gmsocketinterface.h",
 			"sourceGroupIndex" : 1
 		},
 		{

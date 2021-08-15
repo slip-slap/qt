@@ -17,7 +17,7 @@
 #include <QMouseEvent>
 #include <QPaintEvent>
 #include <vector>
-#include "StockSocketInterface.h"
+#include "gmsocketinterface.h"
 #include "gmnode.h"
 #include "gmscene.h"
 

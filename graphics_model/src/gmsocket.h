@@ -7,7 +7,7 @@
 #include "gmobject.h"
 #include "gmserializable.h"
 
-class GMSocket: public StockSocketInterface, public GMObject, public GMSerializable
+class GMSocket: public GMSocketInterface, public GMObject, public GMSerializable
 {
 public:
     GMSocket();
@@ -20,15 +20,18 @@ public:
     StockNodeInterface* GetStockNode() override;
 
 public:
+    void SetPosition(std::pair<double, double> pos);
+
+public:
     std::string serialize() override;
     GMObject deserialize(std::string str) override;
 
 private:
-    StockNodeInterface* m_stock_node_interface=nullptr;
-    StockEdgeInterface* m_stock_edge_interface=nullptr;
-    GMQtGraphicSocket* m_stock_graphics_socket=nullptr;
+    StockNodeInterface* m_gmqt_node_interface=nullptr;
+    StockEdgeInterface* m_gmqt_edge_interface=nullptr;
+    GMQtGraphicSocket* m_gmqt_graphics_socket=nullptr;
     // one to many
-    std::vector<StockEdgeInterface*> m_stock_edge_interface_vec;
+    std::vector<StockEdgeInterface*> m_gmqt_edge_interface_vec;
 };
 
 #endif // STOCKSOCKET_H

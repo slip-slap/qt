@@ -6,14 +6,14 @@
 #include <QWidget>
 #include <QStyleOptionGraphicsItem>
 
-#include "StockSocketInterface.h"
+#include "gmsocketinterface.h"
 
 class GMQtGraphicSocket:public QGraphicsItem
 {
 public:
     GMQtGraphicSocket();
-    GMQtGraphicSocket(StockSocketInterface* stock_socket);
-    StockSocketInterface* GetStockSocketInterface();
+    GMQtGraphicSocket(GMSocketInterface* stock_socket);
+    GMSocketInterface* GetStockSocketInterface();
 
 private:
     void InitUI();
@@ -23,7 +23,7 @@ public:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                QWidget *widget) override;
 private:
-    StockSocketInterface* m_stock_socket_interface;
+    GMSocketInterface* m_stock_socket_interface;
 };
 
 #endif // GRAPHICSSOCKET_H

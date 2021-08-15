@@ -19,6 +19,8 @@ public:
                QWidget *widget) override;
     void SetSource(QPointF source);
     void SetTarget(QPointF target);
+    QPointF GetSource();
+    QPointF GetTarget();
 
 private:
     QPointF m_source;

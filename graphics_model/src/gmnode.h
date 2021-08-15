@@ -2,7 +2,7 @@
 #define STOCKNODE_H
 
 
-#include "StockSocketInterface.h"
+#include "gmsocketinterface.h"
 #include "stocknodeinterface.h"
 #include "gmqtgraphicsnode.h"
 #include "gmscene.h"
@@ -12,25 +12,35 @@
 #include "gmobject.h"
 #include "gmserializable.h"
 
+enum POSITION {NORTH_ANCHOR, SOUTH_ANCHOR};
+
 class GMNode: public StockNodeInterface, public GMSerializable, public GMObject
 {
 public:
-    GMNode(QGraphicsScene* scene, StockSocketInterface* stock_socket_interface);
+    GMNode(GMScene* scene);
 
     GMNode(GMScene* stock_scene, std::string title,
-              StockSocketInterface* socket1);
+              GMSocketInterface* socket1);
     GMNode(GMScene* stock_scene, std::string title,
-              StockSocketInterface* socket1,
-              StockSocketInterface* socket2);
-    GMQtGraphicsNode *GetStockGraphicsNode();
+              GMSocketInterface* socket1,
+              GMSocketInterface* socket2);
+
+    GMQtGraphicsNode* GetStockGraphicsNode();
     GMScene* GetGMScene();
-    QPointF GetStockSocketPosition();
+    void RemoveNode();
+    GMSocketInterface* GetGMSocket(int pos);
 
-    StockSocketInterface *GetStockSocketInterface();
+    GMSocketInterface *GetStockSocketInterface();
     void SetStockNodePosition(QPointF pos);
 
     void UpdateConnectedEdge() override;
     QPointF GetStockNodePosition() override;
+
+public:
+    std::pair<double, double> GetNorthAnchor();
+    std::pair<double, double> GetSouthAnchor();
+    std::pair<double, double> GetWestAnchor();
+    std::pair<double, double> GetEastAnchor();
 
 
 public:
@@ -38,9 +48,9 @@ public:
     GMObject deserialize(std::string str) override;
     friend std::ostream& operator<<(std::ostream& out, const GMNode& obj);
 private:
-    GMQtGraphicsNode* m_stock_graphics_node;
-    StockSocketInterface* m_stock_socket_interface1=nullptr;
-    StockSocketInterface* m_stock_socket_interface2=nullptr;
+    GMQtGraphicsNode* m_gmqt_graphics_node;
+    GMSocketInterface* m_gmqt_socket_interface1=nullptr;
+    GMSocketInterface* m_gmqt_socket_interface2=nullptr;
     GMScene* m_gm_scene;
 };
 

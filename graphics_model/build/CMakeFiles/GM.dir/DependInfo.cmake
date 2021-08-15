@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/kismet/Desktop/qt/stock/build/GM_autogen/mocs_compilation.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/GM_autogen/mocs_compilation.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/build/qrc_resource.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/qrc_resource.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmedge.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmedge.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmgraphicsview.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmgraphicsview.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmnode.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmnode.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmqtgraphicscuttingline.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmqtgraphicscuttingline.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmqtgraphicsedge.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmqtgraphicsnode.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmqtgraphicsnode.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmqtgraphicsscene.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmqtgraphicsscene.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmqtgraphicssocket.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmqtgraphicssocket.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmscene.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmscene.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/gmsocket.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/gmsocket.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/main.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/main.cpp.o"
-  "/Users/kismet/Desktop/qt/stock/src/mainwindow.cpp" "/Users/kismet/Desktop/qt/stock/build/CMakeFiles/GM.dir/src/mainwindow.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/build/GM_autogen/mocs_compilation.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/GM_autogen/mocs_compilation.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/build/qrc_resource.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/qrc_resource.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmedge.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmedge.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmgraphicsview.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmgraphicsview.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmnode.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmnode.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicscuttingline.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmqtgraphicscuttingline.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsedge.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsnode.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmqtgraphicsnode.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsscene.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmqtgraphicsscene.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicssocket.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmqtgraphicssocket.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmscene.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmscene.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/gmsocket.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/gmsocket.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/main.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/main.cpp.o"
+  "/Users/kismet/Desktop/qt/graphics_model/src/mainwindow.cpp" "/Users/kismet/Desktop/qt/graphics_model/build/CMakeFiles/GM.dir/src/mainwindow.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

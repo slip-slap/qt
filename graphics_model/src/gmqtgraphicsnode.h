@@ -14,8 +14,13 @@ public:
     GMQtGraphicsNode();
     GMQtGraphicsNode(std::string title);
     GMQtGraphicsNode(StockNodeInterface* stock_node_interface,std::string title);
-private:
-    void InitUI();
+
+public:
+    double GetNodeStartX();
+    double GetNodeStartY();
+    double GetNodeEndX();
+    double GetNodeEndY();
+
 
 public:
     QRectF boundingRect() const override;
@@ -24,9 +29,16 @@ public:
 
 protected:
     void mouseMoveEvent(QGraphicsSceneMouseEvent* event) override;
+
+private:
+    void InitUI();
 private:
     std::string m_title;
     StockNodeInterface* m_stock_node_interface;
+    double m_node_start_x;
+    double m_node_start_y;
+    double m_node_end_x;
+    double m_node_end_y;
 };
 
 #endif // GRAPHICSNODE_H

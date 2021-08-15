@@ -45,9 +45,9 @@ set(PROJECT_SOURCES
         src/gmqtgraphicsedge.h
         src/gmqtgraphicscuttingline.cpp
         src/gmqtgraphicscuttingline.h
+        src/gmsocketinterface.h
 
 
-        src/stocksocketinterface.h
         src/stocknodeinterface.h
         src/stockedgeinterface.h
         src/GMSerializable.h
@@ -59,5 +59,5 @@ set(PROJECT_SOURCES
 include_directories(./src)
 include_directories(./include)
 qt5_add_resources(PROJECT_SOURCES resource.qrc)
-add_executable(GM    ${PROJECT_SOURCES})
+add_executable(GM ${PROJECT_SOURCES})
 target_link_libraries(GM PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

@@ -29,15 +29,45 @@
    <string notr="true">background-color: rgb(40, 40, 40);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
-     <widget class="GMGraphicsView" name="graphicsView">
-      <property name="minimumSize">
-       <size>
-        <width>200</width>
-        <height>0</height>
-       </size>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="cursor">
+       <cursorShape>SplitHCursor</cursorShape>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>2</number>
+      </property>
+      <widget class="GMGraphicsView" name="graphicsView">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -77,6 +107,7 @@
     </property>
     <addaction name="actionZoom_In"/>
     <addaction name="actionZoom_Out"/>
+    <addaction name="actionClear"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -95,6 +126,8 @@
    </attribute>
    <addaction name="actionOpen"/>
    <addaction name="actionNew"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionClear"/>
    <addaction name="actionZoom_In"/>
    <addaction name="actionZoom_Out"/>
   </widget>
@@ -118,6 +151,11 @@
    </property>
   </action>
   <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normalon>:/rec/resource/img/save.png</normalon>
+    </iconset>
+   </property>
    <property name="text">
     <string>Save</string>
    </property>
@@ -169,6 +207,15 @@
    </property>
    <property name="text">
     <string>Zoom Out</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/rec/resource/img/clear.png</normaloff>:/rec/resource/img/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
    </property>
   </action>
  </widget>

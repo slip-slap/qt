@@ -20,16 +20,41 @@ GMQtGraphicsNode::GMQtGraphicsNode(StockNodeInterface *stock_node_interface, std
     InitUI();
 }
 
+double GMQtGraphicsNode::GetNodeStartX()
+{
+    return mapToScene(m_node_start_x,m_node_start_y).rx();
+}
+
+double GMQtGraphicsNode::GetNodeStartY()
+{
+    return mapToScene(m_node_start_x,m_node_start_y).ry();;
+}
+
+double GMQtGraphicsNode::GetNodeEndX()
+{
+    return mapToScene(m_node_end_x,m_node_end_y).rx();
+}
+
+double GMQtGraphicsNode::GetNodeEndY()
+{
+    return mapToScene(m_node_end_x,m_node_end_y).ry();
+}
+
 void GMQtGraphicsNode::InitUI()
 {
     this->setFlag(QGraphicsItem::ItemIsSelectable);
     this->setFlag(QGraphicsItem::ItemIsFocusable);
     this->setFlag(QGraphicsItem::ItemIsMovable);
+    m_node_start_x = 0;
+    m_node_start_y = 0;
+    m_node_end_x = 90;
+    m_node_end_y = 120;
 }
 
 QRectF GMQtGraphicsNode::boundingRect() const
 {
-    return QRectF(0,0,90,120);
+    return QRectF(m_node_start_x,m_node_start_y,
+                  m_node_end_x,m_node_end_y);
 }
 
 void GMQtGraphicsNode::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
@@ -50,7 +75,8 @@ void GMQtGraphicsNode::paint(QPainter *painter, const QStyleOptionGraphicsItem *
     if(this->isSelected()){
         painter->setPen(QColor(Qt::yellow));
     }
-    painter->drawRoundedRect(0,0,90,120,10,10);
+    painter->drawRoundedRect(m_node_start_x,m_node_start_y,
+                             m_node_end_x,m_node_end_y,10,10);
 }
 
 void GMQtGraphicsNode::mouseMoveEvent(QGraphicsSceneMouseEvent *event)

@@ -15,7 +15,7 @@
 #include <QPaintEvent>
 #include "gmqtgraphicsscene.h"
 #include "gmqtgraphicscuttingline.h"
-#include "StockSocketInterface.h"
+#include "gmsocketinterface.h"
 
 class GMGraphicsView : public QGraphicsView
 {
@@ -50,8 +50,8 @@ private:
     GMQtGraphicsCuttingLine* m_stock_graphics_cutting_line;
 
     StockEdgeInterface* m_drag_stock_edge_interface;
-    StockSocketInterface* m_drag_stock_edge_start;
-    StockSocketInterface* m_drag_stock_edge_end;
+    GMSocketInterface* m_drag_stock_edge_start;
+    GMSocketInterface* m_drag_stock_edge_end;
 
 };
 

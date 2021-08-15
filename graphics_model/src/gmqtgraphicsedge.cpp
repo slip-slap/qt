@@ -38,3 +38,13 @@ void GMQtGraphicsEdge::SetTarget(QPointF target)
     m_target = target;
     this->update();
 }
+
+QPointF GMQtGraphicsEdge::GetSource()
+{
+    return m_source;
+}
+
+QPointF GMQtGraphicsEdge::GetTarget()
+{
+    return m_target;
+}
