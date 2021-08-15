@@ -1,3 +1,4 @@
+#include <sstream>
 #include "gmsocket.h"
 #include "json/json.hpp"
 
@@ -50,6 +51,16 @@ void GMSocket::SetPosition(std::pair<double, double> pos)
     m_gmqt_graphics_socket->update();
 }
 
+void GMSocket::SetIdentifier(int identifier)
+{
+    m_identifier = identifier;
+}
+
+int GMSocket::GetPosition()
+{
+    return m_position;
+}
+
 std::string GMSocket::serialize()
 {
     GMQtGraphicSocket* socket = static_cast<GMQtGraphicSocket*>(m_gmqt_graphics_socket);
@@ -62,8 +73,15 @@ std::string GMSocket::serialize()
     return js.dump();
 }
 
-GMObject GMSocket::deserialize(std::string s)
+GMObject* GMSocket::deserialize(std::string data)
 {
-    return GMObject();
+    std::stringstream ss;
+    ss<<data;
+    nlohmann::json js;
+    ss>>js;
+    GMSocket* obj = new GMSocket();
+    obj->SetIdentifier(js["identifier"]);
+
+    return obj;
 }
 

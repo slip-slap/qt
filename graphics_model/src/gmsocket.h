@@ -21,10 +21,13 @@ public:
 
 public:
     void SetPosition(std::pair<double, double> pos);
+    void SetIdentifier(int identifier);
+    int GetIdentifier();
+    int GetPosition();
 
 public:
     std::string serialize() override;
-    GMObject deserialize(std::string str) override;
+    GMObject* deserialize(std::string str) override;
 
 private:
     StockNodeInterface* m_gmqt_node_interface=nullptr;
@@ -32,6 +35,8 @@ private:
     GMQtGraphicSocket* m_gmqt_graphics_socket=nullptr;
     // one to many
     std::vector<StockEdgeInterface*> m_gmqt_edge_interface_vec;
+    int m_identifier;
+    int m_position;
 };
 
 #endif // STOCKSOCKET_H

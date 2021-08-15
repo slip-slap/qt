@@ -106,18 +106,20 @@ std::string GMEdge::serialize()
 {
     //GMSocket* gm_socket1 = (GMSocket*)m_start_socket;
     //GMSocket* gm_socket2 = (GMSocket*)m_end_socket;
+
+    nlohmann::json json_socket;
+    json_socket.push_back({json_socket.parse(m_start_socket->serialize())});
+    json_socket.push_back({json_socket.parse(m_end_socket->serialize())});
     nlohmann::json js =
     {
         {"id", reinterpret_cast<std::uintptr_t>(this)},
         {"scene",reinterpret_cast<std::uintptr_t>(m_gm_scene)},
-        {"start_socket", js.parse(m_start_socket->serialize())},
-        {"end_socket", js.parse(m_end_socket->serialize())}
+        {"socket", json_socket}
     };
-
     return js.dump();
 }
 
-GMObject GMEdge::deserialize(std::string str)
+GMObject* GMEdge::deserialize(std::string str)
 {
 
 }

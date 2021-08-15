@@ -26,7 +26,7 @@ public:
 
 public:
     std::string serialize() override;
-    GMObject deserialize(std::string str) override;
+    GMObject* deserialize(std::string str) override;
 
 private:
     QGraphicsScene* m_stock_graphics_scene=nullptr;

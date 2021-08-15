@@ -21,16 +21,11 @@ public:
 
     GMNode(GMScene* stock_scene, std::string title,
               GMSocketInterface* socket1);
-    GMNode(GMScene* stock_scene, std::string title,
-              GMSocketInterface* socket1,
-              GMSocketInterface* socket2);
 
     GMQtGraphicsNode* GetStockGraphicsNode();
     GMScene* GetGMScene();
     void RemoveNode();
     GMSocketInterface* GetGMSocket(int pos);
-
-    GMSocketInterface *GetStockSocketInterface();
     void SetStockNodePosition(QPointF pos);
 
     void UpdateConnectedEdge() override;
@@ -45,7 +40,7 @@ public:
 
 public:
     std::string serialize() override;
-    GMObject deserialize(std::string str) override;
+    GMObject* deserialize(std::string str) override;
     friend std::ostream& operator<<(std::ostream& out, const GMNode& obj);
 private:
     GMQtGraphicsNode* m_gmqt_graphics_node;

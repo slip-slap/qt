@@ -116,7 +116,7 @@ std::string GMScene::serialize()
     return js.dump();
 }
 
-GMObject GMScene::deserialize(std::string str)
+GMObject* GMScene::deserialize(std::string str)
 {
     std::stringstream ss; ss<<str;
     nlohmann::json js;    ss>>js;
@@ -129,7 +129,7 @@ GMObject GMScene::deserialize(std::string str)
 
 
 
-    return GMObject();
+    return nullptr;
 }
 
 

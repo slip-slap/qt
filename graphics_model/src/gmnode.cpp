@@ -33,21 +33,6 @@ GMNode::GMNode(GMScene *stock_scene, std::string title,
 
 }
 
-GMNode::GMNode(GMScene *stock_scene, std::string title, GMSocketInterface *socket1, GMSocketInterface *socket2)
-{
-    m_gm_scene = stock_scene;
-    m_gmqt_graphics_node = new GMQtGraphicsNode(this,title);
-    m_gmqt_socket_interface1= socket1;
-    m_gmqt_socket_interface2= socket2;
-    GMSocket* gm_socket = static_cast<GMSocket*>(m_gmqt_socket_interface1);
-    gm_socket->SetPosition(this->GetNorthAnchor());
-    m_gmqt_socket_interface1->GetStockGraphicsSocket()->setParentItem(m_gmqt_graphics_node);
-    GMSocket* gm_socket2 = static_cast<GMSocket*>(m_gmqt_socket_interface2);
-    gm_socket2->SetPosition(this->GetSouthAnchor());
-    m_gmqt_socket_interface2->GetStockGraphicsSocket()->setParentItem(m_gmqt_graphics_node);
-    stock_scene->AddNode(this);
-}
-
 GMQtGraphicsNode *GMNode::GetStockGraphicsNode()
 {
     return m_gmqt_graphics_node;
@@ -73,12 +58,6 @@ GMSocketInterface *GMNode::GetGMSocket(int pos)
     return nullptr;
 }
 
-
-
-GMSocketInterface *GMNode::GetStockSocketInterface()
-{
-    return m_gmqt_socket_interface1;
-}
 
 void GMNode::SetStockNodePosition(QPointF pos)
 {
@@ -146,20 +125,22 @@ std::string GMNode::serialize()
 {
     GMSocket* gm_socket1 = (GMSocket*)m_gmqt_socket_interface1;
     GMSocket* gm_socket2 = (GMSocket*)m_gmqt_socket_interface2;
+    nlohmann::json js_socket;
+    js_socket.push_back({js_socket.parse(gm_socket1->serialize())});
+    js_socket.push_back({js_socket.parse(gm_socket2->serialize())});
+
     nlohmann::json js =
     {
         {"id", reinterpret_cast<std::uintptr_t>(this)},
         {"scene",reinterpret_cast<std::uintptr_t>(m_gm_scene)},
         {"pos_x",m_gmqt_graphics_node->pos().rx()},
-        {"pos_y",m_gmqt_graphics_node->pos().ry()},
-        {"socket1", js.parse(gm_socket1->serialize())},
-        {"socket2", js.parse(gm_socket1->serialize())}
+        {"pos_y",m_gmqt_graphics_node->pos().ry()}
     };
-
+    js["socket"] = js_socket;
     return js.dump();
 }
 
-GMObject GMNode::deserialize(std::string data)
+GMObject* GMNode::deserialize(std::string data)
 {
     std::stringstream ss; ss<<data;
     nlohmann::json js;    ss>>js;
@@ -170,6 +151,7 @@ GMObject GMNode::deserialize(std::string data)
     m_gmqt_socket_interface1= new GMSocket();
     m_gmqt_socket_interface2= new GMSocket();
     GMSocket* gm_socket = static_cast<GMSocket*>(m_gmqt_socket_interface1);
+    gm_socket->deserialize(js["socket"]);
     gm_socket->SetPosition(this->GetNorthAnchor());
     m_gmqt_socket_interface1->GetStockGraphicsSocket()->setParentItem(m_gmqt_graphics_node);
     GMSocket* gm_socket2 = static_cast<GMSocket*>(m_gmqt_socket_interface2);
@@ -178,7 +160,7 @@ GMObject GMNode::deserialize(std::string data)
     m_gm_scene->AddNode(this);
 
 
-    return GMObject();
+    return nullptr;
 }
 
 std::ostream& operator<<(std::ostream& out, const GMNode& obj)
