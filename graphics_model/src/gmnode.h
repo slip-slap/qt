@@ -12,15 +12,13 @@
 #include "gmobject.h"
 #include "gmserializable.h"
 
-enum POSITION {NORTH_ANCHOR, SOUTH_ANCHOR};
+enum POSITION {NORTH_ANCHOR, SOUTH_ANCHOR, EAST_ANCHOR, WEST_ANCHOR};
 
 class GMNode: public StockNodeInterface, public GMSerializable, public GMObject
 {
 public:
     GMNode(GMScene* scene);
 
-    GMNode(GMScene* stock_scene, std::string title,
-              GMSocketInterface* socket1);
 
     GMQtGraphicsNode* GetStockGraphicsNode();
     GMScene* GetGMScene();
@@ -36,6 +34,7 @@ public:
     std::pair<double, double> GetSouthAnchor();
     std::pair<double, double> GetWestAnchor();
     std::pair<double, double> GetEastAnchor();
+    std::pair<double, double> GetAnchor(int pos);
 
 
 public:

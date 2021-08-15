@@ -7,12 +7,16 @@ GMSocket::GMSocket()
     m_gmqt_graphics_socket = new GMQtGraphicSocket(this);
 }
 
-GMSocket::GMSocket(StockNodeInterface *stock_node_interface)
+GMSocket::GMSocket(GMNode* parent, int pos)
 {
     m_gmqt_graphics_socket = new GMQtGraphicSocket(this);
-    m_gmqt_node_interface = stock_node_interface;
-    m_gmqt_graphics_socket->setPos(m_gmqt_node_interface->GetStockNodePosition());
+    m_position = pos;
+    m_gm_node = parent;
+    this->SetPosition(parent->GetAnchor(pos));
+    m_gmqt_graphics_socket->setParentItem(parent->GetStockGraphicsNode());
+
 }
+
 
 GMQtGraphicSocket *GMSocket::GetStockGraphicsSocket()
 {
@@ -45,6 +49,7 @@ StockNodeInterface *GMSocket::GetStockNode()
     return m_gmqt_node_interface;
 }
 
+
 void GMSocket::SetPosition(std::pair<double, double> pos)
 {
     m_gmqt_graphics_socket->setPos(QPointF(pos.first, pos.second));
@@ -60,6 +65,17 @@ int GMSocket::GetPosition()
 {
     return m_position;
 }
+
+void GMSocket::SetLocalPosition(int pos)
+{
+    m_position = pos;
+}
+
+void GMSocket::SetParentItem(QGraphicsItem *parent)
+{
+    m_gmqt_graphics_socket->setParentItem(parent);
+}
+
 
 std::string GMSocket::serialize()
 {
@@ -78,9 +94,8 @@ GMObject* GMSocket::deserialize(std::string data)
     ss<<data;
     nlohmann::json js;
     ss>>js;
-    GMSocket* obj = new GMSocket();
-    obj->SetIdentifier(js["identifier"]);
-
-    return obj;
+    m_identifier = js["identifier"];
+    m_position = js["position"];
+    return nullptr;
 }
 

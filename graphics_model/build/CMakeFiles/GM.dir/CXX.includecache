@@ -346,6 +346,20 @@ gmobject.h
 gmserializable.h
 /Users/kismet/Desktop/qt/graphics_model/src/gmserializable.h
 
+/Users/kismet/Desktop/qt/graphics_model/src/gmnode.cpp
+gmnode.h
+/Users/kismet/Desktop/qt/graphics_model/src/gmnode.h
+gmsocket.h
+/Users/kismet/Desktop/qt/graphics_model/src/gmsocket.h
+iostream
+-
+string
+-
+sstream
+-
+json/json.hpp
+/Users/kismet/Desktop/qt/graphics_model/src/json/json.hpp
+
 /Users/kismet/Desktop/qt/graphics_model/src/gmnode.h
 gmsocketinterface.h
 /Users/kismet/Desktop/qt/graphics_model/src/gmsocketinterface.h
@@ -463,14 +477,6 @@ string
 -
 gmobject.h
 /Users/kismet/Desktop/qt/graphics_model/src/gmobject.h
-
-/Users/kismet/Desktop/qt/graphics_model/src/gmsocket.cpp
-sstream
--
-gmsocket.h
-/Users/kismet/Desktop/qt/graphics_model/src/gmsocket.h
-json/json.hpp
-/Users/kismet/Desktop/qt/graphics_model/src/json/json.hpp
 
 /Users/kismet/Desktop/qt/graphics_model/src/gmsocket.h
 gmqtgraphicssocket.h
