@@ -67,8 +67,7 @@ std::string GMSocket::serialize()
     nlohmann::json js;
     js = {
         {"identifier", reinterpret_cast<std::uintptr_t>(this)},
-        {"pos_x", socket->pos().rx()},
-        {"pos_y", socket->pos().ry()}
+        {"position", m_position},
     };
     return js.dump();
 }

@@ -35,6 +35,7 @@ MainWindow::MainWindow(QWidget *parent)
     gm_node3->SetStockNodePosition(QPointF(400,100));
     new GMEdge(m_scene, gm_node,POSITION::SOUTH_ANCHOR, gm_node2,POSITION::NORTH_ANCHOR);
     new GMEdge(m_scene, gm_node2,POSITION::NORTH_ANCHOR, gm_node3,POSITION::NORTH_ANCHOR);
+    new GMEdge(m_scene, gm_node,POSITION::NORTH_ANCHOR, gm_node3,POSITION::NORTH_ANCHOR);
 
     this->ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     this->ui->graphicsView->setRenderHint(QPainter::HighQualityAntialiasing);
