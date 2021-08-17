@@ -33,7 +33,6 @@ void GMGraphicsView::SetGMQtGraphicsCuttingLine(GMQtGraphicsCuttingLine *stock_g
 
 void GMGraphicsView::mouseMoveEvent(QMouseEvent *event)
 {
-     //std::cout<<"mouse is moving"<<std::endl;
      if(this->m_mode == MODE_CUTTING_LINE)
      {
          QPointF pos = mapToScene(event->pos());

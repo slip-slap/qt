@@ -63,8 +63,10 @@ CMakeFiles/GM.dir/src/gmedge.cpp.o
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsedge.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsnode.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsscene.h
+ /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicssocket.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmscene.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmserializable.h
+ /Users/kismet/Desktop/qt/graphics_model/src/gmsocket.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmsocketinterface.h
  /Users/kismet/Desktop/qt/graphics_model/src/stockedgeinterface.h
  /Users/kismet/Desktop/qt/graphics_model/src/stocknodeinterface.h
@@ -241,14 +243,26 @@ CMakeFiles/GM.dir/src/gmqtgraphicscuttingline.cpp.o
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qstyleoption.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qwidget.h
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o
+ /Users/kismet/Desktop/qt/graphics_model/src/gmobject.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsedge.cpp
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsedge.h
+ /Users/kismet/Desktop/qt/graphics_model/src/gmscene.h
+ /Users/kismet/Desktop/qt/graphics_model/src/gmserializable.h
+ /Users/kismet/Desktop/qt/graphics_model/src/gmsocketinterface.h
+ /Users/kismet/Desktop/qt/graphics_model/src/stockedgeinterface.h
+ /Users/kismet/Desktop/qt/graphics_model/src/stocknodeinterface.h
+ /Users/kismet/Desktop/qt/graphics_model/src/stocksceneinterface.h
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/QPointF
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qpoint.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Headers/QPainter
  /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Headers/qpainter.h
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsItem
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsPathItem
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsScene
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QStyleOptionGraphicsItem
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QWidget
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsitem.h
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsscene.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qstyleoption.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qwidget.h
 CMakeFiles/GM.dir/src/gmqtgraphicsnode.cpp.o
@@ -352,9 +366,11 @@ CMakeFiles/GM.dir/src/gmscene.cpp.o
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsedge.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsnode.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsscene.h
+ /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicssocket.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmscene.cpp
  /Users/kismet/Desktop/qt/graphics_model/src/gmscene.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmserializable.h
+ /Users/kismet/Desktop/qt/graphics_model/src/gmsocket.h
  /Users/kismet/Desktop/qt/graphics_model/src/gmsocketinterface.h
  /Users/kismet/Desktop/qt/graphics_model/src/stockedgeinterface.h
  /Users/kismet/Desktop/qt/graphics_model/src/stocknodeinterface.h
@@ -438,6 +454,7 @@ CMakeFiles/GM.dir/src/main.cpp.o
  ../src/gmobject.h
  ../src/gmscene.h
  ../src/gmserializable.h
+ ../src/gmsocketinterface.h
  ../src/stockedgeinterface.h
  ../src/stocknodeinterface.h
  ../src/stocksceneinterface.h
@@ -450,9 +467,11 @@ CMakeFiles/GM.dir/src/main.cpp.o
  /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qpoint.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qtimer.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QApplication
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsItem
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsScene
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QMainWindow
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qapplication.h
+ /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsitem.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsscene.h
  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qmainwindow.h
 CMakeFiles/GM.dir/src/mainwindow.cpp.o

@@ -10,7 +10,7 @@
 class GMSocket: public GMSocketInterface
 {
 public:
-    GMSocket();
+    GMSocket(GMScene* scene);
     GMSocket(GMNode* gm_node, int pos);
     GMQtGraphicSocket *GetStockGraphicsSocket() override;
     QPointF GetSocketPosition() override;
@@ -29,15 +29,17 @@ public:
 public:
     std::string serialize() override;
     GMObject* deserialize(std::string str) override;
+    const int& GetGMID() const;
 
 private:
     StockNodeInterface* m_gmqt_node_interface=nullptr;
     StockEdgeInterface* m_gmqt_edge_interface=nullptr;
     GMQtGraphicSocket* m_gmqt_graphics_socket=nullptr;
     GMNode* m_gm_node;
+    GMScene* m_gm_scene;
     // one to many
     std::vector<StockEdgeInterface*> m_gmqt_edge_interface_vec;
-    int m_identifier;
+    int m_gm_id;
     int m_position;
 };
 

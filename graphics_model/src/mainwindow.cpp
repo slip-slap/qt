@@ -21,9 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     std::cout<<"it start"<<std::endl;
     ui->setupUi(this);
-    /*ui->statusbar->setStyleSheet("background-color: rgb(255,255,255); color : black;");
-    ui->menubar->setStyleSheet("background-color: rgb(255,255,255); color : black;");
-    ui->toolBar->setStyleSheet("background: white; spacing: 0px;");*/
     ui->menubar->setNativeMenuBar(false);
     m_scene = new GMScene();
     GMQtGraphicsCuttingLine* cutting_line = new GMQtGraphicsCuttingLine((GMQtGraphicScene*)m_scene->GetGraphicsScenePtr());
@@ -33,23 +30,25 @@ MainWindow::MainWindow(QWidget *parent)
     gm_node2->SetStockNodePosition(QPointF(200,200));
     GMNode* gm_node3 = new GMNode(m_scene);
     gm_node3->SetStockNodePosition(QPointF(400,100));
+    GMNode* gm_node4 = new GMNode(m_scene);
+    gm_node4->SetStockNodePosition(QPointF(300,200));
     new GMEdge(m_scene, gm_node,POSITION::SOUTH_ANCHOR, gm_node2,POSITION::NORTH_ANCHOR);
     new GMEdge(m_scene, gm_node2,POSITION::NORTH_ANCHOR, gm_node3,POSITION::NORTH_ANCHOR);
     new GMEdge(m_scene, gm_node,POSITION::NORTH_ANCHOR, gm_node3,POSITION::NORTH_ANCHOR);
-
+    m_scene->GetGraphicsScenePtr()->setBackgroundBrush(Qt::black);
+    m_scene->GetGraphicsScenePtr()->setSceneRect(-100,-100,1000,1000);
+    m_scene->DisplayMap();
     this->ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     this->ui->graphicsView->setRenderHint(QPainter::HighQualityAntialiasing);
     this->ui->graphicsView->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
     this->ui->graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     this->ui->graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-
     this->ui->graphicsView->setScene(m_scene->GetGraphicsScenePtr());
     this->ui->graphicsView->SetStockGraphicScene((GMQtGraphicScene*)(m_scene->GetGraphicsScenePtr()));
     this->ui->graphicsView->SetGMQtGraphicsCuttingLine(cutting_line);
     this->ui->graphicsView->setDragMode(QGraphicsView::RubberBandDrag);
 
-    m_scene->GetGraphicsScenePtr()->setBackgroundBrush(Qt::black);
-    m_scene->GetGraphicsScenePtr()->setSceneRect(-100,-100,1000,1000);
+
 
 
     timer = new QTimer(this);

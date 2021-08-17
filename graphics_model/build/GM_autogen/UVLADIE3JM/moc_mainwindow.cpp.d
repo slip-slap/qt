@@ -119,6 +119,7 @@
   /Users/kismet/Desktop/qt/graphics_model/src/gmobject.h \
   /Users/kismet/Desktop/qt/graphics_model/src/gmscene.h \
   /Users/kismet/Desktop/qt/graphics_model/src/gmserializable.h \
+  /Users/kismet/Desktop/qt/graphics_model/src/gmsocketinterface.h \
   /Users/kismet/Desktop/qt/graphics_model/src/stockedgeinterface.h \
   /Users/kismet/Desktop/qt/graphics_model/src/stocknodeinterface.h \
   /Users/kismet/Desktop/qt/graphics_model/src/stocksceneinterface.h \
@@ -147,6 +148,7 @@
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qline.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qlist.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qlogging.h \
+  /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qmap.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qmargins.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qmetatype.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qmutex.h \
@@ -178,6 +180,7 @@
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qtcore-config.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qtimer.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qtypeinfo.h \
+  /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qvariant.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qvarlengtharray.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qvector.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Versions/5/Headers/qversiontagging.h \
@@ -192,6 +195,7 @@
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qkeysequence.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qmatrix.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qpaintdevice.h \
+  /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qpainterpath.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qpalette.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qpen.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qpixelformat.h \
@@ -204,8 +208,10 @@
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qtguiglobal.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qtransform.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Versions/5/Headers/qwindowdefs.h \
+  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Versions/5/Headers/QGraphicsItem \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Versions/5/Headers/QGraphicsScene \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Versions/5/Headers/QMainWindow \
+  /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Versions/5/Headers/qgraphicsitem.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Versions/5/Headers/qgraphicsscene.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Versions/5/Headers/qmainwindow.h \
   /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Versions/5/Headers/qsizepolicy.h \

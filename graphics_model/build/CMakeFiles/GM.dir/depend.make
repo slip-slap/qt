@@ -62,8 +62,10 @@ CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmobject.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmqtgraphicsedge.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmqtgraphicsnode.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmqtgraphicsscene.h
+CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmqtgraphicssocket.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmscene.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmserializable.h
+CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmsocket.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/gmsocketinterface.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/stockedgeinterface.h
 CMakeFiles/GM.dir/src/gmedge.cpp.o: ../src/stocknodeinterface.h
@@ -240,14 +242,26 @@ CMakeFiles/GM.dir/src/gmqtgraphicscuttingline.cpp.o: /usr/local/Cellar/qt@5/5.15
 CMakeFiles/GM.dir/src/gmqtgraphicscuttingline.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qstyleoption.h
 CMakeFiles/GM.dir/src/gmqtgraphicscuttingline.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qwidget.h
 
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/gmobject.h
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/gmqtgraphicsedge.cpp
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/gmqtgraphicsedge.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/gmscene.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/gmserializable.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/gmsocketinterface.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/stockedgeinterface.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/stocknodeinterface.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: ../src/stocksceneinterface.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/QPointF
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qpoint.h
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Headers/QPainter
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtGui.framework/Headers/qpainter.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsItem
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsPathItem
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsScene
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QStyleOptionGraphicsItem
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QWidget
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsitem.h
+CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsscene.h
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qstyleoption.h
 CMakeFiles/GM.dir/src/gmqtgraphicsedge.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qwidget.h
 
@@ -351,9 +365,11 @@ CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmobject.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmqtgraphicsedge.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmqtgraphicsnode.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmqtgraphicsscene.h
+CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmqtgraphicssocket.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmscene.cpp
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmscene.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmserializable.h
+CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmsocket.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/gmsocketinterface.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/stockedgeinterface.h
 CMakeFiles/GM.dir/src/gmscene.cpp.o: ../src/stocknodeinterface.h
@@ -437,6 +453,7 @@ CMakeFiles/GM.dir/src/gmsocket.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidget
 CMakeFiles/GM.dir/src/main.cpp.o: ../src/gmobject.h
 CMakeFiles/GM.dir/src/main.cpp.o: ../src/gmscene.h
 CMakeFiles/GM.dir/src/main.cpp.o: ../src/gmserializable.h
+CMakeFiles/GM.dir/src/main.cpp.o: ../src/gmsocketinterface.h
 CMakeFiles/GM.dir/src/main.cpp.o: ../src/stockedgeinterface.h
 CMakeFiles/GM.dir/src/main.cpp.o: ../src/stocknodeinterface.h
 CMakeFiles/GM.dir/src/main.cpp.o: ../src/stocksceneinterface.h
@@ -449,9 +466,11 @@ CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.frame
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qpoint.h
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtCore.framework/Headers/qtimer.h
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QApplication
+CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsItem
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QGraphicsScene
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/QMainWindow
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qapplication.h
+CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsitem.h
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qgraphicsscene.h
 CMakeFiles/GM.dir/src/main.cpp.o: /usr/local/Cellar/qt@5/5.15.2/lib/QtWidgets.framework/Headers/qmainwindow.h
 

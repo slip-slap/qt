@@ -18,10 +18,11 @@ class GMNode: public StockNodeInterface, public GMSerializable
 {
 public:
     GMNode(GMScene* scene);
-
+    GMNode(GMScene* scene, int placeholder);
 
     GMQtGraphicsNode* GetStockGraphicsNode();
     GMScene* GetGMScene();
+
     void RemoveNode();
     GMSocketInterface* GetGMSocket(int pos);
     void SetStockNodePosition(QPointF pos);
@@ -29,12 +30,17 @@ public:
     void UpdateConnectedEdge() override;
     QPointF GetStockNodePosition() override;
 
+
 public:
     std::pair<double, double> GetNorthAnchor();
     std::pair<double, double> GetSouthAnchor();
     std::pair<double, double> GetWestAnchor();
     std::pair<double, double> GetEastAnchor();
     std::pair<double, double> GetAnchor(int pos);
+    const int& GetGMID() const;
+
+    const std::vector<int>& GetRelatedSocketId() const;
+    void SetAnchor(GMSocketInterface* anchor);
 
 
 public:
@@ -43,9 +49,11 @@ public:
     friend std::ostream& operator<<(std::ostream& out, const GMNode& obj);
 private:
     GMQtGraphicsNode* m_gmqt_graphics_node;
-    GMSocketInterface* m_gmqt_socket_interface1=nullptr;
-    GMSocketInterface* m_gmqt_socket_interface2=nullptr;
+    GMSocketInterface* m_gm_north_anchor=nullptr;
+    GMSocketInterface* m_gm_south_anchor=nullptr;
+    std::vector<int> m_related_socket_ids;
     GMScene* m_gm_scene;
+    int m_gm_id;
 };
 
 #endif // STOCKNODE_H

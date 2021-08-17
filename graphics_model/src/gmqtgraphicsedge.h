@@ -5,6 +5,7 @@
 #include <QPainter>
 #include <QWidget>
 #include <QStyleOptionGraphicsItem>
+#include "gmscene.h"
 
 
 class GMQtGraphicsEdge: public QGraphicsPathItem

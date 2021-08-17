@@ -2,18 +2,22 @@
 #include "gmsocket.h"
 #include "json/json.hpp"
 
-GMSocket::GMSocket()
+GMSocket::GMSocket(GMScene* scene)
 {
     m_gmqt_graphics_socket = new GMQtGraphicSocket(this);
+    m_gm_scene = scene;
+    m_gm_scene->AddSocket(this);
 }
 
 GMSocket::GMSocket(GMNode* parent, int pos)
 {
+    m_gm_id = GMScene::GenerateIDforGMObject();
     m_gmqt_graphics_socket = new GMQtGraphicSocket(this);
     m_position = pos;
     m_gm_node = parent;
     this->SetPosition(parent->GetAnchor(pos));
-    m_gmqt_graphics_socket->setParentItem(parent->GetStockGraphicsNode());
+    m_gm_scene = parent->GetGMScene();
+    m_gm_scene->AddSocket(this);
 
 }
 
@@ -58,7 +62,7 @@ void GMSocket::SetPosition(std::pair<double, double> pos)
 
 void GMSocket::SetIdentifier(int identifier)
 {
-    m_identifier = identifier;
+    m_gm_id = identifier;
 }
 
 int GMSocket::GetPosition()
@@ -74,26 +78,35 @@ void GMSocket::SetLocalPosition(int pos)
 void GMSocket::SetParentItem(QGraphicsItem *parent)
 {
     m_gmqt_graphics_socket->setParentItem(parent);
+    m_gmqt_graphics_socket->update();
 }
 
 
 std::string GMSocket::serialize()
 {
-    GMQtGraphicSocket* socket = static_cast<GMQtGraphicSocket*>(m_gmqt_graphics_socket);
     nlohmann::json js;
-    js = {"identifier", reinterpret_cast<std::uintptr_t>(this)};
-
+    js["id"] = m_gm_id;
+    js["position"] = m_position;
+    nlohmann::json json_related_edge;
+    for(auto i:m_gmqt_edge_interface_vec){
+        GMEdge* gm_edge = static_cast<GMEdge*>(i);
+        nlohmann::json js_temp1; js_temp1["id"] = gm_edge->GetGMID(); json_related_edge.push_back(js_temp1);
+    }
+    js["connected_edges"] = json_related_edge;
     return js.dump();
 }
 
 GMObject* GMSocket::deserialize(std::string data)
 {
-    std::stringstream ss;
-    ss<<data;
-    nlohmann::json js;
-    ss>>js;
-    m_identifier = js["identifier"];
-    m_position = js["position"];
+    std::stringstream ss; ss<<data;
+    nlohmann::json js; ss>>js;
+    m_gm_id = js["id"];
+    m_position = js["position"];  
     return nullptr;
+}
+
+const int &GMSocket::GetGMID() const
+{
+    return m_gm_id;
 }
 

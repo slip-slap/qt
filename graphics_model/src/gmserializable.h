@@ -3,7 +3,7 @@
 
 #include <string>
 #include "gmobject.h"
-class GMSerializable
+class GMSerializable: public GMObject
 {
 public:
     virtual std::string serialize()=0;

@@ -9,7 +9,7 @@
 #include "gmobject.h"
 #include "gmserializable.h"
 
-class GMEdge: public StockEdgeInterface, public GMObject, public GMSerializable
+class GMEdge: public StockEdgeInterface, public GMSerializable
 {
 public:
     GMEdge(GMScene* scene, GMSocketInterface* start_socket, GMSocketInterface* end_socket);
@@ -24,8 +24,14 @@ public:
     void ConnectGMNodes(GMScene* scene, GMNode* node1, int pos1, GMNode* node2, int pos2);
 
 public:
+    const int& GetStartSocketId() const;
+    const int& GetEndSocketId() const;
+    void SetStartAndEndSocket(GMSocketInterface* start, GMSocketInterface* end);
+
+public:
     std::string serialize() override;
     GMObject* deserialize(std::string str) override;
+    const int& GetGMID() const;
 
 
 private:
@@ -33,6 +39,9 @@ private:
     GMSocketInterface* m_start_socket=nullptr;
     GMSocketInterface* m_end_socket=nullptr;
     GMQtGraphicsEdge* m_gmqt_edge=nullptr;
+    int m_start_socket_id;
+    int m_end_stock_id;
+    int m_id;
 
 };
 

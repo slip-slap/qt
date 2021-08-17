@@ -22,22 +22,22 @@ GMQtGraphicsNode::GMQtGraphicsNode(StockNodeInterface *stock_node_interface, std
 
 double GMQtGraphicsNode::GetNodeStartX()
 {
-    return mapToScene(m_node_start_x,m_node_start_y).rx();
+    return m_node_start_x;
 }
 
 double GMQtGraphicsNode::GetNodeStartY()
 {
-    return mapToScene(m_node_start_x,m_node_start_y).ry();;
+    return m_node_start_y;
 }
 
 double GMQtGraphicsNode::GetNodeEndX()
 {
-    return mapToScene(m_node_end_x,m_node_end_y).rx();
+    return m_node_end_x;
 }
 
 double GMQtGraphicsNode::GetNodeEndY()
 {
-    return mapToScene(m_node_end_x,m_node_end_y).ry();
+    return m_node_end_y;
 }
 
 void GMQtGraphicsNode::InitUI()

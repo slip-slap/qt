@@ -6,6 +6,7 @@ GMQtGraphicsEdge::GMQtGraphicsEdge():QGraphicsPathItem()
     this->setFlag(QGraphicsItem::ItemIsSelectable,true);
 }
 
+
 QRectF GMQtGraphicsEdge::boundingRect() const
 {
     return QRectF(0,0,200,200);

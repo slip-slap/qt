@@ -2,6 +2,8 @@
 #include "json/json.hpp"
 #include <sstream>
 #include <iostream>
+#include "gmsocket.h"
+
 GMEdge::GMEdge(GMScene *scene, GMSocketInterface *start_socket, GMSocketInterface *end_socket)
 {
     m_gm_scene = scene;
@@ -29,6 +31,7 @@ GMEdge::GMEdge(GMScene *scene, QPointF start, QPointF end)
 GMEdge::GMEdge(GMScene *scene, GMNode *node1, int pos1, GMNode *node2, int pos2)
 {
     m_gm_scene = scene;
+    m_id = GMScene::GenerateIDforGMObject();
     m_start_socket = node1->GetGMSocket(pos1);
     m_end_socket = node2->GetGMSocket(pos2);
     m_gmqt_edge = new GMQtGraphicsEdge();
@@ -45,6 +48,8 @@ GMEdge::GMEdge(GMScene *scene)
 {
     m_gm_scene = scene;
     m_gmqt_edge = new GMQtGraphicsEdge();
+    m_gm_scene->GetGraphicsScenePtr()->addItem(m_gmqt_edge);
+    m_gm_scene->AddEdge(this);
 }
 
 void GMEdge::SetTarget(QPointF des)
@@ -109,29 +114,55 @@ void GMEdge::ConnectGMNodes(GMScene* scene, GMNode *node1, int pos1, GMNode *nod
     m_gm_scene->AddEdge(this);
 }
 
+const int &GMEdge::GetStartSocketId() const
+{
+    return m_start_socket_id;
+}
+
+const int &GMEdge::GetEndSocketId() const
+{
+    return m_end_stock_id;
+}
+
+void GMEdge::SetStartAndEndSocket(GMSocketInterface *start, GMSocketInterface *end)
+{
+    m_start_socket = start;
+    m_end_socket = end;
+    m_gmqt_edge->SetSource(m_start_socket->GetSocketPosition()+QPointF(10,10));
+    m_gmqt_edge->SetTarget(m_end_socket->GetSocketPosition()+QPointF(10,10));
+    // Add Related Edge to socket
+    m_start_socket->AddRelatedEdge(this);
+    m_end_socket->AddRelatedEdge(this);
+}
+
 std::string GMEdge::serialize()
 {
-    //GMSocket* gm_socket1 = (GMSocket*)m_start_socket;
-    //GMSocket* gm_socket2 = (GMSocket*)m_end_socket;
+    GMSocket* gm_socket1 = (GMSocket*)m_start_socket;
+    GMSocket* gm_socket2 = (GMSocket*)m_end_socket;
+    nlohmann::json js_socket;
+    nlohmann::json js_temp1; js_temp1["id"] = gm_socket1->GetGMID(); js_socket.push_back(js_temp1);
+    nlohmann::json js_temp2; js_temp2["id"] = gm_socket2->GetGMID(); js_socket.push_back(js_temp2);
 
-    nlohmann::json json_socket;
-    json_socket.push_back({json_socket.parse(m_start_socket->serialize())});
-    json_socket.push_back({json_socket.parse(m_end_socket->serialize())});
     nlohmann::json js =
     {
-        {"id", reinterpret_cast<std::uintptr_t>(this)},
-        {"scene",reinterpret_cast<std::uintptr_t>(m_gm_scene)},
-        {"socket", json_socket}
+        {"id", m_id},
+        {"scene",m_gm_scene->GetGMID()},
+        {"socket", js_socket}
     };
     return js.dump();
 }
 
-GMObject* GMEdge::deserialize(std::string str)
+GMObject* GMEdge::deserialize(std::string data)
 {
-    std::stringstream ss;
-    ss<<str;
-    nlohmann::json js;
-    ss>>js;
-    std::cout<<js["socket"]<<std::endl;
+    std::stringstream ss; ss<<data;
+    nlohmann::json js;    ss>>js;
+    m_id = js["id"];
+    m_start_socket_id = js["socket"][0]["id"];
+    m_end_stock_id = js["socket"][1]["id"];
     return nullptr;
+}
+
+const int &GMEdge::GetGMID() const
+{
+    return m_id;
 }
