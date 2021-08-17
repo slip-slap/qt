@@ -6,6 +6,7 @@
 
 GMEdge::GMEdge(GMScene *scene, GMSocketInterface *start_socket, GMSocketInterface *end_socket)
 {
+    m_id = GMScene::GenerateIDforGMObject();
     m_gm_scene = scene;
     m_start_socket = start_socket;
     m_end_socket = end_socket;

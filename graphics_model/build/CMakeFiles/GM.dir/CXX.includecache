@@ -330,6 +330,18 @@ utility
 vector
 -
 
+/Users/kismet/Desktop/qt/graphics_model/src/gmedge.cpp
+gmedge.h
+/Users/kismet/Desktop/qt/graphics_model/src/gmedge.h
+json/json.hpp
+/Users/kismet/Desktop/qt/graphics_model/src/json/json.hpp
+sstream
+-
+iostream
+-
+gmsocket.h
+/Users/kismet/Desktop/qt/graphics_model/src/gmsocket.h
+
 /Users/kismet/Desktop/qt/graphics_model/src/gmedge.h
 gmqtgraphicsscene.h
 /Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsscene.h
@@ -443,28 +455,6 @@ QStyleOptionGraphicsItem
 -
 gmsocketinterface.h
 /Users/kismet/Desktop/qt/graphics_model/src/gmsocketinterface.h
-
-/Users/kismet/Desktop/qt/graphics_model/src/gmscene.cpp
-gmscene.h
-/Users/kismet/Desktop/qt/graphics_model/src/gmscene.h
-gmqtgraphicsscene.h
-/Users/kismet/Desktop/qt/graphics_model/src/gmqtgraphicsscene.h
-gmedge.h
-/Users/kismet/Desktop/qt/graphics_model/src/gmedge.h
-gmsocket.h
-/Users/kismet/Desktop/qt/graphics_model/src/gmsocket.h
-json/json.hpp
-/Users/kismet/Desktop/qt/graphics_model/src/json/json.hpp
-algorithm
--
-iostream
--
-sstream
--
-string
--
-utility
--
 
 /Users/kismet/Desktop/qt/graphics_model/src/gmscene.h
 QGraphicsScene
