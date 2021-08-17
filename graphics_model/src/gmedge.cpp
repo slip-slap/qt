@@ -49,7 +49,7 @@ GMEdge::GMEdge(GMScene *scene)
     m_gm_scene = scene;
     m_gmqt_edge = new GMQtGraphicsEdge();
     m_gm_scene->GetGraphicsScenePtr()->addItem(m_gmqt_edge);
-    m_gm_scene->AddEdge(this);
+
 }
 
 void GMEdge::SetTarget(QPointF des)
@@ -159,6 +159,7 @@ GMObject* GMEdge::deserialize(std::string data)
     m_id = js["id"];
     m_start_socket_id = js["socket"][0]["id"];
     m_end_stock_id = js["socket"][1]["id"];
+    m_gm_scene->AddEdge(this);
     return nullptr;
 }
 

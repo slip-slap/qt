@@ -10,7 +10,7 @@
 #include <utility>
 
 
-int GMScene::id = 1;
+int GMScene::id = 0;
 GMScene::GMScene()
 {
     m_gm_id = GMScene::GenerateIDforGMObject();
@@ -91,6 +91,10 @@ void GMScene::RemoveAllNodes()
 
 void GMScene::RemoveAllSockets()
 {
+    for(auto i:m_gm_socket_interface_vec){
+        GMSocket* gm_socket_imp = static_cast<GMSocket*>(i);
+        m_stock_graphics_scene->removeItem(gm_socket_imp->GetStockGraphicsSocket());
+    }
     m_gm_socket_interface_vec.clear();
 }
 
@@ -103,6 +107,7 @@ void GMScene::ClearScene()
     RemoveAllNodes();
     // remove all sockets
     RemoveAllSockets();
+    m_id_qmobject_map.clear();
 }
 
 void GMScene::DisplayMap()
@@ -173,11 +178,16 @@ GMObject* GMScene::deserialize(std::string data)
         GMNode* gm_node = new GMNode(this,1);
         gm_node->deserialize(js["node"][i].dump());
     }
+
     for(int i=0; i < js["socket"].size(); i++)
     {
+        for(auto i:m_id_qmobject_map){
+            std::cout<<i.first<<"    "<<i.second<<std::endl;
+        }
         GMSocket* gm_socket = new GMSocket(this);
         gm_socket->deserialize(js["socket"][i].dump());
     }
+
     // relate socket to nodes;
 
     for(auto i:m_stock_node_interface_vec){
@@ -190,6 +200,7 @@ GMObject* GMScene::deserialize(std::string data)
         }
 
     }
+
     //deserialize edge
 
     for(int i=0; i < js["edge"].size(); i++)

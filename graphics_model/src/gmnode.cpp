@@ -8,7 +8,7 @@
 
 GMNode::GMNode(GMScene *scene)
 {
-    m_gm_id = GMScene::GenerateIDforGMObject();
+    m_id = GMScene::GenerateIDforGMObject();
     m_gm_scene = scene;
     m_gmqt_graphics_node = new GMQtGraphicsNode(this,"nothing");
     m_gm_north_anchor= new GMSocket(this, POSITION::NORTH_ANCHOR);
@@ -23,10 +23,9 @@ GMNode::GMNode(GMScene *scene)
 
 GMNode::GMNode(GMScene *scene, int placeholder)
 {
-    m_gm_id = GMScene::GenerateIDforGMObject();
     m_gm_scene = scene;
     m_gmqt_graphics_node = new GMQtGraphicsNode(this,"nothing");
-    m_gm_scene->AddNode(this);
+
 }
 
 
@@ -137,7 +136,7 @@ std::pair<double, double> GMNode::GetAnchor(int pos)
 
 const int &GMNode::GetGMID() const
 {
-    return m_gm_id;
+    return m_id;
 }
 
 const std::vector<int> &GMNode::GetRelatedSocketId() const
@@ -166,7 +165,7 @@ std::string GMNode::serialize()
 
     nlohmann::json js =
     {
-        {"id", m_gm_id},
+        {"id", m_id},
         {"scene",m_gm_scene->GetGMID()},
         {"pos_x",m_gmqt_graphics_node->pos().rx()},
         {"pos_y",m_gmqt_graphics_node->pos().ry()}
@@ -184,8 +183,7 @@ GMObject* GMNode::deserialize(std::string data)
 {
     std::stringstream ss; ss<<data;
     nlohmann::json js;    ss>>js;
-    std::cout<<"####################"<<std::endl;
-    std::cout<<js.dump(4)<<std::endl;
+    m_id = js["id"];
     // socket deserialize
     /*GMSocket* north;
     GMSocket* south;
@@ -212,7 +210,7 @@ GMObject* GMNode::deserialize(std::string data)
         int id = js["socket"][i]["id"];
         m_related_socket_ids.push_back(js["socket"][i]["id"]);
     }
-
+    m_gm_scene->AddNode(this);
     return nullptr;
 }
 

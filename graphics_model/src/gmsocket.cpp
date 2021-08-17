@@ -6,7 +6,7 @@ GMSocket::GMSocket(GMScene* scene)
 {
     m_gmqt_graphics_socket = new GMQtGraphicSocket(this);
     m_gm_scene = scene;
-    m_gm_scene->AddSocket(this);
+
 }
 
 GMSocket::GMSocket(GMNode* parent, int pos)
@@ -101,7 +101,8 @@ GMObject* GMSocket::deserialize(std::string data)
     std::stringstream ss; ss<<data;
     nlohmann::json js; ss>>js;
     m_gm_id = js["id"];
-    m_position = js["position"];  
+    m_position = js["position"];
+    m_gm_scene->AddSocket(this);
     return nullptr;
 }
 

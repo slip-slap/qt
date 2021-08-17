@@ -53,7 +53,7 @@ private:
     GMSocketInterface* m_gm_south_anchor=nullptr;
     std::vector<int> m_related_socket_ids;
     GMScene* m_gm_scene;
-    int m_gm_id;
+    int m_id;
 };
 
 #endif // STOCKNODE_H
