@@ -40,9 +40,9 @@ public:
 
 private:
     QGraphicsScene* m_stock_graphics_scene=nullptr;
-    std::vector<StockNodeInterface*> m_stock_node_interface_vec;
-    std::vector<StockEdgeInterface*> m_stock_edge_interface_vec;
-    std::vector<GMSocketInterface*>  m_gm_socket_interface_vec;
+    std::vector<StockNodeInterface*> m_stock_node_container;
+    std::vector<StockEdgeInterface*> m_stock_edge_container;
+    std::vector<GMSocketInterface*>  m_gm_socket_container;
     std::map<int, GMObject*> m_id_qmobject_map;
     int m_gm_id;
 };

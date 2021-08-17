@@ -34,13 +34,13 @@ QPointF GMSocket::GetSocketPosition()
 
 void GMSocket::SetStockNode(StockNodeInterface *stock_node)
 {
-    m_gmqt_node_interface = stock_node;
+    m_gmqt_node_ptr = stock_node;
 }
 
 
-void GMSocket::AddRelatedEdge(StockEdgeInterface *stock_edge_interface)
+void GMSocket::AddRelatedEdge(StockEdgeInterface *stock_edge_ptr)
 {
-    m_gmqt_edge_interface_vec.push_back(stock_edge_interface);
+    m_gmqt_edge_interface_vec.push_back(stock_edge_ptr);
 }
 
 std::vector<StockEdgeInterface *> GMSocket::GetAllRelatedEdge()
@@ -50,7 +50,7 @@ std::vector<StockEdgeInterface *> GMSocket::GetAllRelatedEdge()
 
 StockNodeInterface *GMSocket::GetStockNode()
 {
-    return m_gmqt_node_interface;
+    return m_gmqt_node_ptr;
 }
 
 

@@ -32,8 +32,8 @@ public:
     const int& GetGMID() const;
 
 private:
-    StockNodeInterface* m_gmqt_node_interface=nullptr;
-    StockEdgeInterface* m_gmqt_edge_interface=nullptr;
+    StockNodeInterface* m_gmqt_node_ptr=nullptr;
+    StockEdgeInterface* m_gmqt_edge_ptr=nullptr;
     GMQtGraphicSocket* m_gmqt_graphics_socket=nullptr;
     GMNode* m_gm_node;
     GMScene* m_gm_scene;
